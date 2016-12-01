@@ -3,8 +3,8 @@ using namespace std;
 int main()
 {
     //uri 1667
-    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-    freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
+//    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+//    freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
     string str;
     vector<string> vs;
     while(getline(cin,str)){

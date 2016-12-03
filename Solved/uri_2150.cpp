@@ -5,7 +5,7 @@ int main()
 
     //uri 2150
    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-//    freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
+// freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
     string s1,s2;
     while(cin >> s1 ){
         getchar();

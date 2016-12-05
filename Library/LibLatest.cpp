@@ -104,7 +104,7 @@ typedef unsigned long long llu;
 #define mem(a, v) memset(a,v,sizeof(a)) //need to see in the internet
 
 #define C printf("Case %d:",tc)
-#define debug printf("\nDEBUG\n");
+#define debug print0("\nDEBUG\n");
 
 #define fi freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
 #define fo freopen("out.txt","w",stdout);

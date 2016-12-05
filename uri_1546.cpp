@@ -110,15 +110,28 @@ typedef unsigned long long llu;
 
 
 int main(int argc, char const *argv[]) {
-    fi
+   // fi
     //fo
+    map<int,string > mis;
+    //string str;
+    mis[1] = "Rolien";
+    mis[2] = "Naej";
+    mis[3] = "Elehcim";
+    mis[4] ="Odranoel";
+
     int tc;
-    scanf("%d",&tc);
+    scanf("%d\n",&tc);
     while(tc--){
-        int a , b;
-        cin >> a >> b;
-        cout << ( a* b) /2 << " cm2" <<  endl;
+        int n;
+        cin >> n;
+        for(int i=0;i<n;i++){
+            int t;
+            scanf("%d",&t);
+            cout << mis[t] <<  endl;
+        }
     }
+
+
 
 
 
@@ -127,8 +140,8 @@ int main(int argc, char const *argv[]) {
 }
 
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1585
-///Time    :4, Dec,2016( 007.25AM - 07.28AM )
+///Problem : URI 1546
+///Time    :4, Dec,2016( 01.46AM - 01.26 AM )
 
 
 

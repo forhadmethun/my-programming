@@ -110,18 +110,33 @@ typedef unsigned long long llu;
 
 
 int main(int argc, char const *argv[]) {
-    ios_base::sync_with_stdio(false);cin.tie(NULL);
+   ios_base::sync_with_stdio(false);cin.tie(NULL);
    // fi
-    double n;
-    scanf("%lf",&n);
-    printf("%0.0lf\n",pow(3,n));
+    int x1,y1,x2,y2;
+    while(scanf("%d%d%d%d",&x1,&y1,&x2,&y2)){
+        if( x1 == 0 && y1 == 0 && x2 ==0 && y2 == 0)break;
 
-    return 0;
+        else if(x1 ==x2 && y1==y2){
+            printf("0\n");
+            continue;
+        }
+            else if(x1 ==x2 || y1 ==y2){
+            printf("1\n");
+        }
+        else if(abs(x1-x2) == abs(y1-y2)){
+            printf("1\n");
+            continue;
+        }
+
+        else{
+            printf("2\n");
+        }
+    }
+
 }
-
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1795
-///Time    :6, Dec,2016( 12.44PM -12.49PM )
+///Problem : URI 1087
+///Time    :
 
 
 

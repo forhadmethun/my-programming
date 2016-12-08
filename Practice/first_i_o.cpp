@@ -108,20 +108,53 @@ typedef unsigned long long llu;
 #define fi freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
 #define fo freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
 
+long long int read_int(){
+    char r;
+    bool start=false,neg=false;
+    long long int ret=0;
+    while(true){
+        r=getchar();
+        if((r-'0'<0 || r-'0'>9) && r!='-' && !start){
+            continue;
+        }
+        if((r-'0'<0 || r-'0'>9) && r!='-' && start){
+            break;
+        }
+        if(start)ret*=10;
+        start=true;
+        if(r=='-')neg=true;
+        else ret+=r-'0';
+    }
+    if(!neg)
+        return ret;
+    else
+        return -ret;
+}
+
 
 int main(int argc, char const *argv[]) {
     ios_base::sync_with_stdio(false);cin.tie(NULL);
-   // fi
-    double n;
-    scanf("%lf",&n);
-    printf("%0.0lf\n",pow(3,n));
+    fi
+    //fo
+    int tc;
+    scanf("%d",&tc);
+    while(tc--){
+        int a , b;
+        //cin >> a >> b;
+        scanf("%d%d",&a,&b);
+        //cout << ( a* b) /2 << " cm2" <<  endl;
+        printf("%d cm2\n",(a*b)/2);
+    }
+
+
+
 
     return 0;
 }
 
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1795
-///Time    :6, Dec,2016( 12.44PM -12.49PM )
+///Problem : URI 1585
+///Time    :4, Dec,2016( 007.25AM - 07.28AM )
 
 
 

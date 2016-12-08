@@ -106,29 +106,37 @@ typedef unsigned long long llu;
 #define debug printf("\nDEBUG\n");
 
 #define fi freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-#define fo freopen("out.txt","w",stdout);
+#define fo freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
 
 
 int main(int argc, char const *argv[]) {
+   ios_base::sync_with_stdio(false);cin.tie(NULL);
     fi
-    //fo
-    int tc;
-    scanf("%d",&tc);
-    while(tc--){
-        int a , b;
-        cin >> a >> b;
-        cout << ( a* b) /2 << " cm2" <<  endl;
+    int x1,y1,x2,y2;
+    while(scanf("%d%d%d%d",&x1,&y1,&x2,&y2)){
+        if( x1 == 0 && y1 == 0 && x2 ==0 && y2 == 0)break;
+
+        else if(x1 ==x2 && y1==y2){
+            printf("0\n");
+            continue;
+        }
+            else if(x1 ==x2 || y1 ==y2){
+            printf("1\n");
+        }
+        else if(abs(x1-x2) == abs(y1-y2)){
+            printf("1\n");
+            continue;
+        }
+
+        else{
+            printf("2\n");
+        }
     }
 
-
-
-
-    return 0;
 }
-
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1585
-///Time    :4, Dec,2016( 007.25AM - 07.28AM )
+///Problem : URI 1087
+///Time    :
 
 
 

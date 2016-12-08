@@ -110,18 +110,43 @@ typedef unsigned long long llu;
 
 
 int main(int argc, char const *argv[]) {
-    ios_base::sync_with_stdio(false);cin.tie(NULL);
-   // fi
-    double n;
-    scanf("%lf",&n);
-    printf("%0.0lf\n",pow(3,n));
+   // ios_base::sync_with_stdio(false);cin.tie(NULL);
+    fi
+    float m[12][12];
+    char ch;
+    cin >>ch;
+    for(int i=0;i<12;i++){
+        for (int j=0;j<12;j++) {
+            //scanf("%f", &m[i][j]);
+            cin >> m[i][j];
+           // cout << m[i][j] << endl;
+        }
 
-    return 0;
+    }
+    float sum=0,count=0;
+    int i=1,k=10;
+    for(int j=0;j<=4;j++){
+        for(;i<=k;i++){
+            sum+=m[i][j]; count++;
+           // cout << i << "-" << j <<  "--> " << sum  << endl;
+        }
+        i=j+2;k--;
+        //cout << "---->>>" << j << "-- " << i << endl;
+
+    }
+
+    if(ch=='S'){
+        printf("%0.1f\n",sum);
+    }
+    else{
+        printf("%0.1f\n",sum/count);
+    }
+
 }
 
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1795
-///Time    :6, Dec,2016( 12.44PM -12.49PM )
+///Problem : URI 1189
+///Time    :
 
 
 

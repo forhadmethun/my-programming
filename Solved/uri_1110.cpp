@@ -109,33 +109,61 @@ typedef unsigned long long llu;
 #define fo freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
 
 
+
 int main(int argc, char const *argv[]) {
-   ios_base::sync_with_stdio(false);cin.tie(NULL);
+  //  ios_base::sync_with_stdio(false);cin.tie(NULL);
    // fi
-    int x1,y1,x2,y2;
-    while(scanf("%d%d%d%d",&x1,&y1,&x2,&y2)){
-        if( x1 == 0 && y1 == 0 && x2 ==0 && y2 == 0)break;
-
-        else if(x1 ==x2 && y1==y2){
-            printf("0\n");
-            continue;
-        }
-            else if(x1 ==x2 || y1 ==y2){
-            printf("1\n");
-        }
-        else if(abs(x1-x2) == abs(y1-y2)){
-            printf("1\n");
-            continue;
+    int n;
+    while(scanf("%d",&n)!=EOF && n){
+        deque<int> q;
+        for(int i=1;i<=n;i++){
+            q.push_back(i);
         }
 
-        else{
-            printf("2\n");
+        vector<int> ans;
+        bool first = true;
+        cout << "Discarded cards: ";
+        while(q.size()>1){
+            if(!first)cout << ", ";
+            first = false;
+
+            int data= *q.begin();
+            cout << data;// << endl;
+            ans.push_back(data);
+            q.pop_front();
+            data = *q.begin();
+            q.pop_front();
+           q.push_back(data);
         }
+        cout << endl << "Remaining card: " << q.front() << endl;
+
+        /*
+        for(auto it=ans.begin();it!=ans.end();it++){
+            auto p = it;
+            p++;
+            if(p==ans.end()){
+                printf("\nRemaining card: %d\n",*it);
+            }
+            else{
+                if(it!=ans.begin()){
+                    printf(", %d",*it);
+                }
+                else{
+                    printf("Discarded cards: %d",*it);
+                }
+            }
+        }
+        */
+
     }
 
+
+
+
+    return 0;
 }
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1087
+///Problem : URI 1110
 ///Time    :
 
 

@@ -109,61 +109,43 @@ typedef unsigned long long llu;
 #define fo freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
 
 
-
-int main(int argc, char const *argv[]) {
-  //  ios_base::sync_with_stdio(false);cin.tie(NULL);
-   // fi
-    int n;
-    while(scanf("%d",&n)!=EOF && n){
-        deque<int> q;
-        for(int i=1;i<=n;i++){
-            q.push_back(i);
-        }
-
-        vector<int> ans;
-        bool first = true;
-        cout << "Discarded cards: ";
-        while(q.size()>1){
-            if(!first)cout << ", ";
-            first = false;
-
-            int data= *q.begin();
-            cout << data;// << endl;
-            ans.push_back(data);
-            q.pop_front();
-            data = *q.begin();
-            q.pop_front();
-           q.push_back(data);
-        }
-        cout << endl << "Remaining card: " << q.front() << endl;
-
-        /*
-        for(auto it=ans.begin();it!=ans.end();it++){
-            auto p = it;
-            p++;
-            if(p==ans.end()){
-                printf("\nRemaining card: %d\n",*it);
-            }
-            else{
-                if(it!=ans.begin()){
-                    printf(", %d",*it);
-                }
-                else{
-                    printf("Discarded cards: %d",*it);
-                }
-            }
-        }
-        */
-
+int f=0,c=0;
+int fib(int n)
+{
+    if(n==0 ){
+        c++;
+        return n;
     }
+        if(n==1){
+            c++;
+            f++;
+            return n;
+        }
+    else{
+        c++;
+        return fib(n-1) + fib(n-2);
+    }
+}
+int main(int argc, char const *argv[]) {
+  // ios_base::sync_with_stdio(false);cin.tie(NULL);
+   fi
+    int tc;
+    scanf("%d",&tc);
+    while(tc--){
 
+        int n;cin >> n;
 
-
+        fib(n);
+        //cout << c-1 << " --" << f << endl;
+        printf("fib(%d) = %d calls = %d\n",n,c-1,f);
+        c=0;
+        f = 0;
+    }
 
     return 0;
 }
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1110
+///Problem : URI 1029
 ///Time    :
 
 

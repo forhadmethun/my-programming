@@ -109,61 +109,26 @@ typedef unsigned long long llu;
 #define fo freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
 
 
-
 int main(int argc, char const *argv[]) {
-  //  ios_base::sync_with_stdio(false);cin.tie(NULL);
+   ios_base::sync_with_stdio(false);cin.tie(NULL);
    // fi
-    int n;
-    while(scanf("%d",&n)!=EOF && n){
-        deque<int> q;
-        for(int i=1;i<=n;i++){
-            q.push_back(i);
+   int marry,john;
+    int tc;
+    while(scanf("%d",&tc) && tc)
+    {
+        marry = 0;
+        john = 0;
+        for(int i=0;i<tc;i++){
+            int in;
+            scanf("%d",&in);
+            if(in == 0)marry++;
+            else john++;
         }
-
-        vector<int> ans;
-        bool first = true;
-        cout << "Discarded cards: ";
-        while(q.size()>1){
-            if(!first)cout << ", ";
-            first = false;
-
-            int data= *q.begin();
-            cout << data;// << endl;
-            ans.push_back(data);
-            q.pop_front();
-            data = *q.begin();
-            q.pop_front();
-           q.push_back(data);
-        }
-        cout << endl << "Remaining card: " << q.front() << endl;
-
-        /*
-        for(auto it=ans.begin();it!=ans.end();it++){
-            auto p = it;
-            p++;
-            if(p==ans.end()){
-                printf("\nRemaining card: %d\n",*it);
-            }
-            else{
-                if(it!=ans.begin()){
-                    printf(", %d",*it);
-                }
-                else{
-                    printf("Discarded cards: %d",*it);
-                }
-            }
-        }
-        */
-
+        printf("Mary won %d times and John won %d times\n",marry,john);
     }
-
-
-
-
-    return 0;
 }
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1110
+///Problem : URI 1329
 ///Time    :
 
 

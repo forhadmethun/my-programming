@@ -142,6 +142,7 @@ int main(int argc, char const *argv[]) {
             auto p = it;
             p++;
             if(p==ans.end()){
+
                 printf("\nRemaining card: %d\n",*it);
             }
             else{

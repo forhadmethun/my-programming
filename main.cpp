@@ -1,4 +1,5 @@
 using namespace std;
+
 #include<bits/stdc++.h>
 
 ///=========================================FOR TAKING INPUT OF ANY TYPE , till 4 parameter====================================================
@@ -69,10 +70,10 @@ typedef vector<vi> vvi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef vector<vii> vvii; //think about 2D matrix of pair
-//typedef set<int> si;
-//typedef map<string, int> msi;
+typedef set<int> si;
+typedef map<string, int> msi;
 typedef unsigned long long llu;
-//typedef map<int,string> mis;
+
 
 ///size, push
 #define sz(a) int((a).size())
@@ -103,69 +104,25 @@ typedef unsigned long long llu;
 #define mem(a, v) memset(a,v,sizeof(a)) //need to see in the internet
 
 #define C printf("Case %d:",tc)
-#define debug printf("\nDEBUG\n");
+#define debug print0("\nDEBUG\n");
 
 #define fi freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-#define fo freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
-
+#define fo freopen("out.txt","w",stdout);
 
 
 int main(int argc, char const *argv[]) {
-  //  ios_base::sync_with_stdio(false);cin.tie(NULL);
-   // fi
-    int n;
-    while(scanf("%d",&n)!=EOF && n){
-        deque<int> q;
-        for(int i=1;i<=n;i++){
-            q.push_back(i);
-        }
-
-        vector<int> ans;
-        bool first = true;
-        cout << "Discarded cards: ";
-        while(q.size()>1){
-            if(!first)cout << ", ";
-            first = false;
-
-            int data= *q.begin();
-            cout << data;// << endl;
-            ans.push_back(data);
-            q.pop_front();
-            data = *q.begin();
-            q.pop_front();
-           q.push_back(data);
-        }
-        cout << endl << "Remaining card: " << q.front() << endl;
-
-        /*
-        for(auto it=ans.begin();it!=ans.end();it++){
-            auto p = it;
-            p++;
-            if(p==ans.end()){
-                printf("\nRemaining card: %d\n",*it);
-            }
-            else{
-                if(it!=ans.begin()){
-                    printf(", %d",*it);
-                }
-                else{
-                    printf("Discarded cards: %d",*it);
-                }
-            }
-        }
-        */
-
-    }
-
-
-
+    //fi
+    //fo
 
     return 0;
 }
+
 ///Writer  : Md ForHad Hossain Methun
-///Problem : URI 1110
+///Problem :
 ///Time    :
 
 
 
 
+
+//  ios_base::sync_with_stdio(false);cin.tie(NULL);

@@ -1,5 +1,7 @@
 3
-3 5 2
-5
-1 15 3 5 2
-0
+9.58
+Mamao Maca Melao
+2.65
+Melancia
+9.54
+Pera Uva Goiaba

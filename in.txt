@@ -1,6 +1,6 @@
-Flowers Flourish from France
-Sam Simmonds speaks softly
-Peter pIckEd pePPers
-truly tautograms triumph
-this is NOT a tautogram
-*
+5
+5 1
+32 8
+1234 3
+4 2
+99 0.1

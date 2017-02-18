@@ -43,11 +43,15 @@ int numCC;
 
 //dfs of a grpah
 void dfs(int u){
+    //first visit a node
     printf(" %d",u);
     dfs_num[u] = DFS_BLACK;
+    //collect all the adjacent node to that visited node
     for(int i=0;i<(int)AdjList[u].size();i++){
         ii v= AdjList[u][i];
+        //if any adjacent node is not visited yet visit that node
         if(dfs_num[v.first] == DFS_WHITE){
+            //recursively call dfs of the visited node...
             dfs(v.first);
         }
 
@@ -148,8 +152,12 @@ int main(){
 
     //DFS DEMO
     cout << "DFS DEMO: " << endl;
+
     numCC = 0;
     dfs_num.assign(V,DFS_WHITE);
+    //for every vertices run DFS
+    // it will mark all connected nodes of a node and increment count
+    //as connected component
     for(int i=0;i<V;i++){
         if(dfs_num[i] == DFS_WHITE){
             printf("Component %d:",++numCC),dfs(i),printf("\n");
@@ -160,7 +168,11 @@ int main(){
     //FLOODFILL
     cout <<"FLOODFILL DEMO: " << endl;
     numCC = 0;
+
+    //assign all the nodes initially white
     dfs_num.assign(V,DFS_WHITE);
+
+
     for(int i=0;i<V;i++){
         if(dfs_num[i] == DFS_WHITE)floodfill(i,++numCC);
     }

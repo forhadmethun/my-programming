@@ -34,17 +34,26 @@ int main()
     priority_queue< pair<int, ii> > EdgeList;
     //number of vertices
     cin >> V;
+
+    //adjacency matrix representation....
     for(int i=0;i<V;i++){
         for(int j=0;j<V;j++){
             cin >> AdjMat[i][j];
         }
     }
+
+
     for(int j=0;j<V;j++){
         if(AdjMat[0][j]){
+            //print all the vertices connected to vertices 0
+
             printf("Edge 0-%d(Weight = %d)\n",j,AdjMat[0][j]);
         }
     }
     cin >> V;
+
+
+    //Adjacency List Representation ...
     AdjList.assign(V,vii());
     for(int i=0;i<V;i++){
         scanf("%d",&total_neighbrs);
@@ -58,6 +67,8 @@ int main()
     for(auto j=AdjList[0].begin();j!=AdjList[0].end();j++){
         cout << "Edge 0 - " << j->first << "  weight -" << j->second << endl;
     }
+
+    //Edge List
     cin >> E;
     for(int i=0;i<E;i++){
         cin >> a>> b >> weight ;

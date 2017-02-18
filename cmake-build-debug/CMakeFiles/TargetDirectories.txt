@@ -1,0 +1,3 @@
+D:/googleDrive/_CSE/Code/cmake-build-debug/CMakeFiles/URI_BEGINNER.dir
+D:/googleDrive/_CSE/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/googleDrive/_CSE/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir

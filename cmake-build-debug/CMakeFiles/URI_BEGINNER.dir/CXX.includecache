@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/googleDrive/_CSE/Code/main.cpp
+uri_1195.cpp
+D:/googleDrive/_CSE/Code/uri_1195.cpp
+
+D:/googleDrive/_CSE/Code/uri_1195.cpp
+bits/stdc++.h
+-
+

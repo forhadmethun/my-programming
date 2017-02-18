@@ -54,8 +54,9 @@ int main(){
         int n;scanf("%d",&n);
         for(int i=0;i<n;i++){
             int in;scanf("%d",&in);
-
+            if(i==0)
             tree = insert(tree,in);
+            else insert(tree,in);
             //cout << "->>>!! "<<in << "!!---- "<<  tree->data << endl;
         }
         /*

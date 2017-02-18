@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    //freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+    //freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     string str1,str2;
     int tc = 1;
     //cout <<"test" <<endl;

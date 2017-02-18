@@ -49,7 +49,7 @@ void post(Node *tree){
 }
 
 int main(){
-    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int tc;scanf("%d",&tc);
     for(int t=1;t<=tc;t++){
        Node* tree = NULL;

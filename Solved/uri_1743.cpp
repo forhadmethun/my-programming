@@ -2,8 +2,8 @@ using namespace std;
 #include<bits/stdc++.h>
 
 int main(int argc, char const *argv[]) {
-//    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-//    freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
+//    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
+//    freopen("D:\\googleDrive\\_CSE\\Code\\out.txt","w",stdout);
     vector<int> vb1,vb2;
     for(int i=0;i<5;i++){
         int in;scanf("%d",&in);

@@ -4,7 +4,7 @@ int main()
 {
 
     //uri 1216
-    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     double counter = 0,sum = 0;
     string str;
     while(getline(cin,str)){

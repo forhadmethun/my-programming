@@ -2,7 +2,7 @@ using namespace std;
 #include<bits/stdc++.h>
 
 int main(int argc, char const *argv[]) {
-    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int tc;
     int c = 1;
     while(scanf("%d",&tc) && tc)

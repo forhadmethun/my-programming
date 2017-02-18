@@ -23,7 +23,7 @@ void dfs(int n){
 
 
 int main(){
-   freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+   freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int tc;scanf("%d",&tc);//cout << "!! " << tc << endl;
     for(int t=1;t<=tc;t++){
         scanf("%d%d\n",&V,&E);

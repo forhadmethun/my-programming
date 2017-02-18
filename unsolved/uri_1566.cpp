@@ -6,8 +6,8 @@ int pos(int a,int b){
 }
 int main(int argc, char const *argv[]) {
     ios_base::sync_with_stdio(false);cin.tie(NULL);
-//    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-//  freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
+//    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
+//  freopen("D:\\googleDrive\\_CSE\\Code\\out.txt","w",stdout);
 
     int tc;scanf("%d\n",&tc);
     while(tc--){

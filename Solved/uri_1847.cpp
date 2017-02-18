@@ -5,7 +5,7 @@ int abs(int a,int b){
     else return b-a;
 }
 int main(int argc, char const *argv[]) {
-    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     //fo
     int A,B,C;
     scanf("%d%d%d",&A,&B,&C);

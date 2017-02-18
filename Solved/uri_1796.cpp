@@ -2,8 +2,8 @@ using namespace std;
 #include<bits/stdc++.h>
 
 int main(int argc, char const *argv[]) {
- //   freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-//  freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);
+ //   freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
+//  freopen("D:\\googleDrive\\_CSE\\Code\\out.txt","w",stdout);
     int n;scanf("%d\n",&n);
     int count0=0 ,count1 = 0;
     for(int i=0;i<n;i++){

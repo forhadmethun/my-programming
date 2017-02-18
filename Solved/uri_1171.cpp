@@ -4,8 +4,8 @@ int main()
 {
 
     //uri 1171
-//    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
-//    freopen("D:\\googleDrive\\_CSE\\URI\\out.txt","w",stdout);string s1,s2;
+//    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
+//    freopen("D:\\googleDrive\\_CSE\\Code\\out.txt","w",stdout);string s1,s2;
     map<int,int> mii;
    // cout << mii[1] << endl;
     int a;

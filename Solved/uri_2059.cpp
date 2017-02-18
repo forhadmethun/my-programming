@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-   // freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+   // freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int p,j1,j2,r,a;scanf("%d%d%d%d%d",&p,&j1,&j2,&r,&a);
     if(r ==0 && a == 0){
         if(p == 1 ){

@@ -4,7 +4,7 @@ int main()
 {
 
     //uri 1397
-    freopen("D:\\googleDrive\\_CSE\\URI\\in.txt","r",stdin);
+    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int tc;
     while(scanf("%d",&tc) && tc){
         int sumA=0,sumB=0;

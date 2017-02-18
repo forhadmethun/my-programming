@@ -1,10 +1,11 @@
-#include "uri_1195.cpp"
+#include "uri_1574.cpp"
+//#include "uri_1195.cpp"
 //#include "uri_1558.cpp"
 //#include "uri_2059.cpp"
 //#include "uri_1082.cpp"
 
 //#include "uri_1082.cpp"
-//#include "Solved/uri_1794.cpp"
+//#include "solved/uri_1794.cpp"
 //#include "Algorithm/EuclidGCD.cpp"
 //#include "Algorithm/SievePrimeNumber.cpp"
 

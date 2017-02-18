@@ -1,44 +1,44 @@
 #include<bits/stdc++.h>
 using namespace std;
-class Node{
-public:
+
+struct BstNode{
     int data;
-    Node* left;
-    Node* right;
+    BstNode *left;
+    BstNode *right;
 };
-Node* newNode(int data){
-    Node* t = new Node();
-    t->data = data;
-    t->left = NULL;
-    t->right = NULL;
-    return t;
+
+BstNode* GetNewNode(int data){
+    BstNode* newNode = new BstNode();
+    newNode->data = data;
+    newNode->left = newNode->right = NULL;
+    return newNode;
 }
-Node* insert(Node* root, int data){
+BstNode* insert(BstNode* root, int data){
     if(root == NULL){
-        root =  newNode(data);
+        root =  GetNewNode(data);
     }
-    else if(data < root->data){
+    else if(data <= root->data){
         root->left = insert(root->left, data);
     }
-    else if(data > root->data){
+    else {
         root->right = insert(root->right,data);
     }
     return root;
 }
 
-void in(Node* tree){
+void in(BstNode* tree){
     if(tree==NULL) return ;
     in(tree->left);
     printf(" %d",tree->data);
     in(tree->right);
 }
-void pre(Node* tree){
-    printf(" %d",tree->data);
+void pre(BstNode* tree){
     if(tree==NULL) return ;
+    printf(" %d",tree->data);
     in(tree->left);
     in(tree->right);
 }
-void post(Node *tree){
+void post(BstNode *tree){
     if(tree==NULL) return ;
     in(tree->left);
     in(tree->right);
@@ -50,7 +50,7 @@ int main(){
     int tc;scanf("%d",&tc);
     for(int t=1;t<=tc;t++){
         if(t>1)cout << endl;
-       Node* tree = NULL;
+       BstNode* tree = NULL;
         int n;scanf("%d",&n);
         for(int i=0;i<n;i++){
             int in;scanf("%d",&in);

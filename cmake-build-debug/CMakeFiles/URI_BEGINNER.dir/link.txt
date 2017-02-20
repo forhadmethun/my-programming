@@ -1,3 +1,0 @@
-"D:\Programs\Program Files (x86)\JetBrains\CLion 2016.2.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\URI_BEGINNER.dir/objects.a
-C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\URI_BEGINNER.dir/objects.a @CMakeFiles\URI_BEGINNER.dir\objects1.rsp
-C:\TDM-GCC-64\bin\g++.exe   -std=c++11 -g   -Wl,--whole-archive CMakeFiles\URI_BEGINNER.dir/objects.a -Wl,--no-whole-archive  -o URI_BEGINNER.exe -Wl,--out-implib,libURI_BEGINNER.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\URI_BEGINNER.dir\linklibs.rsp

@@ -1,11 +1,6 @@
-2
-3
-LEFT
-RIGHT
-SAME AS 2
-5
-LEFT
-SAME AS 1
-SAME AS 2
-SAME AS 1
-SAME AS 4
+3 5
+fechou
+fechou
+clicou
+clicou
+clicou

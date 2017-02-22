@@ -1,92 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
-	<FileVersion major="1" minor="6"/>
-	<Project>
-		<Option title="URI_BEGINNER"/>
-		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
-		<Build>
-			<Target title="all">
-				<Option working_dir="D:/googleDrive/_CSE/Code/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="URI_BEGINNER">
-				<Option output="D:/googleDrive/_CSE/Code/cmake-build-debug/URI_BEGINNER.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/googleDrive/_CSE/Code/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 URI_BEGINNER"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="URI_BEGINNER/fast">
-				<Option output="D:/googleDrive/_CSE/Code/cmake-build-debug/URI_BEGINNER.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/googleDrive/_CSE/Code/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 URI_BEGINNER/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="D:/googleDrive/_CSE/Code/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="D:/googleDrive/_CSE/Code/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/googleDrive/_CSE/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-		</Build>
-		<Unit filename="D:/googleDrive/_CSE/Code/main.cpp">
-			<Option target="URI_BEGINNER"/>
-		</Unit>
-		<Unit filename="D:/googleDrive/_CSE/Code/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-	</Project>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="URI_BEGINNER" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/forhadmethun/ClionProjects/Code/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="URI_BEGINNER">
+         <Option output="/home/forhadmethun/ClionProjects/Code/cmake-build-debug/URI_BEGINNER" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/forhadmethun/ClionProjects/Code/cmake-build-debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/i386-linux-gnu" />
+            <Add directory="/usr/include/i386-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 URI_BEGINNER" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="URI_BEGINNER/fast">
+         <Option output="/home/forhadmethun/ClionProjects/Code/cmake-build-debug/URI_BEGINNER" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/forhadmethun/ClionProjects/Code/cmake-build-debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/i386-linux-gnu" />
+            <Add directory="/usr/include/i386-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 URI_BEGINNER/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/forhadmethun/ClionProjects/Code/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/forhadmethun/ClionProjects/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/forhadmethun/ClionProjects/Code/main.cpp">
+      </Unit>
+      <Unit filename="/home/forhadmethun/ClionProjects/Code/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
 </CodeBlocks_project_file>

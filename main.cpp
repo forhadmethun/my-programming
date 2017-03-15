@@ -1,5 +1,9 @@
-//#include "Practice/computational_geometry.cpp"
-#include "DataStructure/Array/find_missing_number.cpp"
+
+#include "Others/ComputationalGeometry/quick_hull.cpp"
+//#include "Practice/geometry.cpp"
+
+// /#include "Practice/computational_geometry.cpp"
+//#include "DataStructure/Array/find_missing_number.cpp"
 //#include "uri_1943.cpp"
 //#include "uri_1340.cpp"
 //#include "uri_1618.cpp"

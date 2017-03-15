@@ -1,5 +1,6 @@
 
-#include "Others/ComputationalGeometry/quick_hull.cpp"
+#include "OJ/Codforces/cf_158_a.cpp"
+//#include "Others/ComputationalGeometry/quick_hull.cpp"
 //#include "Practice/geometry.cpp"
 
 // /#include "Practice/computational_geometry.cpp"

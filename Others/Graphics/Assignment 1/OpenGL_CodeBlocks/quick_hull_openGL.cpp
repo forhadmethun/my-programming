@@ -669,7 +669,7 @@ int main(int argc, char **argv){
     glutInitWindowPosition(0, 0);
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGB);	//Depth, Double buffer, RGB color
 
-    glutCreateWindow("My OpenGL Program");
+    glutCreateWindow("My Graphics Program");
 
     init();
 
@@ -682,7 +682,7 @@ int main(int argc, char **argv){
     glutSpecialFunc(specialKeyListener);
     glutMouseFunc(mouseListener);
 
-    glutMainLoop();		//The main loop of OpenGL
+    glutMainLoop();		//The main loop of Graphics
 
     return 0;
 }

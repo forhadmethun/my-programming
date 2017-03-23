@@ -13,9 +13,8 @@ struct triangle{
     point ab,bc,ca;
 };
 int main(){
-    //freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\scene.txt","r",stdin);
-    //freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\out.txt","w",stdout);
-    FILE *fp1,*fp2,*fp3,*fp4;
+
+    FILE *fp1,*fp2,*fp3,*fp4,*stage1,*stage2,*stage3;
     char buff[255];
 
     fp1=fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\scene.txt","r");
@@ -42,16 +41,8 @@ int main(){
         string input(buff);
         input.pop_back();
         if(input == "triangle"){
-            fscanf(fp1,"%lf%lf%lf%lf%lf%lf%lf%lf%lf\n",&t.ab.x ,&t.ab.y ,&t.ab.z,&t.bc.x,&t.bc.y,&t.bc.z,&t.ca.x,&t.ca.y,&t.ca.z);
-//            fscanf("%lf %lf %lf",&t.ab.x,&t.ab.y,&t.ab.z);
-//            fscanf("%lf %lf %lf",&t.bc.x,&t.bc.y,&t.bc.z);
-//            fscanf("%lf %lf %lf",&t.ca.x,&t.ca.y,&t.ca.z);
-
-            /*
-            cin >> t.ab.x >> t.ab.y >> t.ab.z ;
-            cin >> t.bc.x >> t.bc.y >> t.bc.z ;
-            cin >> t.ca.x >> t.ca.y >> t.ca.z ;
-            */
+            fscanf(fp1,"%lf%lf%lf%lf%lf%lf%lf%lf%lf\n",
+                   &t.ab.x ,&t.ab.y ,&t.ab.z,&t.bc.x,&t.bc.y,&t.bc.z,&t.ca.x,&t.ca.y,&t.ca.z);
             v.push_back(t);
 
         }
@@ -84,16 +75,44 @@ int main(){
         //fgetc(fp1);
     }
     fclose(fp1);
+    /*
 
     fp2 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\out.txt","w");
-    //cout << "successfully input taken" << endl;
     fputs("successfully input taken",fp2);
     fclose(fp2);
-    fp3  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\out2.txt","w");
 
-    //cout << (int)v.size() << endl;
+
+    fp3  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\out2.txt","w");
     fprintf(fp3,"%d",(int)v.size());
     fclose(fp3);
+    */
+
+
+
+    stage1  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage1.txt","w");
+    //fprintf(stage1,"%d",(int)v.size());
+    for(int i=0;i<(int)v.size();i++){
+        cout << v[i].ab.x << " " << v[i].ab.y << " " << v[i].ab.z << endl;
+        cout << v[i].bc.x << " " << v[i].bc.y << " " << v[i].bc.z << endl;
+        cout << v[i].ca.x << " " << v[i].ca.y << " " << v[i].ca.z << endl;
+        fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",v[i].ab.x,v[i].ab.y,v[i].ab.z);
+        fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",v[i].bc.x,v[i].bc.y,v[i].bc.z);
+        fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",v[i].ca.x,v[i].ca.y,v[i].ca.z);
+        //cout << endl;
+        fprintf(stage1,"\n");
+    }
+
+    fclose(stage1);
+
+    stage2  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage2.txt","w");
+    //fprintf(fp3,"%d",(int)v.size());
+    fclose(stage2);
+
+    stage3  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage3.txt","w");
+    //fprintf(fp3,"%d",(int)v.size());
+    fclose(stage3);
+
+
 
     return 0;
 }

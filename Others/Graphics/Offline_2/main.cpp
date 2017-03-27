@@ -12,6 +12,9 @@ struct point{
 struct triangle{
     point ab,bc,ca;
 };
+
+
+
 int main(){
 
     FILE *fp1,*fp2,*fp3,*fp4,*stage1,*stage2,*stage3;
@@ -105,7 +108,7 @@ int main(){
     fclose(stage1);
 
     stage2  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage2.txt","w");
-    //fprintf(fp3,"%d",(int)v.size());
+    //fprintf(stage2,"%d",(int)v.size());
     fclose(stage2);
 
     stage3  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage3.txt","w");
@@ -116,3 +119,7 @@ int main(){
 
     return 0;
 }
+
+/*
+ * http://stackoverflow.com/questions/8617683/return-a-2d-array-from-a-function
+ */

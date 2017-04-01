@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#define pi 2*acos(0.0)
 using namespace std;
 struct point{
     double x,y,z;
@@ -13,7 +12,7 @@ struct point{
         y = py;
         z = pz;
     }
-    point operator = (point p){
+    operator = (point p){
         x = p.x;
         y = p.y;
         z = p.z;
@@ -26,10 +25,10 @@ struct triangle{
 
 point R(point x,point a,double theta){
     point p;
-    theta = (pi * theta )/180.0;
-    p.x = x.x * cos(theta) + (1-cos(theta))*(a.x*x.x + a.y *x.y + a.z * x.z)*a.x + sin(theta)*(a.y*x.z - x.y*a.z);
-    p.y = x.y * cos(theta) + (1-cos(theta))*(a.x*x.x + a.y *x.y + a.z *x.z) *a.y + sin(theta)*(a.z*x.x - a.x*x.z);
-    p.z = x.z * cos(theta) + (1-cos(theta))*(a.x*x.x + a.y *x.y + a.z *x.z) *a.z + sin(theta)*(a.x*x.y - a.y*x.x);
+    theta = (3.1416 * theta )/180.0;
+    p.x = a.x * cos(theta) + (1-cos(theta))*(a.x*x.x + a.y *x.y + a.z * x.z)*a.x + sin(theta)*(a.y*x.z - x.y*a.z);
+    p.y = a.y * cos(theta) + (1-cos(theta))*(a.x*x.x + a.y *x.y + a.z *x.z) *a.y + sin(theta)*(a.z*x.x - a.x*x.z);
+    p.z = a.z * cos(theta) + (1-cos(theta))*(a.x*x.x + a.y *x.y + a.z *x.z) *a.z + sin(theta)*(a.x*x.y - a.y*x.x);
     return p;
 }
 
@@ -59,15 +58,11 @@ double** mul(double** mat1, double** mat2,int r1,int c1,int r2,int c2){
         }
 
     for(int i = 0; i < r1; ++i)
-        for(int j = 0; j < c2; ++j){
-            for(int k = 0; k < c1; ++k) {
+        for(int j = 0; j < c2; ++j)
+            for(int k = 0; k < c1; ++k)
+            {
                 mult[i][j] += mat1[i][k] * mat2[k][j];
-                //mult[i][j] <<
-
             }
-            // cout << mult[i][j]  << " ";
-
-        }
 
     return mult;
 }
@@ -211,10 +206,9 @@ int main(){
     mult1[2][2] = 1;
     mult1[3][3] = 1;
     s.push(mult1);
-    // for(auto it= s.)
+   // for(auto it= s.)
 
-    //  print_matrix(temp,4,4);
-    stack<int> si;
+  //  print_matrix(temp,4,4);
 
     stage1  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage1.txt","w");
     while(true){
@@ -249,18 +243,12 @@ int main(){
 
             double **resulta,**resultb,**resultc;
             //transform_point
-            print_matrix(s.top(),4,4);
-
             resulta = mul(s.top(),a,4,4,4,1);
             resultb = mul(s.top(),b,4,4,4,1);
             resultc = mul(s.top(),c,4,4,4,1);
-            /*
-            cout << "********************************** " << endl;
-         print_matrix(resulta,4,1);
-            print_matrix(resultb,4,1);
-            print_matrix(resultc,4,1);
-            cout << "********************************** " << endl;
-            */
+//            print_matrix(resulta,3,1);
+//            print_matrix(resultb,3,1);
+//            print_matrix(resultc,3,1);
             t.a.x = resulta[0][0];
             t.a.y = resulta[1][0];
             t.a.z = resulta[2][0];
@@ -278,39 +266,24 @@ int main(){
             v.push_back(t);
 
 
-            fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",t.a.x,t.a.y,t.a.z);
-            fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",t.b.x,t.b.y,t.b.z);
-            fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n\n",t.c.x,t.c.y,t.c.z);
+        fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",t.a.x,t.a.y,t.a.z);
+        fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n",t.b.x,t.b.y,t.b.z);
+        fprintf(stage1,"%0.7lf %0.7lf %0.7lf\n\n",t.c.x,t.c.y,t.c.z);
 
 
         }
         else if(input == "push"){
-            si.push((int)s.size());
-            // continue;
+
+
+            continue;
         }
         else if(input == "pop"){
-            int pop_size = (int)s.size() - si.top();
 
-            int y = 0;
-            /*
-            for(int i= ((int) si.top()- 1 );i<s.size();i++){
-                y++;
-                s.pop();
-            }
-             */
-            for(int i=0;i<pop_size;i++){
-                s.pop();
-                y++;
-            }
-            // cout << "--> " <<  pop_size  << endl;
-            si.pop();
-
-
-            //continue;
+            continue;
         }
         else if(input == "scale"){
 
-            // cin >> scale.x >> scale.y >> scale.z;
+           // cin >> scale.x >> scale.y >> scale.z;
             fscanf(fp1,"%lf%lf%lf\n",&scale.x,&scale.y,&scale.z);
             double** sc = create_2d_array();
             sc[0][0] = scale.x;
@@ -320,14 +293,8 @@ int main(){
 
             double **temp = s.top();
             double **ans = mul(temp,sc,4,4,4,4);
-            /*
-            //cheking identity matrix
-            cout << "checking idendityt Matrix" << endl;
             print_matrix(temp,4,4);
-            //checking
-            cout << "checking scaling operation" << endl;
             print_matrix(sc,4,4);
-             */
             s.push(ans);
 
 
@@ -337,17 +304,16 @@ int main(){
             //cin >> angle >> p.x >> p.y >> p.z;
             fscanf(fp1,"%lf%lf%lf%lf\n",&angle,&a.x,&a.y,&a.z);
             //normalizing a
-            double sq = sqrt(a.x*a.x + a.y*a.y + a.z *a.z);
-            a.x = a.x / sq;
-            a.y = a.y / sq;
-            a.z = a.z / sq;
+            a.x = a.x / sqrt(a.x*a.x + a.y*a.y + a.z *a.z);
+            a.y = a.y / sqrt(a.x*a.x + a.y*a.y + a.z *a.z);
+            a.z = a.z / sqrt(a.x*a.x + a.y*a.y + a.z *a.z);
 
-            point c1,c2,c3,i(1,0,0),j(0,1,0),k(0,0,1);
+            point c1,c2,c3,i(1.0/sqrt(2.0),1.0/sqrt(2.0),0),j,k;
 
 
             c1 = R(i,a,angle);
-            c2 = R(j,a,angle);
-            c3 = R(k,a,angle);
+            c2 = R(i,a,angle);
+            c3 = R(i,a,angle);
 
 
 
@@ -366,24 +332,13 @@ int main(){
             sc[2][2] = c3.z;
 
             sc[3][3] = 1;
-            /*
-            cout<<"vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv" << endl;
-            print_matrix(sc,4,4);
-            cout<<"vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv" << endl;
-
-            */
 
 
 
 
-            print_matrix(sc,4,4);
+
             double **temp = s.top();
             double **ans = mul(temp,sc,4,4,4,4);
-
-            cout << "checking rotation matrix" << endl;
-            print_matrix(temp,4,4);
-            print_matrix(ans,4,4);
-
             s.push(ans);
 
 
@@ -409,10 +364,6 @@ int main(){
 
             double **temp = s.top();
             double **ans = mul(temp,sc,4,4,4,4);
-            /*
-            cout << "checking translate" << endl;
-            print_matrix(ans,4,4);
-             */
             s.push(ans);
 
         }
@@ -424,7 +375,7 @@ int main(){
     fclose(stage1);
     //View Transformation
 
-
+    /*
     stage1  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage1.txt","r");
     stage2 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage2.txt","w");
     double** T = create_2d_array();
@@ -440,25 +391,24 @@ int main(){
     l.x = look_at.x - eye.x;
     l.y = look_at.y - eye.y;
     l.z = look_at.z - eye.z;
-    double sq = sqrt(l.x*l.x + l.y*l.y + l.z*l.z);
-    l.x = l.x / sq;
-    l.y = l.y / sq;
-    l.z = l.z / sq;
+
+    l.x = l.x / sqrt(l.x*l.x + l.y*l.y + l.z*l.z);
+    l.y = l.y / sqrt(l.x*l.x + l.y*l.y + l.z*l.z);
+    l.z = l.z / sqrt(l.x*l.x + l.y*l.y + l.z*l.z);
 
 
     r.x = l.y * up.z - up.y * l.z;
-    r.y = up.x *l.z - l.x * up.z;
+    r.y = up.x *l.y - l.x * up.z;
     r.z =l.x * up.y - up.x * l.y;
 
-    sq = sqrt(r.x*r.x + r.y*r.y + r.z*r.z);;
-    r.x = r.x / sq;
-    r.y = r.y / sq;
-    r.z = r.z / sq;
+    r.x = r.x / sqrt(r.x*r.x + r.y*r.y + r.z*r.z);
+    r.y = r.y / sqrt(r.x*r.x + r.y*r.y + r.z*r.z);
+    r.z = r.z / sqrt(r.x*r.x + r.y*r.y + r.z*r.z);
 
 
     u.x = r.y*l.z  - l.y * r.z;
-    u.y =  l.x  *r.z -r.x  * l.z;
-    u.z = r.x *l.y - l.x*r.y;
+    u.y =  l.x  *r.y -r.x  * l.z;
+    u.z =r.x *l.y - l.x*r.y;
 
 
 
@@ -476,33 +426,25 @@ int main(){
     R[3][3] = 1;
 
     double **V = mul(R,T,4,4,4,4);
-    // print_matrix(V,4,4);
 
     double x, y, z;
     int sum = 0;
     //printf("dhukse");
     while (fscanf(stage1, "%lf%lf%lf\n", &x, &y, &z) != EOF) {
         //printf("-> --> %0.7f %0.7f %0.7f\n",x,y,z);
-        // printf("dhuksiii");
+       // printf("dhuksiii");
 
         double **p = create_2d_array();
         p[0][0] = x;
-        p[1][0] = y;
-        p[2][0] = z;
-        p[3][0] = 1;
-        // cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!! start " <<endl;
-        //  print_matrix(V,4,4);
-        // print_matrix(p,4,4);
-        // cout << "!!!!!!!!!!!!!!!!!!!!!! end" << endl;
+        p[0][1] = y;
+        p[0][2] = z;
+        p[0][3] = 1;
 
-        double **ans = mul(V, p , 4, 4, 4, 4);
-        //print_matrix(ans,4,4);
-        // cout << "-->" << x << " - " << y << " " <<  z << endl;
+       double **ans = mul(V, p, 4, 4, 4, 4);
 
         //printf("--------------------");
-        // print_matrix(ans,4,4);
+        //print_matrix(ans,4,4);
         fprintf(stage2, "%0.07f %0.07f %0.07f\n", ans[0][0], ans[1][0], ans[2][0]);
-        // print_matrix(ans,4,4);
 
         sum++;
         if (sum % 3 == 0)fprintf(stage2, "\n");
@@ -524,58 +466,47 @@ int main(){
     stage3  = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Graphics\\Offline_2\\stage3.txt","w");
 
     //fprintf(fp3,"%d",(int)v.size());
-    // printf("asheni ");
+   // printf("asheni ");
 
-    //double x, y, z;
-    sum = 0;
-    while (fscanf(stage2, "%lf%lf%lf\n", &x, &y, &z) != EOF) {
-        //printf("-> %0.7f %0.7f %0.7f\n",x,y,z);
-        double **p = create_2d_array();
-        p[0][0] = x;
-        p[1][0] = y;
-        p[2][0] = z;
-        p[3][0] = 1;
-        // print_matrix(p,4,4);
+        //double x, y, z;
+         sum = 0;
+        while (fscanf(stage2, "%lf%lf%lf\n", &x, &y, &z) != EOF) {
+            //printf("-> %0.7f %0.7f %0.7f\n",x,y,z);
+            double **p = create_2d_array();
+            p[0][0] = x;
+            p[0][1] = y;
+            p[0][2] = z;
+            p[0][3] = 1;
 
-        double fovX, fovY, t, r;
-        fovY = field_of_view;
-        fovX = field_of_view * aspect_ratio;
+            double fovX, fovY, t, r;
+            fovY = field_of_view;
+            fovX = field_of_view * aspect_ratio;
+            t = near * tan(fovY / 2.0);
+            r = near * tan(fovX / 2.0);
 
-        fovY = (fovY * pi) / 180.0;
-        fovX = (fovX * pi) / 180.0;
+            double **projection_matrix = create_2d_array();
+            projection_matrix[0][0] = near / r;
+            projection_matrix[1][1] = near / t;
+            projection_matrix[2][2] = -(far + near) / (far - near);
+            projection_matrix[2][3] = -(2.0 * far * near) / (far - near);
+            projection_matrix[3][2] = -1.0;
 
-        t = near * tan(fovY / 2.0);
-        r = near * tan(fovX / 2.0);
+            double **ans = mul(projection_matrix, p, 4, 4, 4, 4);
+            fprintf(stage3, "%0.07f %0.07f %0.07f\n", ans[0][0], ans[1][0], ans[2][0]);
 
-        double **projection_matrix = create_2d_array();
-        projection_matrix[0][0] = near / r;
-        projection_matrix[1][1] = near / t;
-        projection_matrix[2][2] = -(far + near) / (far - near);
-        projection_matrix[2][3] = -(2.0 * far * near) / (far - near);
-        projection_matrix[3][2] = -1.0;
+            sum++;
+            if (sum % 3 == 0)fprintf(stage3, "\n");
 
-        double **ans = mul(projection_matrix, p, 4, 4, 4, 4);
-        double d = ans[3][0];
-        fprintf(stage3, "%0.07f %0.07f %0.07f\n", ans[0][0]/d, ans[1][0]/d, ans[2][0]/d);
+        }
+        //stage 3 processing should be here...
 
+        fclose(fp1);
+        fclose(stage2);
+        fclose(stage3);
 
-
-        //print_matrix(projection_matrix,4,4);
-        // print_matrix(ans,4,4);
-
-        sum++;
-        if (sum % 3 == 0)fprintf(stage3, "\n");
-
+    */
+        return 0;
     }
-    //stage 3 processing should be here...
-
-    fclose(fp1);
-    fclose(stage2);
-    fclose(stage3);
-
-
-    return 0;
-}
 
 /*
  * http://stackoverflow.com/questions/8617683/return-a-2d-array-from-a-function

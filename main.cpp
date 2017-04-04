@@ -1,4 +1,12 @@
-#include "Others/Graphics/Offline_2/main.cpp"
+
+#include <bits/stdc++.h>
+using  namespace std;
+
+int main(){
+    cout << "hello forhad! " << endl;
+    return 0;
+}
+//#include "Others/Graphics/Offline_2/main.cpp"
 //#include "DataStructure/Array/two_dimensional.cpp"
 //#include "Others/AlgoEngineering/tsp_exact_exponential.cpp"
 //#include "OJ/Codforces/cf_158_a.cpp"

@@ -1,6 +1,9 @@
 
-//#include "Others/AlgoEngineering/set_cover.cpp"
-#include "Others/ComputationalGeometry/monotone.cpp"
+#include "Others/AlgoEngineering/set_cover_test_case.cpp"
+//#include "Others/AlgoEngineering/set_cover_bitmask.cpp"
+//#include "Others/AlgoEngineering/set_cover_lp.cpp"
+//#include "Others/ComputationalGeometry/monotone.cpp"
+//#include "Others/ComputationalGeometry/TriangulateMonotonePolygone.cpp"
 //#include "Others/Graphics/Offline_2/main.cpp"
 //#include "DataStructure/Array/two_dimensional.cpp"
 //#include "Others/AlgoEngineering/tsp_exact_exponential.cpp"
@@ -60,3 +63,17 @@
 //
 //
 ////  ios_base::sync_with_stdio(false);cin.tie(NULL);
+
+
+/*
+     point prev,next;
+   // prevNext(prev,next,b);
+
+
+    if(ccw(prev,b,a)){
+        return true;
+    }
+    else return false;
+
+}
+ */

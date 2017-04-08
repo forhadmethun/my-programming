@@ -49,7 +49,7 @@ vector<edge> D;
 bool operator< (const edge &left, const edge &right)
 {
     //need to be edited
-    return left.p.x  < right.p.x;
+    return left.p.y  < right.p.y;
 }
 
 set<edge> T;
@@ -86,19 +86,15 @@ public:
 //}
 struct vec { double x, y;  // name: `vec' is different from STL vector
     vec(double _x, double _y) : x(_x), y(_y) {} };
-
 vec toVec(point a, point b) {       // convert 2 points to vector a->b
     return vec(b.x - a.x, b.y - a.y); }
 double norm_sq(vec v) { return v.x * v.x + v.y * v.y; }
 double dot(vec a, vec b) { return (a.x * b.x + a.y * b.y); }
 double cross(vec a, vec b) { return a.x * b.y - a.y * b.x; }
-
 // note: to accept collinear points, we have to change the `> 0'
 // returns true if point r is on the left side of line pq
 bool ccw(point p, point q, point r) {
     return cross(toVec(p, q), toVec(p, r)) > 0; }
-
-
 double angle(point a, point o, point b) {  // returns angle aob in rad
     vec oa = toVec(o, a), ob = toVec(o, b);
     if(ccw(a,o,b))
@@ -107,8 +103,6 @@ double angle(point a, point o, point b) {  // returns angle aob in rad
         return 2.0*PI - acos(dot(oa, ob) / sqrt(norm_sq(oa) * norm_sq(ob)));
 
 }
-
-
 enum {
     START, // 0
     SPLIT, // 1
@@ -138,7 +132,6 @@ void prevNext(point &prev,point &next,point p){
         }
     }
 }
-
 int vertexType(point p){
     point prev, next;
     //map<int,point> ::iterator it = m.find(2);
@@ -178,18 +171,16 @@ int vertexType(point p){
     */
     //int id =
 }
-
-
 void HandleStartVertex(point p){
     point prev,next;
     prevNext(prev,next,p);
-
-    cout << endl;
-    cout << "prev -> " << prev.x << "," << prev.y << endl;
-    cout << "cur -> " << p.x << "," << p.y << endl;
-    cout << "next -> " << next.x << "," << next.y << endl;
-    cout << endl;
-    edge e(prev,next);
+//
+//    cout << endl;
+//    cout << "prev -> " << prev.x << "," << prev.y << endl;
+//    cout << "cur -> " << p.x << "," << p.y << endl;
+//    cout << "next -> " << next.x << "," << next.y << endl;
+//    cout << endl;
+    edge e(p,next);
     T.insert(e);
     helper[e] = p;
 
@@ -203,21 +194,68 @@ void HandleEndVertex(point p){
         D.push_back(edge(p,helper[ei]));
     }
     T.erase(ei);
-
 }
 void HandleSplitVertex(point p){
+    point prev,next;
+    prevNext(prev,next,p);
 
+    edge ei = edge(p,next);
+
+
+    set<edge> ::iterator it = T.upper_bound(ei);
+    D.push_back(edge(p,helper[*it]));
+
+    helper[*it] = p;
+    T.insert(ei);
+    helper[ei] = p;
 }
 void HandleMergeVertex(point p){
+    point prev,next;
+    prevNext(prev,next,p);
+
+    edge ei = edge(prev,p);
+    if(vertexType(helper[ei]) == MERGE){
+        D.push_back(edge(p,helper[ei]));
+    }
+    T.erase(ei);
+
+    set<edge> ::iterator ej = T.upper_bound(ei);
+
+    if(vertexType(helper[*ej]) == MERGE){
+        D.push_back(edge(p,helper[*ej]));
+    }
+    helper[*ej] =p;
+
+
+
+
 
 }
 void HandleRegularVertex(point p){
+    point prev,next;
+    prevNext(prev,next,p);
+
+    edge ei = edge(prev,p);
+    if(p.y > next.y){
+        if(vertexType(helper[ei]) == MERGE){
+            D.push_back(edge(p,helper[ei]));
+        }
+        T.erase(ei);
+
+
+        T.insert(edge(p,next));
+        helper[edge(p,next)] = p;
+
+    }
+    else{
+        set<edge> ::iterator ej = T.upper_bound(ei);
+        if(vertexType(helper[*ej]) == MERGE){
+            D.push_back(edge(p,helper[*ej]));
+        }
+        helper[*ej] =p;
+    }
 
 }
-
-
-
-
 void makeMonotone(vector<point> vp){
     priority_queue<point,vector<point>, CompareNodePtr> pp;//(vp);
     for(int i=0;i<(int)vp.size();i++){
@@ -244,14 +282,12 @@ void makeMonotone(vector<point> vp){
         pp.pop();
     }
 }
-
 void print(){
     for(auto it=m.begin();it!=m.end();it++){
         point p = it->second;
         cout << it->first << "--> " << it->second.x  << "," << it->second.y << " -> Type: " << vertexType(p) << endl;
     }
 }
-
 int main(){
     freopen("D:\\googleDrive\\_CSE\\Code\\Others\\ComputationalGeometry\\monotone.txt","r",stdin);
     int n;
@@ -271,6 +307,11 @@ int main(){
     }
     */
      makeMonotone(vp);
+    printf("Size: %d\n",D.size());
+    for(int i=0;i<(int)D.size();i++){
+        cout << vertexType(point( D[i].p.x, D[i].p.y )) <<  " - (" << D[i].p.x << "," << D[i].p.y << ") - ("<<D[i].q.x << ","<<D[i].q.y <<")" << endl;
+    }
+
    // print();
 
     //vertexType(point(-2,2));

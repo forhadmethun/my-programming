@@ -112,11 +112,7 @@ bool visible(point a,point b){
 
 int main(){
     freopen("D:\\googleDrive\\_CSE\\Code\\Others\\ComputationalGeometry\\input_y_monotone.txt","r",stdin);
-
-
-
     int n;
-
     scanf("%d",&n);
     // point q;
     for(int i=0;i<n;i++){
@@ -184,6 +180,10 @@ int main(){
             s.push(u[j]);
         }
 
+    }
+    printf("Size: %d\n",D.size());
+    for(int i=0;i<(int)D.size();i++){
+        cout  << " - (" << D[i].p.x << "," << D[i].p.y << ") - ("<<D[i].q.x << ","<<D[i].q.y <<")" << endl;
     }
 
    // printf("Size: %d\n",D.size());

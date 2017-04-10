@@ -44,12 +44,18 @@ public:
 
 
 };
+double global_y;
 map<edge, point> helper;
 vector<edge> D;
 bool operator< (const edge &left, const edge &right)
 {
     //need to be edited
-    return left.p.y  < right.p.y;
+    double x1,x2;
+    x1 = ((global_y - left.p.y)/(left.p.y - left.q.y))*(left.p.x - left.q.x) + left.p.x;
+    x2 = ((global_y - right.p.y)/(right.p.y - right.q.y))*(right.p.x-right.q.x) + right.p.x;
+
+
+    return x1  < x2 ;
 }
 
 set<edge> T;
@@ -181,6 +187,7 @@ void HandleStartVertex(point p){
 //    cout << "next -> " << next.x << "," << next.y << endl;
 //    cout << endl;
     edge e(p,next);
+    global_y = p.y;
     T.insert(e);
     helper[e] = p;
 
@@ -193,6 +200,7 @@ void HandleEndVertex(point p){
     if(vertexType(helper[ei]) == MERGE){
         D.push_back(edge(p,helper[ei]));
     }
+    global_y = p.y;
     T.erase(ei);
 }
 void HandleSplitVertex(point p){
@@ -206,6 +214,7 @@ void HandleSplitVertex(point p){
     D.push_back(edge(p,helper[*it]));
 
     helper[*it] = p;
+    global_y = p.y;
     T.insert(ei);
     helper[ei] = p;
 }
@@ -217,6 +226,7 @@ void HandleMergeVertex(point p){
     if(vertexType(helper[ei]) == MERGE){
         D.push_back(edge(p,helper[ei]));
     }
+    global_y = p.y;
     T.erase(ei);
 
     set<edge> ::iterator ej = T.upper_bound(ei);
@@ -240,8 +250,8 @@ void HandleRegularVertex(point p){
         if(vertexType(helper[ei]) == MERGE){
             D.push_back(edge(p,helper[ei]));
         }
+        global_y = p.y;
         T.erase(ei);
-
 
         T.insert(edge(p,next));
         helper[edge(p,next)] = p;

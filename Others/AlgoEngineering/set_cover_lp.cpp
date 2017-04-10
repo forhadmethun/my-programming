@@ -19,9 +19,7 @@ double f(int coveredMask, int nowConsiderIndex ){
     return  min( valChoose, valNotChoose );
 
 }
-
-
-void Pivot( long m,long n,double A[MAX+7][MAX+7],long *B,long *N,long r,long c )
+void Pivot( long m,long n,double A[][MAX+7],long *B,long *N,long r,long c )
 {
     long i,j;
     swap( N[c],B[r] );
@@ -34,8 +32,7 @@ void Pivot( long m,long n,double A[MAX+7][MAX+7],long *B,long *N,long r,long c )
         }
     }
 }
-
-long Feasible( long m,long n,double A[MAX+7][MAX+7],long *B,long *N )
+long Feasible( long m,long n,double A[][MAX+7],long *B,long *N )
 {
     long r,c,i;
     double p,v;
@@ -54,8 +51,7 @@ long Feasible( long m,long n,double A[MAX+7][MAX+7],long *B,long *N )
         Pivot( m,n,A,B,N,r,c );
     }
 }
-
-long Simplex( long m,long n,double A[MAX+7][MAX+7],double *b,double &Ret )
+long Simplex( long m,long n,double A[][MAX+7],double *b,double &Ret )
 {
     long B[MAX+7],N[MAX+7],r,c,i;
     double p,v;
@@ -81,12 +77,12 @@ long Simplex( long m,long n,double A[MAX+7][MAX+7],double *b,double &Ret )
     }
 }
 
-
 int main(){
    // printf("%d\n",f(10,10));
     freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int tc;scanf("%d",&tc);//test cases
     while(tc--){
+        //cout << "! " << tc << endl;
         weight.clear();
         mask.clear();
 
@@ -100,6 +96,16 @@ int main(){
         int subset_number;
         scanf("%d",&subset_number); // number of subset
         N = subset_number;
+        //declaring the lp mask
+        double mat[MAX+7][MAX+ 7];
+        for(int i=0;i<=element_number;i++){
+            for(int j=0;j<=subset_number;j++){
+               // printf("%d ",mat[i][j]);
+                mat[i][j] = 0;
+                if(j == subset_number && i!=element_number)mat[i][j] = -1.0;
+            }
+            //cout << endl;
+        }
         map< set<int> , double> costs; //takes input of everything...
         vector< set<int> > v;
         for(int i=0;i<subset_number;i++){ // next subset_number times input
@@ -111,7 +117,7 @@ int main(){
             int c  = 0;
             for(int j=0;j<subset_element;j++){
                 int in;scanf("%d",&in);
-                c = c | ( 1 <<in);
+            //    c = c | ( 1 <<in);
                 s.insert(in);
             }
            // printf("-> -> %d\n",c ); // masked...
@@ -120,16 +126,118 @@ int main(){
             v.push_back(s);
            // cout << "--> " << cost << endl;
         }
-        int p = (int)(double)pow(2,N) -1 ;
+//        for(int i=0;i<v.size();i++){
+//            int x=0;
+//            for(auto it = v[i].begin();it!=v[i].end();it++,x++){
+//               // cout << " " << (int) *it;
+//                if( i == (int)*it){
+//
+//                }
+//            }
+//            //cout << endl;
+//        }
+        for(int i=0;i<=element_number;i++){
+            for(int j=0;j<=subset_number;j++){
+                // printf("%d ",mat[i][j]);
+                mat[i][j] = 0;
+                if(j == subset_number && i!=element_number)mat[i][j] = -1.0;
+                if(i == element_number){
+                    mat[i][j] = -weight[j];
+                }
+            }
+            //cout << endl;
+        }
+        //setting constraitns
+        vector<int> find_max_element;
+        for(int i=0;i<subset_number;i++){
+            find_max_element.push_back(0);
+        }
+        for(int i=0;i<element_number;i++){
+            int x=0;
+            for(int j=0;j<v.size();j++) {
+                set<int> si(v[j]);
+                if(si.find(i) != si.end()){
+                   // cout << "dhuki nai "<< endl;
+                    mat[i][j] = -1.0;
+                    find_max_element[i]++;
+                }
+
+//                for (auto it = v[j].begin(); it != v[j].end(); it++, x++) {
+//                    // cout << " " << (int) *it;
+//                    if (i == (int) *it) {
+//
+//                    }
+//
+//
+//                }
+            }
+            //cout << endl;
+        }
+
+
+        //finding maximum frequency number
+        int mx = INT_MIN;
+        for(int i=0;i<element_number;i++){
+            if(find_max_element[i]>mx){
+                mx = find_max_element[i];
+            }
+        }
+       // cout << "frequency -> " << mx << endl;
+
+
+
+        //long Simplex( long m,long n,double A[MAX+7][MAX+7],double *b,double &Ret )
+        long m = M;
+        long n = N;
+        double b[MAX + 7];
+        double Ret;
+
+
+
+        //printing the matrix
+        for(int i=0;i<=element_number;i++){ // 0 to the main set number // (7) 0,1,2,3,4,5,6,7
+            for(int j=0;j<=subset_number;j++){
+                if( i == element_number)
+                printf("%3.1f ",mat[i][j]);
+                else printf("%3.0f ",mat[i][j]);
+            }
+            cout << endl;
+        }
+        double cst = 0;
+       // cout << (double) mx << endl;
+
+        long ans = Simplex(n,m,mat,b,Ret);
+
+        for(int i=0;i<M;i++){
+            //cout << "--> " << b[i] << endl;
+            if( b[i] >= (1.0/(double)mx)){
+
+                cst = cst + weight[i];
+                cout << " " << i ;
+            }
+        }
+
+        cout << endl << cst << endl;
+
+
+
+//        double cst = 0;
+
+
+
+
+
+        //still useless
+        //int p = (int)(double)pow(2,N) -1 ;
         //cout << "!!!!!!!1 " << p << " _> " << N  << endl;
 
 
-        cout << f(0,0) << endl;
+        //cout << f(0,0) << endl;
 
 
 
        // cout << mask.size() << endl;
-        vector<set<int> >list;
+        //vector<set<int> >list;
        // cout << "---> " << msk << endl;
     }
 

@@ -1,7 +1,7 @@
 
-#include "Others/AlgoEngineering/set_cover_test_case.cpp"
+//#include "Others/AlgoEngineering/set_cover_test_case.cpp"
 //#include "Others/AlgoEngineering/set_cover_bitmask.cpp"
-//#include "Others/AlgoEngineering/set_cover_lp.cpp"
+#include "Others/AlgoEngineering/set_cover_lp.cpp"
 //#include "Others/ComputationalGeometry/monotone.cpp"
 //#include "Others/ComputationalGeometry/TriangulateMonotonePolygone.cpp"
 //#include "Others/Graphics/Offline_2/main.cpp"

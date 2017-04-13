@@ -1,4 +1,4 @@
-
+#include "D:\googleDrive\_CSE\Code\Library\1.head.cpp"
 ///3.max
 ///min
 ///swap
@@ -471,13 +471,16 @@ T fact(T n)
 int main()
 {
     //sieve(1,100);
-    sieve(1000);
-    long long a = 49;
-    vi r = primeFactor(a);
-    //cout << r[0] << endl;
-    //cout << numDiv(9) << endl;
-    cout << EulerPhi(15) << endl;
-    cout << EulerPhi(5) << endl;
+    sieve(100000+10);
+    for(int i=0;i<primes.size();i++){
+        cout << primes[i] << endl;
+    }
+//    long long a = 49;
+//    vi r = primeFactor(a);
+//    //cout << r[0] << endl;
+//    //cout << numDiv(9) << endl;
+//    cout << EulerPhi(15) << endl;
+//    cout << EulerPhi(5) << endl;
 
     return 0;
 }

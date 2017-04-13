@@ -195,14 +195,14 @@ int main(){
 
 
         //printing the matrix
-        for(int i=0;i<=element_number;i++){ // 0 to the main set number // (7) 0,1,2,3,4,5,6,7
-            for(int j=0;j<=subset_number;j++){
-                if( i == element_number)
-                printf("%3.1f ",mat[i][j]);
-                else printf("%3.0f ",mat[i][j]);
-            }
-            cout << endl;
-        }
+//        for(int i=0;i<=element_number;i++){ // 0 to the main set number // (7) 0,1,2,3,4,5,6,7
+//            for(int j=0;j<=subset_number;j++){
+//                if( i == element_number)
+//                printf("%3.1f ",mat[i][j]);
+//                else printf("%3.0f ",mat[i][j]);
+//            }
+//            cout << endl;
+//        }
         double cst = 0;
        // cout << (double) mx << endl;
 

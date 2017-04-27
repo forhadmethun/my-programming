@@ -4,86 +4,32 @@ using namespace std;
 
 #define EPS 1e-9
 #define  PI acos(-1)
-struct point{
-    double x,y;
-    point(double a,double b){
-        x  = a;
-        y = b;
+double area(int x1,int y1,int x2,int y2,int x3,int y3){
+    return 0.5* (x1*y2 +x2*y3 + x3*y1 - y1*x2-y2*x3-y3*x1);
+}
+
+int inside(vector<int> A,vector<int> B,int X,int Y,double rect_area){
+    double total_area = 0;
+    for(int i=0;i<4;i++){
+        double tri  = area(A[i%4],B[i%4],A[(i+1)%4],B[(i+1)%4],X,Y);
+        if(tri == 0)return 0;
+        total_area+=tri;
     }
-    point(){
-        x = 0;
-        y = 0;
-    }
-};
-struct vec{
-    double x,y;
-    vec(double _x,double _y){
-        x = _x;
-        y = _y;
-    }
-};
-
-vec toVec(point a,point b ){
-    return vec(b.x-a.x, b.y-a.y);
+    if(total_area == rect_area)return 1;
+    return 0;
 }
 
-double sq(vec x){
-    return x.x * x.x + x.y * x.y;
-}
-double dot(vec a,vec b){
-    return a.x*b.x + a.y * b.y;
-}
-double angle(point a,point o,point b){
-    vec oa = toVec(o,a),ob = toVec(o,b);
-    return acos(dot(oa,ob)/sqrt(sq(oa)*sq(ob)));
+int solve(vector<int> &A, vector<int> &B, vector<int> &C, vector<int> &D){
+    int N = C.size();
+    int count =0 ;
 
-}
-double cross(vec a,vec b){
-    return a.x * b.y - b.x * a.y ;
-}
-bool ccw(point p,point q, point r){
-    return cross(toVec(p,q),toVec(p,r)) > 0;
-}
-
-int solve(vector<int> &A, vector<int> &B, vector<int> &C, vector<int> &D) {
-    vector<point> P;
-    int len = (int)A.size();
-    for(int i=0;i<len;i++){
-        P.push_back(point(A[i],B[i]));
-    }
-    if((int)P.size() == 0)return 0;
-    int count = 0;
-
-    P.push_back(P[0]);
-    reverse(P.begin(),P.end()) ;
-//    for(int i=0;i<P.size();i++){
-//        cout << P[i].x << "," << P[i].y << endl;
-//    }
-    for(int k=0;k<(int)C.size();k++) {
-        point pt(C[k],D[k]);
-//        cout << "------------" << endl;
-//        cout << pt.x << "," << pt.y << endl;
-        double sum = 0;
-        // cout << "dhukii " << endl;
-        for (int i = 0; i < P.size() - 1; i++) {
-//            cout << "( "<<P[i].x << "," << P[i].y << ") (" << P[i+1].x << "," << P[i+1].y <<")" << endl;
-            if (ccw(pt,P[i],P[i+1])){
-                sum+=angle(P[i],pt,P[i+1]);
-//                cout << "ccw" << endl;
-            }
-            else{
-                sum-=angle(P[i],pt,P[i+1]);
-            }
-
-        }
-//        cout << "angle:>>>> " << sum << endl;
-        if(fabs(fabs(sum) - 2 *PI ) < EPS){
+    double rect_are = area(A[0],B[0],A[1],B[1],A[2],B[2]) + area(A[2],B[2],A[3],B[3],A[0],B[0]);
+    for(int i=0;i<N;i++){
+        if(inside(A,B,C[i],D[i],rect_are)){
             count++;
         }
-
-
     }
-    return count ;
+    return count;
 }
 
 int main(){

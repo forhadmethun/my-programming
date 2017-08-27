@@ -1,16 +1,27 @@
-#include "/home/forhadmethun/CLionProjects/Code/Practice/data structure/graph_ds.cpp"
-//#include "/home/forhadmethun/CLionProjects/Code/Practice/data structure/priority_queue.cpp"
-//#include "/home/forhadmethun/CLionProjects/Code/Practice/data structure/stack_queue.cpp"
-//#include "/home/forhadmethun/CLionProjects/Code/Practice/data structure/bit_manupulation.cpp"
-//#include "/home/forhadmethun/CLionProjects/Code/Practice/data structure/algorithm_collections.cpp"
-//#include "/Practice/data structure/array_vector.cpp"
-///home/forhadmethun/CLionProjects/Code/Practice/data structure/array_vector.cpp
-//#include "/home/forhadmethun/CLionProjects/Code/Practice/data structure/array_vector.cpp"
+#include "OJ/InterviewBit/minimize-the-absolute-difference.cpp"
+//#include "OJ/InterviewBit/diffk.cpp"
+//#include "OJ/InterviewBit/container-with-most-water.cpp"
 
-//#include "Others/Graphics/ct4.cpp"
+//#include "DataStructure/Array/two_pointers.cpp"
+//#include "Algorithm/BitMagic/CountSetBits.cpp"
+//#include "Algorithm/BitMagic/minXor.cpp"
+
+
+//#include "Algorithm/BitMagic/findUniqueNumberOfArray.cpp"
+//#include "OJ/URI/uri_1393.cpp"
+
+//#include "OJ/URI/uri_1371.cpp"
+//#include "Algorithm/NumberTheory/modpow.cpp"
+//#include "DataStructure/Tree/trie.cpp"
+//#include "Others/job/WAP/max_xor.cpp"
+//#include "DataStructure/Tree/trie_basics_insert.cpp"
 //#include "Others/AlgoEngineering/splay_tree.cpp"
 //#include "Others/Graphics/Offline_3/codes/offline3.cpp"
 //#include "OJ/InterviewBit/implement-power-function.cpp"
+
+//#include "OJ/InterviewBit/sort-by-color.cpp"
+//#include "OJ/InterviewBit/intersection-of-sorted-arrays.cpp"
+
 //#include "OJ/InterviewBit/rotated_sorted_array_search.cpp"
 //#include "OJ/InterviewBit/matrix-search.cpp"
 //#include "OJ/InterviewBit/square-root-of-integer.cpp"
@@ -110,6 +121,10 @@
 //
 //
 ////  ios_base::sync_with_stdio(false);cin.tie(NULL);
+
+///laptop_service@globalbrand.com.bd
+
+
 
 
 /*

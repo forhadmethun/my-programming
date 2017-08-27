@@ -213,14 +213,14 @@ void N104() {
         if (r == 0) {
             start_delete = clock();
             root = sp.del(root, randVal);
-//            cout << endl << "deleting: " << randVal << endl;
+            cout << endl << "deleting: " << randVal << endl;
             duration_delete += (clock() - start_delete) / (double) CLOCKS_PER_SEC;
 
         } else {
             start_search = clock();
             root = sp.search(root, randVal);
             if (root->key == randVal) {
-//                printf("found %d\n",randVal) ;
+                printf("found %d\n",randVal) ;
             }
             duration_search += (clock() - start_search) / (double) CLOCKS_PER_SEC;
         }
@@ -355,30 +355,28 @@ void sampleInput1() {
     root = sp.insert(root, 5);
     sp.print(root);
     printf("\n");
-
-    //searching
-    root = sp.search(root, 7);
-    if (root->key == 7) {
-        printf("found\n");
-    } else {
-        printf("not found\n");
-    }
-
-    //deleting
-
-    root = sp.del(root, 7);
-
-    //print
+    root = sp.insert(root, 7);
     sp.print(root);
     printf("\n");
 
+    root = sp.del(root, 3);
+
+    printf("\nTree after deleting 3\n");
+
+    sp.print(root);
+    //print
     //searching
-    root = sp.search(root, 7);
-    if (root->key == 7) {
+
+    root = sp.search(root, 1);
+    cout << "seariching 1" << endl;
+    if (root->key == 1) {
         printf("found\n");
     } else {
         printf("not found\n");
     }
+    cout << endl;
+    sp.print(root);
+
 
 
 }

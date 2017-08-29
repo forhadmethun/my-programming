@@ -742,13 +742,233 @@ void blood_pressure_time_base()
 
 }
 
+//food grain sugar /starch = 19
+//fat oily = 6
+//protein = 7
+//fruit = 28
+    // 21 -> 2
+    //22- 28 -> 1
+//mmilk = 4
+// pulse other = 6
+// vegetable
+    //21 - >> 2
+    // 22 - 33 => 1
 
 
+void breakfast_generation(){
+    //starch
 
+    //protein
+    //pulse
+
+    //veg 1
+   // freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_29_aug.txt","w",stdout);
+    FILE *fp1,*fp2,*fp3,*fp4,*fp5;
+    char  c;
+    double f;
+
+
+    fp1 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_starch_29_aug.txt","w");
+
+    fp2 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_protein_29_aug.txt","w");
+
+    fp3 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_pulse_29_aug.txt","w");
+
+    fp4 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_veg_29_aug.txt","w");
+    fp5 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_pk_29_aug.txt","w");
+
+    int count = 1;
+    for(int i=1;i<=19;i++){
+      //  for(int j=1; j<=7;j++){
+            for(int k=1;k<=6;k++){
+                for(int l=22;l<=33;l++){
+                    //cout << i  << " "<<0 << " " << k << " " << l << endl;
+                    fprintf(fp1,"%d\n",i);
+                    fprintf(fp2,"%d\n",0);
+                    fprintf(fp3,"%d\n",k);
+                    fprintf(fp4,"%d\n",l);
+                    fprintf(fp5,"%d\n",count++);
+
+
+                }
+            }
+      //  }
+    }
+    for(int i=1;i<=19;i++){
+       for(int j=1; j<=7;j++){
+           // for(int k=1;k<=6;k++){
+                for(int l=22;l<=33;l++){
+                   // cout << i  << " " << j << " " << 0 << " " << l << endl;
+                    fprintf(fp1,"%d\n",i);
+                    fprintf(fp2,"%d\n",j);
+                    fprintf(fp3,"%d\n",0);
+                    fprintf(fp4,"%d\n",l);
+                    fprintf(fp5,"%d\n",count++);
+
+                }
+            }
+      //  }
+    }
+
+}
+
+void dinner_generation() {
+    //starch 19
+    //protein 7
+    //pulse 6
+    //veg 2 - 21
+    //veg 1 - 22-33
+
+    // freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_29_aug.txt","w",stdout);
+    FILE *fp1, *fp2, *fp3, *fp4, *fp5;
+    char c;
+    double f;
+
+
+    fp1 = fopen(
+            "D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\dinner_starch_29_aug.txt",
+            "w");
+
+    fp2 = fopen(
+            "D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\dinner_protein_29_aug.txt",
+            "w");
+
+    fp3 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\dinner_pulse_29_aug.txt",
+                "w");
+
+//    fp4 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\dinner_veg_29_aug.txt","w");
+    fp5 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\dinner_pk_29_aug.txt",
+                "w");
+
+    int count = 1;
+    for (int i = 1; i <= 19; i++) {
+        for (int j = 1; j <= 7; j++) {
+            for (int k = 1; k <= 6; k++) {
+//                for(int l=22;l<=33;l++){
+                //cout << i  << " "<<0 << " " << k << " " << l << endl;
+                fprintf(fp1, "%d\n", i);
+                fprintf(fp2, "%d\n", j);
+                fprintf(fp3, "%d\n", k);
+//                    fprintf(fp4,"%d\n",l);
+                fprintf(fp5, "%d\n", count++);
+
+
+//                }
+            }
+            //  }
+        }
+
+    }
+}
+
+void lunch_generation(){
+
+
+   // freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_29_aug.txt","w",stdout);
+
+    FILE *fp1,*fp2,*fp3,*fp4,*fp5,*fp6;
+    char  c;
+    double f;
+    fp1 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_starch_29_aug.txt","w");
+    fp2 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_protein_29_aug.txt","w");
+    fp3 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_pulse_29_aug.txt","w");
+    fp4 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_veg_1_29_aug.txt","w");
+    fp5 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_veg_2_29_aug.txt","w");
+    fp5 = fopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_pk_29_aug.txt","w");
+
+    int count = 1;
+    for(int starch=1;starch<=19;starch++) {
+        for (int protein = 1; protein <= 7; protein++) {
+            for (int pulse = 1; pulse <= 6; pulse++) {
+                for (int veg1 = 1; veg1 <= 21; veg1++) {
+//                    for (int veg2 = 22; veg2 <= 33; veg2++) {
+                        //cout << i  << " "<<0 << " " << k << " " << l << endl;
+                        fprintf(fp1, "%d\n", starch);
+                        fprintf(fp2, "%d\n", protein);
+                        fprintf(fp3, "%d\n", pulse);
+
+                        fprintf(fp4, "%d\n", veg1);
+//                        fprintf(fp5, "%d\n", veg2);
+
+                        fprintf(fp5, "%d\n", count++);
+
+
+//                    }
+                }
+            }
+        }
+    }
+
+}
+
+void meal_planning_id_from_calorie_need(){
+    freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\calorie_need_time_based_29_aug.txt","r",stdin);
+    freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\meal_planning_id_from_calorie_need_29_aug.txt","w",stdout);
+    float f;
+    for(int i=1;i<=5430;i++){
+        cin >> f;
+        if(f <= 1000){
+            cout << 1 << endl;
+        }
+        else if( f <= 1200){
+            cout << 2 << endl;
+        }
+        else if( f <= 1400){
+            cout << 3 << endl;
+        }
+        else if( f <= 1600 ){
+            cout << 4 << endl;
+        }
+        else if( f <= 1800){
+            cout << 5 << endl;
+        }
+        else if( f <= 2000){
+            cout << 6 << endl;
+
+        }else if(f <= 2200){
+            cout << 7 << endl;
+        }
+        else if(f <= 2400){
+            cout << 8 << endl;
+        }
+        else if( f <= 2600 )cout << 9 << endl;
+        else if( f <= 2800) cout << 10 << endl;
+    }
+
+}
+
+void breakfast_meal_id_generation_time_based(){
+    freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\breakfast_meal_id_generation_time_based.txt","w",stdout);
+
+
+    for(int i=1;i<=5430;i++){
+        cout << random_range(1,2964) << endl;
+    }
+}
+void lunch_meal_id_generation_time_based(){
+    freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\lunch_meal_id_generation_time_based.txt","w",stdout);
+    for(int i=1;i<=5430;i++){
+        cout << random_range(1,16758) << endl;
+    }
+}
+void dinner_meal_id_generation_time_based(){
+    freopen("D:\\googleDrive\\_CSE\\Code\\Others\\Thesis\\_thesis_by_azad\\ThesisPrograms\\dinner_meal_id_generation_time_based.txt","w",stdout);
+    for(int i=1;i<=5430;i++){
+        cout << random_range(1,798) << endl;
+    }
+}
 
 
 int main() {
     srand(time(NULL));
+    breakfast_meal_id_generation_time_based();
+    lunch_meal_id_generation_time_based();
+    dinner_meal_id_generation_time_based();
+
+//    meal_planning_id_from_calorie_need();
+//    lunch_generation();
+//    dinner_generation();
+//    breakfast_generation();
     //blood_pressure_time_base();
     //freopen("weight.txt","r",stdin);
     //freopen("carbohydrate.txt","r",stdin);
@@ -764,7 +984,7 @@ int main() {
     // re analysis the exercise portion....
      // exercise();
 
-        caloryneed();
+//        caloryneed();
     //freeFood();
     //fruit();
     //milk();

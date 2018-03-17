@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9327b99-fb7e-49c7-8b1e-b7acf300160d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/LinkList/DoublyLinkList.cpp" afterPath="$PROJECT_DIR$/DataStructure/LinkList/DoublyLinkList.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/LinkList/ReverseLinkListStack.cpp" afterPath="$PROJECT_DIR$/DataStructure/LinkList/ReverseLinkListStack.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/LinkList/SinglyLinkList.cpp" afterPath="$PROJECT_DIR$/DataStructure/LinkList/SinglyLinkList.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/LinkList/StackWithLinkList.cpp" afterPath="$PROJECT_DIR$/DataStructure/LinkList/StackWithLinkList.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/Stack/ReverseStringStack.cpp" afterPath="$PROJECT_DIR$/DataStructure/Stack/ReverseStringStack.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/Stack/StackWithArray.cpp" afterPath="$PROJECT_DIR$/DataStructure/Stack/StackWithArray.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataStructure/Stack/isParenthesesBalanaced.cpp" afterPath="$PROJECT_DIR$/DataStructure/Stack/isParenthesesBalanaced.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/1.head.cpp" afterPath="$PROJECT_DIR$/Library/1.head.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Library/source_file/ch2/in_07.txt" afterPath="$PROJECT_DIR$/Library/source_file/ch2/in_07.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/URI/solved/uri_1245.cpp" afterPath="$PROJECT_DIR$/OJ/URI/solved/uri_1245.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/URI/solved/uri_1250.cpp" afterPath="$PROJECT_DIR$/OJ/URI/solved/uri_1250.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/URI/solved/uri_1256.cpp" afterPath="$PROJECT_DIR$/OJ/URI/solved/uri_1256.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/URI/solved/uri_1267.cpp" afterPath="$PROJECT_DIR$/OJ/URI/solved/uri_1267.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/URI/unsolved/uri_1383.cpp" afterPath="$PROJECT_DIR$/OJ/URI/unsolved/uri_1383.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/UVa10229.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/UVa10229.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/UVa10986.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/UVa10986.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/UVa11616.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/UVa11616.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/UVa11817.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/UVa11817.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/UVa11838.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/UVa11838.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/offline_1_uva_10397.cpp_1205111/uva_10397.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/offline_1_uva_10397.cpp_1205111/uva_10397.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/offline_1_uva_10397.cpp_1205111/uva_10397.cpp.layout" afterPath="$PROJECT_DIR$/OJ/UVA/offline_1_uva_10397.cpp_1205111/uva_10397.cpp.layout" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/offline_2_uva_11729.cpp_1205111/uva_11729.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/offline_2_uva_11729.cpp_1205111/uva_11729.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/offline_2_uva_11729.cpp_1205111/uva_11729.cpp.layout" afterPath="$PROJECT_DIR$/OJ/UVA/offline_2_uva_11729.cpp_1205111/uva_11729.cpp.layout" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva 11461.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva 11461.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva 11466.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva 11466.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10018_revercePalindrome.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10018_revercePalindrome.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10035_carry.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10035_carry.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10038.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10038.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10082_wertyu.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10082_wertyu.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10101.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10101.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10101_banglataka.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10101_banglataka.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10195_triangleCircle.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10195_triangleCircle.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10219.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10219.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10300.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10300.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10302.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10302.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10323_factorial.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10323_factorial.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10327_flipsort.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10327_flipsort.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10346.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10346.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10424_loveCalculator.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10424_loveCalculator.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10469_mofijway.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10469_mofijway.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10509.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10509.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10523.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10523.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10533_digitPrime.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10533_digitPrime.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10591.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10591.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10678.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10678.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10696.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10696.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10699_prime_factor.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10699_prime_factor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10700.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10700.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10700cpypste.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10700cpypste.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10783.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10783.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10784_diagonall.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10784_diagonall.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10924_prime.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10924_prime.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10929_multiple11.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10929_multiple11.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10931.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10931.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10945.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10945.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva10945_.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva10945_.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11152_triangle_circle.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11152_triangle_circle.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11172.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11172.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11185.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11185.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11192.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11192.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva1124_printequ.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva1124_printequ.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11332_sumDigit.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11332_sumDigit.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva113_cryptography.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva113_cryptography.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11417_gcd.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11417_gcd.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11437.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11437.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11462_ageshort.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11462_ageshort.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11464.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11464.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11465_quaderangle.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11465_quaderangle.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11466.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11466.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11479.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11479.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11586_traintTracks.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11586_traintTracks.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11614_WARRior_loop.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11614_WARRior_loop.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11622_cpast.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11622_cpast.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11636_hellow_copypaste.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11636_hellow_copypaste.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11734_stringRelatd.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11734_stringRelatd.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11743.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11743.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11764_mario_array.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11764_mario_array.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11777.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11777.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11900.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11900.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva11984_thermalchange.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva11984_thermalchange.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12149_fleyman.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12149_fleyman.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12157.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12157.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12250_hello.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12250_hello.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12289.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12289.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12373_mrholiday.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12373_mrholiday.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12459_bee_ancest.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12459_bee_ancest.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12468_tv.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12468_tv.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12502_family.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12502_family.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12555baby.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12555baby.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12578_flag.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12578_flag.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12611_flag.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12611_flag.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12626.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12626.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12626_copypaste.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12626_copypaste.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12646_0_or_1.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12646_0_or_1.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva12704_length.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva12704_length.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva1277.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva1277.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva136.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva136.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva136_uglynum.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva136_uglynum.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva1583_generator.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva1583_generator.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva1686_molarmass_string_num.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva1686_molarmass_string_num.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva299_swapping.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva299_swapping.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva374_bigmod.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva374_bigmod.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva378_bisectors.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva378_bisectors.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva378_cpaste.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva378_cpaste.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva382_perffection.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva382_perffection.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva401_22.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva401_22.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva438_circumference.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva438_circumference.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva438_cpaste.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva438_cpaste.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva458_string_char.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva458_string_char.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva483_reverse_stringWord.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva483_reverse_stringWord.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva488_triangle_wave.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva488_triangle_wave.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva494.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva494.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva543.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva543.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva575.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva575.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva591_brick.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva591_brick.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva694collatz.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva694collatz.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva713.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva713.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva913.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva913.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_10038.cpp/uva_10038.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_10038.cpp/uva_10038.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_10070_leap.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_10070_leap.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_10130.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_10130.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_10387.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_10387.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_10397.cpp/uva_10397.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_10397.cpp/uva_10397.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_10911_from_book.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_10911_from_book.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_11192final.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_11192final.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_11282.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_11282.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_11729.cpp/uva_11729.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_11729.cpp/uva_11729.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_136.cpp/uva_136.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_136.cpp/uva_136.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_343.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_343.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_352.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_352.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_482.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_482.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_482_main.cpp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_482_main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/encodings.xml" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/misc.xml" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/modules.xml" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/uva_494.cpp.iml" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/uva_494.cpp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/vcs.xml" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/CMakeLists.txt" afterPath="$PROJECT_DIR$/OJ/UVA/uva_494.cpp/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OJ/UVA/uva_673.cpp/uva_673.cpp.cbp" afterPath="$PROJECT_DIR$/OJ/UVA/uva_673.cpp/uva_673.cpp.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Others/ComputationalGeometry/monotone.txt" afterPath="$PROJECT_DIR$/Others/ComputationalGeometry/monotone.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Others/Thesis/_thesis_by_azad/HEIGHT_GEN_VERSION.cpp" afterPath="$PROJECT_DIR$/Others/Thesis/_thesis_by_azad/HEIGHT_GEN_VERSION.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Practice/dfs.cpp" afterPath="$PROJECT_DIR$/Practice/dfs.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Practice/stack.cpp" afterPath="$PROJECT_DIR$/Practice/stack.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/URI_BEGINNER.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/URI_BEGINNER.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/in.txt" afterPath="$PROJECT_DIR$/in.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="232" />
+    <option name="y" value="-4" />
+    <option name="width" value="1402" />
+    <option name="height" value="1029" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="URI_BEGINNER" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9327b99-fb7e-49c7-8b1e-b7acf300160d" name="Default" comment="" />
+      <created>1516605075022</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516605075022</updated>
+      <workItem from="1516605090626" duration="1046000" />
+      <workItem from="1517736113607" duration="606000" />
+      <workItem from="1519066897451" duration="613000" />
+      <workItem from="1520764951130" duration="35000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2300000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15416667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

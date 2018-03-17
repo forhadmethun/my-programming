@@ -15,6 +15,7 @@ itself. So, output 14.
 
 
 int main(){
+cout << "Hey Forhad .. How'u doing? " << endl;
 
     return 0;
 }

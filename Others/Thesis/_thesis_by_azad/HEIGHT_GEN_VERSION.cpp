@@ -960,10 +960,11 @@ void dinner_meal_id_generation_time_based(){
 
 
 int main() {
-    srand(time(NULL));
-    breakfast_meal_id_generation_time_based();
-    lunch_meal_id_generation_time_based();
-    dinner_meal_id_generation_time_based();
+//    srand(time(NULL));
+//    breakfast_meal_id_generation_time_based();
+//    lunch_meal_id_generation_time_based();
+//    dinner_meal_id_generation_time_based();
+    printf("hello forhad!");
 
 //    meal_planning_id_from_calorie_need();
 //    lunch_generation();

@@ -1,32 +1,5 @@
-//#include ""
-#include "Others/Thesis/_thesis_by_azad/HEIGHT_GEN_VERSION.cpp"
-//#include "Others/Thesis/_thesis_by_azad/height_27_aug_time_based.cpp"
-//#include "Others/Thesis/ThesisPrograms_by_me/last_25_aug - (now... )/patient_time_based_info.cpp"
-//#include "OJ/InterviewBit/minimize-the-absolute-difference.cpp"
-//#include "OJ/InterviewBit/diffk.cpp"
-//#include "OJ/InterviewBit/container-with-most-water.cpp"
-
-//#include "DataStructure/Array/two_pointers.cpp"
-//#include "Algorithm/BitMagic/CountSetBits.cpp"
-//#include "Algorithm/BitMagic/minXor.cpp"
-
-
-//#include "Algorithm/BitMagic/findUniqueNumberOfArray.cpp"
-//#include "OJ/URI/uri_1393.cpp"
-
-//#include "OJ/URI/uri_1371.cpp"
-//#include "Algorithm/NumberTheory/modpow.cpp"
-//#include "DataStructure/Tree/trie.cpp"
-//#include "Others/job/WAP/max_xor.cpp"
-//#include "DataStructure/Tree/trie_basics_insert.cpp"
-//#include "Others/AlgoEngineering/splay_tree.cpp"
-//#include "Others/Graphics/Offline_3/codes/offline3.cpp"
 //#include "OJ/InterviewBit/implement-power-function.cpp"
-
-//#include "OJ/InterviewBit/sort-by-color.cpp"
-//#include "OJ/InterviewBit/intersection-of-sorted-arrays.cpp"
-
-//#include "OJ/InterviewBit/rotated_sorted_array_search.cpp"
+#include "OJ/InterviewBit/rotated_sorted_array_search.cpp"
 //#include "OJ/InterviewBit/matrix-search.cpp"
 //#include "OJ/InterviewBit/square-root-of-integer.cpp"
 //#include "OJ/InterviewBit/rotated-array.cpp"
@@ -125,10 +98,6 @@
 //
 //
 ////  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
-///laptop_service@globalbrand.com.bd
-
-
 
 
 /*

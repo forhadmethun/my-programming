@@ -11,8 +11,8 @@ void dfs(int u)
 }
 
 int main(){
-    freopen("/home/forhadmethun/Documents/OJ/URI_BEGINNER/in.txt","r",stdin);
-    vetor<vii> AdjList;
+    //freopen("/home/forhadmethun/Documents/OJ/URI_BEGINNER/in.txt","r",stdin);
+    vector<vii> AdjList;
     int V,E,w,u,v;
     cin >> V >> E;
     for(int i=0;i<E;i++){

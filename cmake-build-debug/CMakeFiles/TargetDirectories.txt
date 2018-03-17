@@ -1,0 +1,3 @@
+/media/forhad/Development/MyCodes/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/forhad/Development/MyCodes/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/forhad/Development/MyCodes/Code/cmake-build-debug/CMakeFiles/URI_BEGINNER.dir

@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/media/forhad/Development/MyCodes/Code/Others/CP3/Chapter 6/Ch6_02_kmp.cpp.cpp">
+			<Option target="URI_BEGINNER"/>
+		</Unit>
 		<Unit filename="/media/forhad/Development/MyCodes/Code/main.cpp">
 			<Option target="URI_BEGINNER"/>
 		</Unit>

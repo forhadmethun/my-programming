@@ -1,5 +1,5 @@
 //#include "OJ/InterviewBit/implement-power-function.cpp"
-#include "OJ/InterviewBit/rotated_sorted_array_search.cpp"
+//#include "OJ/InterviewBit/rotated_sorted_array_search.cpp"
 //#include "OJ/InterviewBit/matrix-search.cpp"
 //#include "OJ/InterviewBit/square-root-of-integer.cpp"
 //#include "OJ/InterviewBit/rotated-array.cpp"

@@ -16,6 +16,7 @@ class ch6_01_basic_string {
     String str = "";
     first = true; // technique to differentiate first line with the other lines
     prev_dash = this_dash = false; // to differentiate whether the previous line contains a dash or not
+    System.out.println();
 
     File f = new File("ch6.txt");
     Scanner sc = new Scanner(f);

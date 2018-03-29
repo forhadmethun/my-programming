@@ -123,6 +123,33 @@ URI_BEGINNER/fast:
 	$(MAKE) -f CMakeFiles/URI_BEGINNER.dir/build.make CMakeFiles/URI_BEGINNER.dir/build
 .PHONY : URI_BEGINNER/fast
 
+Others/CP3/Chapter_6/Ch6_02_kmp.cpp.o: Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.o
+
+.PHONY : Others/CP3/Chapter_6/Ch6_02_kmp.cpp.o
+
+# target to build an object file
+Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.o:
+	$(MAKE) -f CMakeFiles/URI_BEGINNER.dir/build.make CMakeFiles/URI_BEGINNER.dir/Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.o
+.PHONY : Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.o
+
+Others/CP3/Chapter_6/Ch6_02_kmp.cpp.i: Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.i
+
+.PHONY : Others/CP3/Chapter_6/Ch6_02_kmp.cpp.i
+
+# target to preprocess a source file
+Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.i:
+	$(MAKE) -f CMakeFiles/URI_BEGINNER.dir/build.make CMakeFiles/URI_BEGINNER.dir/Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.i
+.PHONY : Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.i
+
+Others/CP3/Chapter_6/Ch6_02_kmp.cpp.s: Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.s
+
+.PHONY : Others/CP3/Chapter_6/Ch6_02_kmp.cpp.s
+
+# target to generate assembly for a file
+Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.s:
+	$(MAKE) -f CMakeFiles/URI_BEGINNER.dir/build.make CMakeFiles/URI_BEGINNER.dir/Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.s
+.PHONY : Others/CP3/Chapter_6/Ch6_02_kmp.cpp.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... URI_BEGINNER"
+	@echo "... Others/CP3/Chapter_6/Ch6_02_kmp.cpp.o"
+	@echo "... Others/CP3/Chapter_6/Ch6_02_kmp.cpp.i"
+	@echo "... Others/CP3/Chapter_6/Ch6_02_kmp.cpp.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

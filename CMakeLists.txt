@@ -3,5 +3,5 @@ project(URI_BEGINNER)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp "Others/CP3/Chapter 6/Ch6_02_kmp.cpp.cpp")
 add_executable(URI_BEGINNER ${SOURCE_FILES})

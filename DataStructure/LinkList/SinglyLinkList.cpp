@@ -1,38 +1,75 @@
+/**
+ * why link list?
+ * -----------------
+ * i) size of array is fixed.
+ * ii) inserting a new element in an array of elements is expensive
+ * iii) deletion is also expensive
+ *
+ * advantage over arrays?
+ * -----------------------
+ * i) dynamic size
+ * ii) ease of insertion/ deletion
+ *
+ * drawbacks?
+ * ---------
+ * i) random access not allowed. need to access sequentially, cannot apply any binary search
+ * ii) extra memory space for pointer is required
+ * iii) Not cache friendly. as array elements are contiguous locations so there is locality of reference for array but there is nothing such in linked list.
+ *
+ *
+ * topic covered-
+ * ---------------
+ * i) insert head
+ * ii) insert nth position
+ * iii) insert last position
+ * iv) delete
+ * v) print
+ * vi) print reverse
+ * vii) reverse link list
+ * viii) reverse link list by recursion
+ *
+ *
+ */
 #include<bits/stdc++.h>
+
 using namespace std;
-class Node{
+
+//start: representation of link list
+class Node {
 public:
+    //data
     int data;
-    Node* next;
+
+    //pointer to the next node
+    Node *next;
 };
-Node* head = NULL;
-void insert(int data){
-    Node* temp = new Node();
+
+//end: representation of link list
+
+Node *head = NULL;
+
+//insert at the starting and make the insert data as head
+void insert(int data) {
+    //create a new node
+    Node *temp = new Node();
+    //set data in that node
     temp->data = data;
     temp->next = head;
+
     head = temp;
 
 }
-void print()
-{
-    Node* temp = head;
-    while(temp!=NULL){
-        printf("%d ",temp->data);
-        temp  = temp->next;
-    }
-    printf("\n");
-}
 
-void insert(int data, int n){
-    Node* temp = new Node();
+//insert in n'th position
+void insert(int data, int n) {
+    Node *temp = new Node();
     temp->data = data;
-    if(n == 1){
+    if (n == 1) {
         temp->next = head;
         head = temp;
-    }
-    else{
-        Node* cur = head;
-        for(int i=0;i<n-2;i++){
+    } else {
+        Node *cur = head;
+        for (int i = 0; i < n - 2; i++) {
             cur = cur->next;
         }
         temp->next = cur->next;
@@ -41,29 +78,88 @@ void insert(int data, int n){
     }
 }
 
-void del(int pos){
-    Node* temp = head;
-    if(pos == 1){
+void insert(Node **head_ref, int data) {
+    Node *newNode = new Node();
+    newNode->data = data;
+    newNode->next = *head_ref;
+    *head_ref = newNode;
+}
+
+
+//insert at the end
+void insertLast(int data) {
+    Node *newNode = new Node();
+    newNode->data = data;
+    newNode->next = NULL;
+
+    if (head == NULL) {
+        head = newNode;
+    }
+    Node *tempHead = head;
+    while (tempHead->next != NULL) {
+        tempHead = tempHead->next;
+    }
+    tempHead->next = newNode;
+    return;
+
+
+}
+
+//delete an element in specific position
+void deleteNodefromNthPosition(int pos) {
+    /**
+     * delete case-
+     * - delete first element => take temp var as head and head = head->next and free temp.
+     * - delete 2nd/ any  element => loop through n-2, move head pointer to next in every iteration; assign temp->next in a var;  temp->next = temp->next->next; delete the var;
+     */
+
+    Node *temp = head;
+    if (pos == 1) {
         head = head->next;
-       // cout << "--------------> " << head->data << endl;
+        // cout << "--------------> " << head->data << endl;
         free(temp);
-        return ;
+        return;
     }
 
     // 1 2 3
-    for(int i=0;i<pos-2;i++){
+    for (int i = 0; i < pos - 2; i++) {
         temp = temp->next;
     }
-    Node* deleted_node = temp->next;
+    Node *deleted_node = temp->next;
     temp->next = temp->next->next;
     free(deleted_node);
 }
-//iterative
-void reverse()
-{
-    Node *current, *previous = NULL, *next = NULL ;
+
+//delete first occurrence of a number
+void deleteFirstOccurrence(int item) {
+    Node *temp = head, *prev = NULL;
+    //if head data need to be deleted
+    if (temp->data == item) {
+        head = head->next;
+        delete (temp);
+        return;
+    }
+
+
+    while (temp->data != item) {
+        /**
+         *  1 2 3 2
+         *  deleteFirstOccurrence(2)
+         *  deleteFirstOccurrence(1)
+         */
+        prev = temp;
+        temp = temp->next;
+    }
+    Node *deleted_node = prev->next;
+    prev->next = prev->next->next;
+    delete (deleted_node);
+}
+
+//iterative reverse
+void reverse() {
+    Node *current, *previous = NULL, *next = NULL;
     current = head;
-    while(current!=NULL){
+    while (current != NULL) {
         next = current->next;
         current->next = previous;
         previous = current;
@@ -71,9 +167,10 @@ void reverse()
     }
     head = previous;
 }
-//recursive
-void reverse(Node* p){
-    if(p->next == NULL){
+
+//recursive reverse
+void reverse(Node *p) {
+    if (p->next == NULL) {
         head = p;
         return;
     }
@@ -82,35 +179,316 @@ void reverse(Node* p){
     p->next = NULL;
 }
 
-void printReverse(Node* temp)
-{
+//delete a link list
 
-    if(temp == NULL){
-        return ;
+void deleteLinkList() {
+    Node *current = head, *next;
+    while (current != NULL) {
+        next = current->next;
+        delete (current);
+        current = next;
+    }
+    head = NULL;
+}
+
+
+void printReverse(Node *temp) {
+
+    if (temp == NULL) {
+        return;
     }
     //printf("%d ",temp->data);
     printReverse(temp->next);
-    printf("%d ",temp->data);
+    printf("%d ", temp->data);
 }
-int main()
-{
+
+
+int lengthOfLinkList(Node *listHead) {
+    int count = 0;
+    while (listHead != NULL) {
+        count++;
+        listHead = listHead->next;
+    }
+    return count;
+}
+
+int lengthOfLinkListRecursive(Node *listHead) {
+    if (listHead == NULL)return 0;
+    return lengthOfLinkListRecursive(listHead->next) + 1;
+}
+
+
+void print() {
+    Node *temp = head;
+    while (temp != NULL) {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+void print(Node *listHead) {
+    while (listHead != NULL) {
+        printf("%d ", listHead->data);
+        listHead = listHead->next;
+    }
+    printf("\n");
+}
+
+bool isExistsItem(Node *listHead, int item) {
+    while (listHead != NULL) {
+        if (listHead->data == item)return true;
+        listHead = listHead->next;
+    }
+    return false;
+}
+
+bool isExistsItemRecursive(Node *listHead, int item) {
+    if (listHead == NULL) return false; //base case, after recurse when the node will return null then the list doesn't contain the item
+    if (listHead->data == item)return true; // if list data is similiar to the item then return true
+    bool isTruth =  isExistsItemRecursive(listHead->next, item);
+    printf("\n====== FINISHED ONE TIME ============\n");
+    return isTruth;
+}
+
+int getDataAtNthPosition(Node* headList, int pos){
+    while(--pos){
+        headList = headList->next;
+    }
+    return headList->data;
+}
+int getDataAtNthPositionRecursive(Node* headList, int pos){
+    if(pos == 0 )return headList->data;
+    return getDataAtNthPositionRecursive(headList->next, pos-1);
+}
+
+int printMiddleOfLinkList(Node* head){
+    Node *fast = head, *slow = head;
+    if(head!=NULL){
+        while(fast != NULL && fast->next !=NULL){
+            fast = fast->next->next;
+            slow = slow->next;
+        }
+    }
+    return slow->data;
+}
+
+int printMiddleOfLinkListBitwiseOperator(Node *head){
+    int count = 0;Node *mid = head;
+    if(head!=NULL){
+        while(head!=NULL){
+            if(count &1 ){
+                mid = mid->next;
+            }
+            count++;
+            head=head->next;
+        }
+    }
+    return mid->data;
+}
+
+int numberOfOccurrenceOfAnItem(Node* head, int item){
+    int count = 0;
+    while(head!=NULL){
+        if(head->data == item)count++;
+        head  = head->next;
+    }
+    return count;
+}
+
+//int numberOfOccurrence = 0 ;
+int numberOfOccurrenceOfAnItemRecursive(Node *head, int item){
+    if(head == NULL) return 0;
+    int freq = numberOfOccurrenceOfAnItemRecursive(head->next, item);
+    if(head->data == item) return 1+freq;
+
+//    return numberOfOccurrence;
+}
+int numberOfOccurrence = 0 ;
+int numberOfOccurrenceOfAnItemRecursive2(Node *head, int item){
+    if(head == NULL) return numberOfOccurrence;
+    if(head->data == item) numberOfOccurrence++;
+    numberOfOccurrenceOfAnItemRecursive2(head->next, item);
+
+//    return numberOfOccurrence;
+}
+
+
+void print(string str){
+    printf("%s\n",str.c_str());
+}
+
+int main() {
     //freopen("/home/forhadmethun/ClionProjects/URI_OJ_LINUX/in.txt","r",stdin);
-    insert(10,1);
-    insert(11,2);
-    insert(4,3);
-    insert(15,2);
+    insert(10, 1);
+    insert(11, 2);
+    insert(4, 3);
+    insert(15, 2);
+    /*
+     * after insertion -
+     *  10  15 11 4
+     */
     print();
-    del(4);
-    print() ;
+    deleteNodefromNthPosition(4);
+    /*
+     * after deletion of 4th item
+     * 10 15 11
+     */
+    print();
     reverse();
+    /*
+     * after reverse the link list
+     * 11 15 10
+     */
     print();
     //printf("\n");
+    /*
+     * print ll in reverse order
+     */
     printReverse(head);
     printf("\n");
 
+    /*
+     * reverse again -
+     * 10 15 11
+     */
     reverse(head);
     print();
+    /*
+     * delete first occurrence with item 10
+     * 15 11
+     */
+    deleteFirstOccurrence(10);
+    print();
+    /*
+     * delete first occurrence with item 11
+     * 15
+     *
+     */
+    deleteFirstOccurrence(11);
+    print();
 
+    insert(4);
+    insert(3);
+    insert(2);
+    insert(1);
+    print();
+    /*
+     * after insert
+     * 1 2 3 4 15
+     *
+     */
+    /*
+     * deleting link list
+     */
+    deleteLinkList();
+    /*
+     * print after delete
+     */
+    printf("START: Print after emptying link list - \n");
+    print();
+    printf("Entering 1 2 3 4 5 to the list again\n");
+    insert(4), insert(3), insert(2), insert(1);
+    print();
+    printf("END: Print after emptying link list \n\n");
+
+
+    printf("START: INSERT WITH HEAD POINTER - \n");
+
+    Node *insertTestNode = NULL;
+    insert(&insertTestNode, 4);
+    insert(&insertTestNode, 3);
+    insert(&insertTestNode, 2);
+    insert(&insertTestNode, 1);
+    insert(&insertTestNode, 0);
+    print(insertTestNode);
+
+    printf("END: INSERT WITH HEAD POINTER \n\n");
+
+    printf("START: Link List Count-\n");
+    printf("Count - %d \n", lengthOfLinkList(insertTestNode));
+    printf("END: Link List Count\n\n");
+
+    printf("START: Link List Count Recursive-\n");
+    printf("Count - %d \n", lengthOfLinkListRecursive(insertTestNode));
+    printf("END: Link List Count Recursive\n\n");
+
+
+    printf("START: if an item exists\n");
+    if (isExistsItem(insertTestNode, 1)) { printf("1 EXISTS\n"); }
+    if (!isExistsItem(insertTestNode, 5)) { printf("5 doesn't EXISTS\n"); }
+    printf("END: if an item exists\n\n");
+
+
+    printf("START: if an item exists recursive\n");
+    if (isExistsItemRecursive(insertTestNode, 1)) { printf("1 EXISTS\n"); }
+//    if (!isExistsItemRecursive(insertTestNode, 5)) { printf("5 doesn't EXISTS\n"); }
+    printf("END: if an item exists recursive\n\n");
+
+
+    printf("START: data of 2nd position - \n");
+    print(insertTestNode);
+    printf("2nd position data - %d\n",getDataAtNthPosition(insertTestNode,2));
+    printf("3nd position data - %d\n",getDataAtNthPosition(insertTestNode,3));
+    printf("5th position data - %d\n",getDataAtNthPosition(insertTestNode,5));
+    printf("END: data of 2nd position \n\n");
+
+
+    printf("START: data of 2nd position recursive- \n");
+    print(insertTestNode);
+    printf("2nd position data - %d\n",getDataAtNthPositionRecursive(insertTestNode,2-1));
+    printf("3nd position data - %d\n",getDataAtNthPositionRecursive(insertTestNode,3-1));
+
+    printf("5th position data - %d\n",getDataAtNthPositionRecursive(insertTestNode,5-1));
+    printf("END: data of 2nd position recursive\n\n");
+
+
+
+    printf("========= START: print nth position from the last of link list ============\n");
+    printf("2nd position data from last - %d\n", getDataAtNthPosition(insertTestNode, lengthOfLinkList(insertTestNode)-2+1));
+    printf("1st position data from last - %d\n", getDataAtNthPosition(insertTestNode, lengthOfLinkList(insertTestNode)-1+1));
+    printf("4th position data from last - %d\n", getDataAtNthPosition(insertTestNode, lengthOfLinkList(insertTestNode)-4+1));
+
+
+    printf("========= END: print nth position from the last of link list ============\n\n");
+
+
+    printf("==== Print Middle Element of Link List Check ====\n");
+    Node* printMiddleLinkList = NULL;
+    for(int i=5;i>=0;i--){
+        insert(&printMiddleLinkList,i);
+        print(printMiddleLinkList); printf("\t Mid ==>  %d\n",printMiddleOfLinkList(printMiddleLinkList));
+    }
+
+    printf("==== Print Middle Element of Link List Check ====\n\n");
+
+    printf("==== Print Middle Element of Link List Check (BITWISE OPERATOR)====\n");
+    Node* printMiddleLinkListBitwiseOperator = NULL;
+//    deleteLinkList();
+    for(int i=5;i>=0;i--){
+        insert(&printMiddleLinkListBitwiseOperator,i);
+        print(printMiddleLinkListBitwiseOperator); printf("\t Mid ==>  %d\n",printMiddleOfLinkListBitwiseOperator(printMiddleLinkListBitwiseOperator));
+    }
+
+    printf("==== Print Middle Element of Link List Check ====\n\n");
+
+    printf("=== START: number of occurrence of an item in the link list =====\n");
+    Node *checkNumberOfOccurrences = NULL;
+    for(int i=5;i>=0;i--){
+//        Node *newNode = new Node();
+        insert(&checkNumberOfOccurrences,i);
+    }
+    insert(&checkNumberOfOccurrences,2);
+    insert(&checkNumberOfOccurrences,2);
+    insert(&checkNumberOfOccurrences,3);
+    print(checkNumberOfOccurrences);
+
+    printf("Number of Occurrence of 2 in the list is - > %d\n",numberOfOccurrenceOfAnItem(checkNumberOfOccurrences,2));
+    printf("Number of Occurrence of 2 in the list is (rec)- > %d\n",numberOfOccurrenceOfAnItemRecursive(checkNumberOfOccurrences,2));
+    numberOfOccurrenceOfAnItemRecursive2(checkNumberOfOccurrences,2);
+    printf("Number of Occurrence of 2 in the list is (rec 2 )- > %d\n",numberOfOccurrence);
+
+    printf("=== START: number of occurrence of an item in the link list =====\n\n");
 
 
 

@@ -6,3 +6,4 @@ int main(){
     printf("%d\n",i);
     return 0;
 }
+///media/forhad/Development/MyCodes/Code/DataStructure/Test.c

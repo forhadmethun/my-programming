@@ -1,4 +1,10 @@
-//#include "OJ/InterviewBit/implement-power-function.cpp"
+
+
+#include "/media/forhad/Development/MyCodes/Code/DataStructure/LinkList/SinglyLinkList.cpp"
+//#include "/media/forhad/Development/MyCodes/Code/DataStructure/Test.c"
+
+
+//#include "OJ/InterviewBit/unsolved/implement-power-function.cpp"
 //#include "OJ/InterviewBit/rotated_sorted_array_search.cpp"
 //#include "OJ/InterviewBit/matrix-search.cpp"
 //#include "OJ/InterviewBit/square-root-of-integer.cpp"

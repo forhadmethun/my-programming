@@ -313,6 +313,45 @@ int numberOfOccurrenceOfAnItemRecursive2(Node *head, int item){
 //    return numberOfOccurrence;
 }
 
+// TODO Detect Loop in ll
+/*
+ *  Different way to solve the problem -
+ *
+ * 1. use hash table and check if current node exists in the table
+ * L 2. keep an extra field in the node data structure which will check if the node already visited or not
+ *  3. ** Floyd's Cycle-Finding Algorithm** -> Fastest solution. Traverse the LL with two pointers. Move one pointer by one and other pointer by two. If these pointers meet at same node there is a loop. If pointers do not meet then LL doesn't have any loop.
+ *
+ */
+
+
+
+
+
+// TODO Find Length of loop in ll
+
+/*
+ * TODO palindrome check in ll
+ */
+
+/*
+ * TODO remove duplicate from sorted ll
+ */
+
+//TODO swap nodes in linkedlist without swapping data
+
+//TODO pairwise swap elements of a given ll
+
+//TODO move last element to front of a given ll
+
+//TODO intersection of two sorted link list
+
+//TODO intersection point of two link list
+
+//TODO QuickSort on link list
+
+// TODO Segregate even and odd nodes in link list
+
+// TODO Reverse a link list
 
 void print(string str){
     printf("%s\n",str.c_str());

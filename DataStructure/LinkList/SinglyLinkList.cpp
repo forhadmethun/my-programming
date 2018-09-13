@@ -328,17 +328,46 @@ int numberOfOccurrenceOfAnItemRecursive2(Node *head, int item){
 
 
 // TODO Find Length of loop in ll
-
+/*
+ * Firstly find the Node pointer which makes the loop (use Floyd's Cycle Finding Algorithm)
+ * Iterate from  pointer->next to the pointer and increase the count
+ * return the count
+ */
 /*
  * TODO palindrome check in ll
+ *  Method 1: ( Stack Approach )
+ *      i) push all elements of ll to a stack, ii) traverse the ll again and each time pop a node from stack and check with currently visited node, iii) If all match then palindrome else not
+ *
+ * Method 2: ( Reversing the list by half )
+ *      i) get middle of ll, ii) reverse 2nd half, iii) check first half and 2nd half identical, iv) construct original ll by reversing the 2nd half again and attaching back to the first half
+ *
+ * Method 3: ( Recursion Approach )
+ *      i) two pointer -> a) sub-list is palindrome, b)value at current left right matching
+ *      => The idea is to use function call stack as a container, Recursively traverse till the end of the list. When we return form last NULL, we will be at last node. The last node to be compared with first node of list.
+ *      => In order to access first node list,, we need list head to be available in the last call of recursion. Hence we pass head also to the recursive function. If they both match we need to compare (2,n-2) nodes. Again when recursion falls back to (n-2)th node, we reference to 2nd node from head thus advance the head pointer in previous call to refer to next node in the list.
  */
 
 /*
  * TODO remove duplicate from sorted ll
+ * 1 2 2 2 3 5 5 7
+ *  traverse the list and compare each node with its next. if next node is same as current then delete next node and before delete need to store the next pointer of the node
+ * 
+ */
+//region Remove duplicates from an unsorted link list
+/*
+ * Method 1 : two loop through and check
+ * Method 2 : Sort with Merge Sort(O(nlogn)) then check with O(n)
+ * Method 3 : Use hash map to find if an element already exists
  */
 
-//TODO swap nodes in linkedlist without swapping data
+//endregion
 
+//TODO swap nodes in linkedlist without swapping data
+/*
+ * Different Cases need to be handled - (1) x, y may not be adjacent (2) may be head node (3) may be last node (4) may not be present in the LL
+ * Solution: check trivial case and return; loop through the list and keep track of the current and previous pointers and satisfy all conditions accordingly.
+ *
+ */
 //TODO pairwise swap elements of a given ll
 
 //TODO move last element to front of a given ll

@@ -36,7 +36,7 @@ void print(Node *head){
 int main()
 {
     Node* head  = NULL;
-    freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
+    // freopen("D:\\googleDrive\\_CSE\\Code\\in.txt","r",stdin);
     int n;scanf("%d\n",&n);
     for(int i=0;i<n;i++){
         int x;scanf("%d\n",&x);

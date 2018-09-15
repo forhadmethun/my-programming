@@ -362,15 +362,29 @@ int numberOfOccurrenceOfAnItemRecursive2(Node *head, int item){
 
 //endregion
 
-//TODO swap nodes in linkedlist without swapping data
+//TODO swap nodes in linked list without swapping data
 /*
  * Different Cases need to be handled - (1) x, y may not be adjacent (2) may be head node (3) may be last node (4) may not be present in the LL
  * Solution: check trivial case and return; loop through the list and keep track of the current and previous pointers and satisfy all conditions accordingly.
  *
  */
 //TODO pairwise swap elements of a given ll
+/*  Input:  1 -> 2 ->3 ->4 ->5 -> 6 -> 7
+ *  Output: 2-> 1 ->4 ->3 ->6 -> 5 -> 7
+ *  Method 1(Iterative)
+ *      while tempHead and it's next not null swap items of them and make tempHead= tempHead->next->next
+ *  Method 2(Recursive)
+ *      while temHead and it's next not null then swap item and recurse with tempHead->next->next
+ *
+ */
 
 //TODO move last element to front of a given ll
+/*
+ * save the head node in temp
+ * traverse till last and save last and 2nd last
+ * make 2nd last->next = null , last->next = temp, *head= last;
+ *
+ */
 
 //TODO intersection of two sorted link list
 

@@ -3,3 +3,13 @@ cmake-build-debug/*
 .vscode/*
 CMakeLists.txt
 
+
+Others/python/sorting/\.idea/
+
+Others/python/sorting/venv/bin/
+
+Others/python/sorting/venv/lib/python3\.5/site-packages/
+
+Others/python/sorting/venv/
+
+*.swp

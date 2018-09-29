@@ -166,6 +166,12 @@ void reverse() {
         current = next;
     }
     head = previous;
+    /*
+     *              !
+     *    (prev)  (cur)  (next)
+     *                      !
+     *            (prev) (cur)  (next)
+     */
 }
 
 //recursive reverse
@@ -387,14 +393,36 @@ int numberOfOccurrenceOfAnItemRecursive2(Node *head, int item){
  */
 
 //TODO intersection of two sorted link list
+/*
+  Method 1: two loop through the link list and check reference of items
+  Method 2: make a list circularl and check find loop in the second link list
+  Method 3: keep extra item in node for visited which will cost memory
+  Method 4: loop through len(list1) ~ len(list2) then loop through the bigger list till the difference so that each lists have equal no of nodes -> traverse both list in parallel to find common node. 
+  Method 5: use hashing 
+  
 
+*/
 //TODO intersection point of two link list
+/*
+  same as previous ( there may some sort of trick for sorted link list (think) ) 
+
+*/
 
 //TODO QuickSort on link list
+/*
+  #try after review the quick sort in array
+*/
 
-// TODO Segregate even and odd nodes in link list
-
+// TODO Segregate even and odd nodes in link list ( even first and odd last )
+/*
+ *  Method 1: Create two list, even and odd then add them
+ *  Method 2: move odd elements to the end of the list
+  
+*/
 // TODO Reverse a link list
+/*
+ * already exists in the first portion of the program
+ */
 
 void print(string str){
     printf("%s\n",str.c_str());

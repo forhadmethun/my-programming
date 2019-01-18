@@ -19,7 +19,7 @@ if "apple" in thelist:
 #thelist.pop()
 #del thelist
 #thelist.clear()
-#thelist = list((lis items))
+#thelist = list((list items))
 
 thetuple = ("apple","banana","cherry")
 #almost everything like list except that tupe is immutable

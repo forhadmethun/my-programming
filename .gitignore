@@ -13,3 +13,9 @@ Others/python/sorting/venv/lib/python3\.5/site-packages/
 Others/python/sorting/venv/
 
 *.swp
+.history/*
+interviews/.idea/*
+interviews/interview.iml
+interviews/out
+interviews/src/Main.java
+interviews/src/amazon/*.class

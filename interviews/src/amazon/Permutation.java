@@ -21,7 +21,8 @@ public class Permutation {
         if (length == 0) System.out.println(prefix);
         else {
             for (int i = 0; i < length; i++) {
-                permutate(prefix + suffix.charAt(i), suffix.substring(0, i) + suffix.substring(i + 1, length));
+                permutate(prefix + suffix.charAt(i),
+                        suffix.substring(0, i) + suffix.substring(i + 1, length));
             }
         }
     }

@@ -36,6 +36,7 @@ public class PrintLeftViewOfBinaryTree {
         r.left = rl;
         r.right = rr;
 
+
         rl.left = rll;
         rl.right = rlr;
 

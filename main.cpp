@@ -1,4 +1,7 @@
-#include "/media/forhad/Development/MyCodes/Code/OJ/gfg/src/ReverseArrayInGroups.cpp"
+#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/CheckIfTwoTreesAreMirror.cpp"
+//#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/TopViewOfBinaryTree.cpp"
+//#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/FindKSumPathInBinaryTree.cpp"
+//#include "/media/forhad/Development/MyCodes/Code/OJ/gfg/src/ReverseArrayInGroups.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/Practice/string_split_by_space.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/OJ/gfg/src/LeadersInAnArray.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/OJ/gfg/src/ImmediateSmallerElement.cpp"

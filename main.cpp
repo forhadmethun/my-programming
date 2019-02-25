@@ -1,4 +1,5 @@
-#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/CheckIfTwoTreesAreMirror.cpp"
+#include "interviews/src/amazon/SortedInsertInCircularLinkedList.cpp"
+//#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/CheckIfTwoTreesAreMirror.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/TopViewOfBinaryTree.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/interviews/src/amazon/FindKSumPathInBinaryTree.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/OJ/gfg/src/ReverseArrayInGroups.cpp"

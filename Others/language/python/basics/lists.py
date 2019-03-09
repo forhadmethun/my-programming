@@ -24,3 +24,14 @@ if "apple" in thelist:
 thetuple = ("apple","banana","cherry")
 #almost everything like list except that tupe is immutable
 
+
+thelist.remove("banana")
+print("========================")
+
+print(thelist)
+
+print("========================")
+
+print(thelist.index("cherry"))
+# thelist.
+

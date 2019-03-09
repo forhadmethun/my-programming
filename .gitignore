@@ -12,7 +12,9 @@ Others/python/sorting/venv/lib/python3\.5/site-packages/
 
 Others/python/sorting/venv/
 
-Others/programming-languages/java/.idea
+Others/programming-languages/java/*.idea
+Others/programming-languages/Java/*.idea
+Others/programming-languages/Java/*.iml
 Others/programming-languages/java/out
 
 *.swp
@@ -23,3 +25,14 @@ interviews/out
 interviews/src/Main.java
 interviews/src/anki-coding/.idea
 interviews/src/amazon/*.class
+
+
+OJ/gfg/*.iml 
+OJ/gfg/*.idea  
+OJ/gfg/out/*
+
+
+
+Others/programming-languages/Java/out/production/Java/com/company/Main.class
+Others/programming-languages/python/.idea/*
+interviews/interviews.iml

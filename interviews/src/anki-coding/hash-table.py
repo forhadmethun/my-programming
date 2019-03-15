@@ -1,38 +1,47 @@
 from nose.tools import assert_equal, assert_raises
+
+
 class Item:
-    def __init__(self,key, value):
+
+    def __init__(self, key, value):
         self.key = key
         self.value = value
+
+
 class HashTable:
-    def __init__(self,size):
+
+    def __init__(self, size):
         self.size = size
         self.table = []
         for i in range(0, size):
             self.table.append([])
+
     def _hash_function(self, key):
-        return  key  %  self.size
+        return key % self.size
+
     def set(self, key, value):
         hash_index = self._hash_function(key)
         for item in self.table[hash_index]:
-            if( item.key == key):
+            if (item.key == key):
                 item.key = value
                 return
-        self.table[hash_index].append(Item(key,value))
+        self.table[hash_index].append(Item(key, value))
 
     def get(self, key):
         hash_index = self._hash_function(key)
         for item in self.table[hash_index]:
-            if(item.key == key):
+            if (item.key == key):
                 return item.value
-        raise KeyError ("No key found!")
+        raise KeyError("No key found!")
 
     def remove(self, key):
         hash_index = self._hash_function(key)
         for index, item in enumerate(self.table[hash_index]):
-            if(item.key == key):
-                del(self.table[hash_index][index])
+            if (item.key == key):
+                del (self.table[hash_index][index])
                 return
         raise KeyError("No Key Found!")
+
 
 # if __name__ == "__main__" :
 #     # print("Hello Forhad")
@@ -43,13 +52,13 @@ class HashTable:
 
 #     print(ht.table)
 
+
 class TestHashMap(object):
     # TODO: It would be better if we had unit tests for each
 
     # method in addition to the following end-to-end test
 
     def test_end_to_end(self):
-
         hash_table = HashTable(10)
         print("Test: get on an empty hash table index")
         assert_raises(KeyError, hash_table.get, 0)
@@ -78,14 +87,10 @@ class TestHashMap(object):
 
 
 def main():
-
     test = TestHashMap()
 
     test.test_end_to_end()
 
 
 if __name__ == '__main__':
-
     main()
-
-

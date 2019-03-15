@@ -1,4 +1,4 @@
-package amazon;
+package amazon.data_structures.linked_list;
 
 import java.util.*;
 

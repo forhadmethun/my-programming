@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d28dedb7-adb1-468b-82a5-083adfeb4e4b" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="interviews.iml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="interviews" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/NbagsWithChocolateHowManyChocolatesTheKidEaten.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/greedy/Permutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/array/PrintUniqueRowInBooleanMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/RearrangeLinkedListByOddEven.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/string/ReverseStringByWords.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/array/SearchInSortedAndRotatedArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/graph/TopologicalSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="method#dfs#0;class#TopologicalSort#0" />
+                <element signature="e#411#532#1" />
+                <element signature="e#483#522#1" />
+                <element signature="method#main#0;class#TopologicalSort#0" />
+                <element signature="e#651#738#1" />
+                <element signature="e#766#794#0" />
+                <element signature="e#878#904#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/LargestSumContiguousSubarray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/MergeOverlappingIntervals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/MoveAllZeroToEndOfArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IntegerPair</find>
+      <find>prim</find>
+      <find>node1</find>
+      <find>add</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>head</replace>
+      <replace>insert</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/amazon/LCS.java" />
+        <option value="$PROJECT_DIR$/src/amazon/EggDroppingPuzzle.java" />
+        <option value="$PROJECT_DIR$/src/amazon/findMissingNumber.java" />
+        <option value="$PROJECT_DIR$/src/amazon/EditDistance.java" />
+        <option value="$PROJECT_DIR$/src/MajorityElement.java" />
+        <option value="$PROJECT_DIR$/src/LoopDetectInLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/amazon/MergeTwoSortedLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/amazon/CheckIfBinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/amazon/MST.java" />
+        <option value="$PROJECT_DIR$/src/amazon/in/detectcycle.txt" />
+        <option value="$PROJECT_DIR$/src/amazon/DetectCycleInDirectedGraph.java" />
+        <option value="$PROJECT_DIR$/src/amazon/MajorityElement.java" />
+        <option value="$PROJECT_DIR$/src/amazon/LoopDetectInLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/amazon/FindNumberOccurringOddTimes.java" />
+        <option value="$PROJECT_DIR$/src/amazon/NextGreaterElement.java" />
+        <option value="$PROJECT_DIR$/src/amazon/SearchInSortedAndRotatedArray.java" />
+        <option value="$PROJECT_DIR$/src/amazon/DetectCycleInUndirectedGraph.java" />
+        <option value="$PROJECT_DIR$/src/amazon/FlattenLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/amazon/MergeOverlappingIntervals.java" />
+        <option value="$PROJECT_DIR$/src/amazon/MoveAllZeroToEndOfArray.java" />
+        <option value="$PROJECT_DIR$/src/amazon/RearrangeLinkedListByOddEven.java" />
+        <option value="$PROJECT_DIR$/src/amazon/TwoElementsSumCloseToZero.java" />
+        <option value="$PROJECT_DIR$/src/amazon/ConvertArrayZigZagFashion.java" />
+        <option value="$PROJECT_DIR$/src/amazon/CheckForBalanceParenthesis.java" />
+        <option value="$PROJECT_DIR$/src/amazon/PrintUniqueRowInBooleanMatrix.java" />
+        <option value="$PROJECT_DIR$/src/amazon/BinaryTreeLeavesToDLL.java" />
+        <option value="$PROJECT_DIR$/src/amazon/ContinuousSubarrayWithGivenSum.java" />
+        <option value="$PROJECT_DIR$/src/amazon/FindFourElementsThatSumToGivenValue.java" />
+        <option value="$PROJECT_DIR$/src/amazon/FindMiddleOfLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/IfRootToLeafPathSumToGivenNumberExists.java" />
+        <option value="$PROJECT_DIR$/src/amazon/IfRootToLeafPathSumToGivenNumberExists.java" />
+        <option value="$PROJECT_DIR$/src/amazon/BoundaryTraversalOfBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/amazon/ImplementStackUsingQueue.java" />
+        <option value="$PROJECT_DIR$/src/amazon/PrintLeftViewOfBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/amazon/MaximumWidthOfBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/amazon/IsTreeHeightBalanced.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/src/amazon/ConvertBinaryTreeToDLL.java" />
+        <option value="$PROJECT_DIR$/src/amazon/CountPairsOfNumbersWhoSumLessThanX.java" />
+        <option value="$PROJECT_DIR$/src/amazon/CountNumbersWhichHaveSameFirstAndLastDigits.java" />
+        <option value="$PROJECT_DIR$/src/amazon/NbagsWithChocolateHowManyChocolatesTheKidEaten.java" />
+        <option value="$PROJECT_DIR$/src/amazon/ReverseStringByWords.java" />
+        <option value="$PROJECT_DIR$/src/amazon/AddTwoSinglyLinkedLists.java" />
+        <option value="$PROJECT_DIR$/src/amazon/data_structures/linked_list/AddTwoSinglyLinkedLists.java" />
+        <option value="$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/ContinuousSubarrayWithGivenSum.java" />
+        <option value="$PROJECT_DIR$/src/amazon/algorithms/dp/MST.java" />
+        <option value="$PROJECT_DIR$/src/amazon/data_structures/tree/IfRootToLeafPathSumToGivenNumberExists.java" />
+        <option value="$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/LargestSumContiguousSubarray.java" />
+        <option value="$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/MergeOverlappingIntervals.java" />
+        <option value="$PROJECT_DIR$/src/amazon/algorithms/greedy/Permutation.java" />
+        <option value="$PROJECT_DIR$/src/amazon/data_structures/array/PrintUniqueRowInBooleanMatrix.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1922" />
+    <option name="height" value="1085" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="interviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="amazon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="amazon" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="amazon" type="462c0819:PsiDirectoryNode" />
+              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551389773223" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/amazon/data_structures/linked_list" />
+      <recent name="$PROJECT_DIR$/src/amazon/data_structures/tree" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="amazon" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/amazon/in" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AddTwoSinglyLinkedLists">
+    <configuration name="AddTwoSinglyLinkedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="amazon.data_structures.linked_list.AddTwoSinglyLinkedLists" />
+      <module name="interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="amazon.data_structures.linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountNumbersWhichHaveSameFirstAndLastDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="amazon.algorithms.ad_hoc.CountNumbersWhichHaveSameFirstAndLastDigits" />
+      <module name="interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="amazon.data_structures.linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountPairsOfNumbersWhoSumLessThanX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="amazon.algorithms.ad_hoc.CountPairsOfNumbersWhoSumLessThanX" />
+      <module name="interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="amazon.data_structures.linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NbagsWithChocolateHowManyChocolatesTheKidEaten" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="amazon.algorithms.ad_hoc.NbagsWithChocolateHowManyChocolatesTheKidEaten" />
+      <module name="interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="amazon.data_structures.linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseStringByWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="amazon.data_structures.string.ReverseStringByWords" />
+      <module name="interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="amazon.data_structures.linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CountPairsOfNumbersWhoSumLessThanX" />
+      <item itemvalue="Application.CountNumbersWhichHaveSameFirstAndLastDigits" />
+      <item itemvalue="Application.NbagsWithChocolateHowManyChocolatesTheKidEaten" />
+      <item itemvalue="Application.ReverseStringByWords" />
+      <item itemvalue="Application.AddTwoSinglyLinkedLists" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AddTwoSinglyLinkedLists" />
+        <item itemvalue="Application.ReverseStringByWords" />
+        <item itemvalue="Application.NbagsWithChocolateHowManyChocolatesTheKidEaten" />
+        <item itemvalue="Application.CountNumbersWhichHaveSameFirstAndLastDigits" />
+        <item itemvalue="Application.CountPairsOfNumbersWhoSumLessThanX" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d28dedb7-adb1-468b-82a5-083adfeb4e4b" name="Default Changelist" comment="" />
+      <created>1547810967871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547810967871</updated>
+      <workItem from="1547810973804" duration="6337000" />
+      <workItem from="1547819398065" duration="6135000" />
+      <workItem from="1547901307208" duration="2223000" />
+      <workItem from="1547903963905" duration="9594000" />
+      <workItem from="1547995252595" duration="9126000" />
+      <workItem from="1548039763067" duration="593000" />
+      <workItem from="1548075428275" duration="5877000" />
+      <workItem from="1548165853960" duration="7559000" />
+      <workItem from="1548253379135" duration="10419000" />
+      <workItem from="1548303140337" duration="1330000" />
+      <workItem from="1548348320332" duration="2102000" />
+      <workItem from="1548350456589" duration="18396000" />
+      <workItem from="1548578736079" duration="1477000" />
+      <workItem from="1548680263776" duration="314000" />
+      <workItem from="1548727930910" duration="2235000" />
+      <workItem from="1548868293728" duration="6707000" />
+      <workItem from="1549036483842" duration="22874000" />
+      <workItem from="1549160432703" duration="1529000" />
+      <workItem from="1549200974868" duration="7028000" />
+      <workItem from="1549296080422" duration="3597000" />
+      <workItem from="1549388741908" duration="2479000" />
+      <workItem from="1549467398943" duration="4204000" />
+      <workItem from="1549766218059" duration="660000" />
+      <workItem from="1549898437479" duration="1706000" />
+      <workItem from="1550847514918" duration="11985000" />
+      <workItem from="1550973313705" duration="1536000" />
+      <workItem from="1551341189746" duration="1492000" />
+      <workItem from="1551342726952" duration="1322000" />
+    </task>
+    <task id="LOCAL-00001" summary="amazon: find vertical sum of binary tree. (idea: use horizontal distance and map )">
+      <created>1547814149033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547814149033</updated>
+    </task>
+    <task id="LOCAL-00002" summary="amazon: DFS, LIS, Max width of BT, Permutation, Topological Sort, knapsack 01">
+      <created>1547926236404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547926236404</updated>
+    </task>
+    <task id="LOCAL-00003" summary="amazon: ifBinary, cycle (un)directed graph, edit distance, egg drop, find missing num, number occurring odd num, flatten linked list, majority element, overlapping interval, move all zero to end, next greater element, linked list by odd then even, search in sorted and rotated -fm">
+      <created>1548680454321</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548680454321</updated>
+    </task>
+    <task id="LOCAL-00004" summary="amazon: balance parenthesis, convert array zigzag, print unique row boolean matrix, two elements sum close to zero(31 Jan, 2019) -fm">
+      <created>1548876873857</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548876873857</updated>
+    </task>
+    <task id="LOCAL-00005" summary="amazon: Binarytree to DLL, Continuous Subarry with given Sum ,Find Four element sum equal to given sum, middle of linked list, if root to leaf path sum equal to some number eixist (2 Feb, 2019) -fm">
+      <created>1549129513656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1549129513656</updated>
+    </task>
+    <task id="LOCAL-00006" summary="amazon: Given a binary tree. Print the boundary in anti-clockwise order from the root. (2 Feb, 2019) -fm">
+      <created>1549134897113</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1549134897113</updated>
+    </task>
+    <task id="LOCAL-00007" summary="amazon: Implement Stack using queue, Print Left View of Binary Tree. (3 Feb, 2019) -fm">
+      <created>1549219718590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1549219718590</updated>
+    </task>
+    <task id="LOCAL-00008" summary="amazon: count pairs sum in sorted, count # with first &amp; last same&#10;gfg: aders in array, reverse array, rotate array, split string cpp">
+      <created>1550889064194</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550889064194</updated>
+    </task>
+    <task id="LOCAL-00009" summary="amazon: add 2 singly linked list, check if tree are mirror, k sum path in binary tree, bags with chocolate how many can be eaten by maximum, reverse string by words, top view of binary tree">
+      <created>1550974365561</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550974365561</updated>
+    </task>
+    <task id="LOCAL-00010" summary="amazon: restructure package">
+      <created>1551378729977</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1551378729977</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="150836000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.5021008" side_tool="true" weight="0.42849374" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49789914" visible="true" weight="0.23585913" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989035" weight="0.2101293" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36637932" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="YouTrack" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010965" side_tool="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32706374" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
+      <window_info anchor="right" id="Key Promoter X" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.5021008" side_tool="true" weight="0.42849374" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49789914" visible="true" weight="0.45614034" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32901832" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4989035" visible="true" weight="0.2101293" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.28125" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="YouTrack" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010965" side_tool="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3279396" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Key Promoter X" order="1" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Mongo Explorer" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="amazon: find vertical sum of binary tree. (idea: use horizontal distance and map )" />
+    <MESSAGE value="amazon: DFS, LIS, Max width of BT, Permutation, Topological Sort, knapsack 01" />
+    <MESSAGE value="amazon: ifBinary, cycle (un)directed graph, edit distance, egg drop, find missing num, number occurring odd num, flatten linked list, majority element, overlapping interval, move all zero to end, next greater element, linked list by odd then even, search in sorted and rotated -fm" />
+    <MESSAGE value="amazon: balance parenthesis, convert array zigzag, print unique row boolean matrix, two elements sum close to zero(31 Jan, 2019) -fm" />
+    <MESSAGE value="amazon: Binarytree to DLL, Continuous Subarry with given Sum ,Find Four element sum equal to given sum, middle of linked list, if root to leaf path sum equal to some number eixist (2 Feb, 2019) -fm" />
+    <MESSAGE value="amazon: Given a binary tree. Print the boundary in anti-clockwise order from the root. (2 Feb, 2019) -fm" />
+    <MESSAGE value="amazon: Implement Stack using queue, Print Left View of Binary Tree. (3 Feb, 2019) -fm" />
+    <MESSAGE value="amazon: count pairs sum in sorted, count # with first &amp; last same&#10;gfg: aders in array, reverse array, rotate array, split string cpp" />
+    <MESSAGE value="amazon: add 2 singly linked list, check if tree are mirror, k sum path in binary tree, bags with chocolate how many can be eaten by maximum, reverse string by words, top view of binary tree" />
+    <MESSAGE value="amazon: restructure package" />
+    <option name="LAST_COMMIT_MESSAGE" value="amazon: restructure package" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/FindFourElementsThatSumToGivenValue.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/amazon/in/.fuse_hidden00003a7300000003" />
+    <entry file="file://$PROJECT_DIR$/src/amazon/in/MST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/FindVerticalSumOfBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/LoopDetectInLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/in/.fuse_hidden00003a7300000004" />
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/MergeTwoSortedLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/FindMiddleOfLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="method#print#0;class#FindMiddleOfLinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/PrintLeftViewOfBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/FlattenLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="859">
+          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/MaximumWidthOfBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+    <entry file="file://$PROJECT_DIR$/interviews.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/AddTwoSinglyLinkedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/BinaryTreeLeavesToDLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/BoundaryTraversalOfBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="class#Node#0;class#BoundaryTraversalOfBinaryTree#0" />
+            <element signature="method#main#0;class#BoundaryTraversalOfBinaryTree#0" />
+            <element signature="method#printBoundaryOfTreeAntiClockWise#0;class#BoundaryTraversalOfBinaryTree#0" />
+            <element signature="method#printRightPortion#0;class#BoundaryTraversalOfBinaryTree#0" />
+            <element signature="method#printMiddlePortion#0;class#BoundaryTraversalOfBinaryTree#0" />
+            <element signature="method#printLeftPortion#0;class#BoundaryTraversalOfBinaryTree#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/stack/CheckForBalanceParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/CheckIfBinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/ConvertBinaryTreeToDLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/ContinuousSubarrayWithGivenSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/ConvertArrayZigZagFashion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/CountNumbersWhichHaveSameFirstAndLastDigits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/graph/DetectCycleInDirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/graph/DetectCycleInUndirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/graph/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/dp/ZeroOneKnapsack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/dp/LIS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/dp/LCS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/dp/EditDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/MajorityElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/EggDroppingPuzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/findMissingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/FindNumberOccurringOddTimes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/NextGreaterElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/FindFourElementsThatSumToGivenValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1551341717084" expanded="false" signature="1511:2170" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/CountPairsOfNumbersWhoSumLessThanX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="method#countNumberOfPairs#0;class#CountPairsOfNumbersWhoSumLessThanX#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/TwoElementsSumCloseToZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/graph/MST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/IfRootToLeafPathSumToGivenNumberExists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/queue/ImplementStackUsingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="class#Stack#0;class#ImplementStackUsingQueue#0" />
+            <marker date="1551341789546" expanded="true" signature="102:1133" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/tree/IsTreeHeightBalanced.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="method#main#0;class#IsTreeHeightBalanced#0" />
+            <element signature="method#height#0;class#IsTreeHeightBalanced#0" />
+            <element signature="method#isTreeBalanced#0;class#IsTreeHeightBalanced#0" />
+            <element signature="method#isTreeHeightBalancedEfficient#0;class#IsTreeHeightBalanced#0" />
+            <element signature="method#isTreeHeightBalancedNaive#0;class#IsTreeHeightBalanced#0" />
+            <element signature="class#Height#0;class#IsTreeHeightBalanced#0" />
+            <element signature="class#Node#0;class#IsTreeHeightBalanced#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/NbagsWithChocolateHowManyChocolatesTheKidEaten.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/greedy/Permutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/array/PrintUniqueRowInBooleanMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/linked_list/RearrangeLinkedListByOddEven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/string/ReverseStringByWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/data_structures/array/SearchInSortedAndRotatedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/LargestSumContiguousSubarray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/MergeOverlappingIntervals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/ad_hoc/MoveAllZeroToEndOfArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/amazon/algorithms/graph/TopologicalSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="method#dfs#0;class#TopologicalSort#0" />
+            <element signature="e#411#532#1" />
+            <element signature="e#483#522#1" />
+            <element signature="method#main#0;class#TopologicalSort#0" />
+            <element signature="e#651#738#1" />
+            <element signature="e#766#794#0" />
+            <element signature="e#878#904#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -8,7 +8,7 @@
    - #, --+, /* */ are few of the ways of commenting
 ```sql
     --the possible sql queries are - 
-    select * from table where id='1';
+    select * from table where id='1' or 1=1;
     select * from table where id="1";
     select * from table where id=('1');
     select * from table where id=("1");

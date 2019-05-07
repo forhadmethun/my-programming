@@ -13,3 +13,4 @@
 ### I - Interface Segregation Principle
  - do not add additional functionality to an existing interface by adding new methods, instead create new interface and let class implement multiple interface if needed
 ### D - Dependency inversin principle
+ - 

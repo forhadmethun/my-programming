@@ -1,7 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 bitset<10000010> bs;
+/*
 
+why sqrt(n) will work for finiding primality of n?
+    - sqrt(n) * sqrt(n) = n
+    - (x <= sqrt(n)) * (y >= sqrt(n)) = n
+    - there must be some number which is less than or equal to sqrt(n) and divides n, if n is not a prime number.
+ 
+
+*/
 
 vector<int> sieve(long long A){
     vector<int> primes;

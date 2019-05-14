@@ -87,7 +87,8 @@ class StringManipulator {
             for(String emo: emoticons){
                 tempString = new String(tempString.replace(emo,""));
             }
-            stringArrayListMap.get(e).add(modifiedString(tempString,e));
+            String regEx = "(@.([^\\s]+))";
+            stringArrayListMap.get(e).add(modifiedString(tempString,e).replaceAll(regEx,""));
         }
     }
 

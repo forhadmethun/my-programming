@@ -8,10 +8,20 @@ class StringManipulator {
     static String outputPath = "/media/forhad/Development/MyCodes/Code/Others/general-topics/misc-concept/string-manipulation/src/files/output";
     public static void main(String[] args) throws Exception {
         Collection<File> fileCollection = listFileTree(new File(inputPath));
+        StringBuffer sb = new StringBuffer();
         for (File file : fileCollection) {
-            if(file.getAbsolutePath().endsWith(".csv")) handleStringManipulationByCSV(file);
+            if(file.getAbsolutePath().endsWith(".csv")) sb.append(handleStringManipulationByCSV(file));
             if(file.getAbsolutePath().endsWith(".txt")) handleStringManipulationByTXT(file);
         }
+
+        fw  = new FileWriter(outputPath+"/"+"combined-out.txt");
+        try {
+            fw.write(sb.toString());
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        fw.close();
+
     }
 
     private static void handleStringManipulationByTXT(File file) throws Exception  {
@@ -43,7 +53,7 @@ class StringManipulator {
         fw.close();
     }
 
-    private static void handleStringManipulationByCSV(File file) throws Exception{
+    private static String handleStringManipulationByCSV(File file) throws Exception{
         String path = file.getAbsolutePath();
         BufferedReader reader = new BufferedReader(new FileReader(path));
         String[] emoticonsArray = {"Anger", "Anticipation","Disgust","Surprise","Joy","Fear", "Sadness","Trust"};
@@ -59,22 +69,26 @@ class StringManipulator {
                 populateMapData(stringArrayListMap,e,line,emoticons);
             }
         }
-        printMapData(stringArrayListMap,outputPath+"/"+file.getName().replace(".csv","-" + "out.txt"));
+        return printMapData(stringArrayListMap,outputPath+"/"+file.getName().replace(".csv","-" + "out.txt"));
     }
 
     public static FileWriter fw;
-    private static void printMapData(Map<String, ArrayList<String>> stringArrayListMap,String path) throws IOException {
+    private static String printMapData(Map<String, ArrayList<String>> stringArrayListMap,String path) throws IOException {
+        StringBuffer sb = new StringBuffer();
         fw  = new FileWriter(path);
         stringArrayListMap.keySet().forEach(k->{
             stringArrayListMap.get(k).forEach(e->{
                 try {
-                    fw.write(k+ " : " + e+"\n");
+                    String currentLine = k+ " : " + e+"\n";
+                    fw.write(currentLine);
+                    sb.append(currentLine);
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
             });
         });
         fw.close();
+        return sb.toString();
     }
 
     private static void populateMapData(Map<String, ArrayList<String>> stringArrayListMap, String e, String line, ArrayList<String> emoticons) {

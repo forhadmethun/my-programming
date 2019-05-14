@@ -67,7 +67,7 @@ class StringManipulator {
 
     public static FileWriter fw;
     private static void printMapData(Map<String, ArrayList<String>> stringArrayListMap,String path) throws IOException {
-        fw  = new FileWriter(path.replace(".csv","")+"-out.txt");
+        fw  = new FileWriter(path);
         stringArrayListMap.keySet().forEach(k->{
             stringArrayListMap.get(k).forEach(e->{
 //                System.out.println(k + " : " + e);

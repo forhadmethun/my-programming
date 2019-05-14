@@ -1,7 +1,7 @@
-import jdk.nashorn.internal.scripts.JO;
-
 import java.io.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class StringManipulator {
     static String inputPath = "/media/forhad/Development/MyCodes/Code/Others/general-topics/misc-concept/string-manipulation/src/files/input";
@@ -9,12 +9,40 @@ class StringManipulator {
     public static void main(String[] args) throws Exception {
         Collection<File> fileCollection = listFileTree(new File(inputPath));
         for (File file : fileCollection) {
-            if(file.getAbsolutePath().endsWith(".csv"))
-            handleStringManipulation(file);
+            if(file.getAbsolutePath().endsWith(".csv")) handleStringManipulationByCSV(file);
+            if(file.getAbsolutePath().endsWith(".txt")) handleStringManipulationByTXT(file);
         }
     }
 
-    private static void handleStringManipulation(File file) throws Exception{
+    private static void handleStringManipulationByTXT(File file) throws Exception  {
+        BufferedReader reader = new BufferedReader(new FileReader(file.getAbsoluteFile()));
+        fw  = new FileWriter(outputPath+"/"+file.getName().replace(".txt","-" + "out.txt"));
+        String line = null;
+        while ((line = reader.readLine()) != null) {
+            String modifiedLine = new String(line);
+            String currentLine = new String(line);
+            Pattern pattern = Pattern.compile("([0-9].*@)");
+            Matcher matcher = pattern.matcher(currentLine);
+            if(matcher.find()){
+                String matchedString = matcher.group(1);
+                Integer code = Integer.valueOf(matchedString.split("@")[1]);
+                modifiedLine = new String (code + " : " + line.replace(matchedString,"")+"\n");
+                System.out.println(modifiedLine);
+            }
+            try {
+                fw.write(modifiedLine);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
+//            for(String e: emoticons){
+//                populateMapData(stringArrayListMap,e,line,emoticons);
+//            }
+        }
+        fw.close();
+    }
+
+    private static void handleStringManipulationByCSV(File file) throws Exception{
         String path = file.getAbsolutePath();
         BufferedReader reader = new BufferedReader(new FileReader(path));
         String[] emoticonsArray = {"Anger", "Anticipation","Disgust","Surprise","Joy","Fear", "Sadness","Trust"};

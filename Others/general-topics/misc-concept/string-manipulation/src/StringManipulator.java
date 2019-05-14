@@ -28,12 +28,13 @@ class StringManipulator {
                 Integer code = Integer.valueOf(matchedString.split("@")[1]);
                 modifiedLine = new String (code + " : " + line.replace(matchedString,"")+"\n");
                 System.out.println(modifiedLine);
+                try {
+                    fw.write(modifiedLine);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
-            try {
-                fw.write(modifiedLine);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+
 
 //            for(String e: emoticons){
 //                populateMapData(stringArrayListMap,e,line,emoticons);

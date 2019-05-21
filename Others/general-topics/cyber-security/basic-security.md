@@ -42,3 +42,6 @@
  - only the private key can decrypt the data which are encrypted by the public key.
  - ex:
    - I want to buy something from amazon. amazon has a public and a private key. I also have a public and private key. When I want to send some request to amazon then I use the public key to encrypt the data and send it to the amazon. Amazon then uses it's private key to decrypt the data. Likely, when amazon want to send me some data, then amazon will encrypt the data with my public key, then only I can decrypt the data.
+
+### How cookie may help intruder?
+ - it may share confidential data.

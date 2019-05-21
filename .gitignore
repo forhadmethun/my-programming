@@ -54,3 +54,7 @@ Others/general-topics/misc-concept/string-manipulation/src/main/java/files/input
 Others/general-topics/misc-concept/string-manipulation/target/classes/StringManipulator.class
 Others/general-topics/misc-concept/string-manipulation/target/classes/StringManipulatorByLabelText.class
 Others/general-topics/misc-concept/string-manipulation/target/classes/META-INF/string-manipulation.kotlin_module
+Others/general-topics/misc-concept/string-manipulation/.classpath
+Others/general-topics/misc-concept/string-manipulation/.project
+Others/general-topics/misc-concept/string-manipulation/.settings/*
+Others/general-topics/misc-concept/string-manipulation/target/classes/StringManipulatorByEmoticon.class

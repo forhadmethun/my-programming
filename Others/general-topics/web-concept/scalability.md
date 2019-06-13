@@ -135,7 +135,6 @@
  - wait for it's response
  - forward the response to the client
 
-
 ##### Layer 4 load balancing
 ##### Layer 7 load balancing
 

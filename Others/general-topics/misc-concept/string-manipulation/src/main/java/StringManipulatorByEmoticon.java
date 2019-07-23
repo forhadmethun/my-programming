@@ -15,13 +15,7 @@ class StringManipulatorByEmoticon {
             if(file.getAbsolutePath().endsWith(".txt")) handleStringManipulationByTXT(file);
         }
 
-        fw  = new FileWriter(outputPath+"/"+"combined-out.txt");
-        try {
-            fw.write(sb.toString());
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        fw.close();
+        w
 
     }
 

@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class StringManipulatorByQuotes {
-    static String inputPath = "/media/forhad/Development/MyCodes/Code/Others/general-topics/misc-concept/string-manipulation/src/main/java/files/input/jeff_file.csv";
+    static String inputPath = "/media/forhad/Development/MyCodes/Code/Others/general-topics/misc-concept/string-manipulation/src/main/java/files/input/lasdataset.csv";
     static String outputPath = "/media/forhad/Development/MyCodes/Code/Others/general-topics/misc-concept/string-manipulation/src/main/java/files/output";
 
     public static FileWriter fw;
@@ -14,7 +14,7 @@ public class StringManipulatorByQuotes {
             sb.append(e + "\n");
         });
 
-        fw  = new FileWriter(outputPath+"/"+"jeff_files_out.csv");
+        fw  = new FileWriter(outputPath+"/"+"lasdataset_out.csv");
         try {
             fw.write(sb.toString());
         } catch (IOException ex) {
@@ -55,11 +55,62 @@ public class StringManipulatorByQuotes {
                                 lineList.get(2) + "," +
                                 lineList.get(3) + "," +
                                 lineList.get(4) + ",";
+                String allLines ="";
 
                 for (int i = 0; i < newLineList.size(); i++) {
 
-                    outputList.add(outputString + newLineList.get(i));
+                    String currentLine = newLineList.get(i);
+
+                    boolean interviewer = false;
+                    boolean interviewee = true;
+
+                    String[] words = currentLine.split("\\s+");
+
+                    String intervieweeString = "";
+
+                    for(int j = 0; j < words.length; j++){
+
+                        if(words[j].contains("Interviewee:")){
+                            intervieweeString +=words[j] + " ";
+                            if(j+1 == words.length)break;
+                            j++; // check corner case
+                            while (!words[j].contains("Interviewer:") && !words[j].contains("Interviewee:")) {
+                                intervieweeString += words[j] + " ";
+                                if(j+1 == words.length)break;
+                                j++;
+                            }
+//                            int x = 0;
+//                            outputList.add(outputString + intervieweeString);
+                            allLines+=intervieweeString;
+
+                            intervieweeString = "";
+                        }
+
+//                        if(words[j].equals("Interviewer:")){
+//                            while (!words[j].equals("Interviewee:")) {
+//                                j++;
+//                            } j++;
+//                        }
+
+//                        while (!words[j].equals("Interviewee:")) {
+//                            if(words[j].equals("Interviewer:")){ j--; break;}
+//                            j++;
+//                            intervieweeString += words[j];
+//                        }
+
+                    }
+
+
+
+
+
+
+
+
+//                    outputList.add(outputString + newLineList.get(i));
                 }
+                if(allLines.equals(""))continue;
+                outputList.add(outputString+allLines);
             }catch(Exception e){
                 continue;
             }

@@ -286,3 +286,8 @@ alter table table_name add column_name decimal(10) default 0 null;
     select * from employees
     where salary > (select avg(salary) from employees); 
 ```
+
+## permission
+CREATE USER 'billing'@'119.148.4.18' IDENTIFIED BY 'root';
+
+grant all privileges on *.* to 'billing'@'119.148.4.18';

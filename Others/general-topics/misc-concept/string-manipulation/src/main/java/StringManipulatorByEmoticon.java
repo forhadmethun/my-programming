@@ -14,9 +14,6 @@ class StringManipulatorByEmoticon {
             if(file.getAbsolutePath().endsWith(".csv")) sb.append(handleStringManipulationByCSV(file));
             if(file.getAbsolutePath().endsWith(".txt")) handleStringManipulationByTXT(file);
         }
-
-        w
-
     }
 
     private static void handleStringManipulationByTXT(File file) throws Exception  {

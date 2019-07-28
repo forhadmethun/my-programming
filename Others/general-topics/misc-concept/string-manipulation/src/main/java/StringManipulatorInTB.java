@@ -7,6 +7,7 @@ class StringManipulatorInTB {
     static String[] tb_hbc_list = {"20","50","76","156","408","180","231","356","360","404","508","104","566","586","608","643","710","764","834","704","116","140","178","426","430","516","598","694","894","716"};
     static String[] tb_or_hbc_list = {"20","76","120","156","180","231","356","360","404","426","454","508","104","566","710","764","800","834","894","716","72","140","148","178","288","624","430","516","598"};
     static String[] mdt_tb_hbc_list = {"50","156","408","180","231","356","398","404","360","508","104","566","586","608","643","710","764","804","860","704","20","31","112","417","598","604","498","706","762","716"};
+    static String[] sdg_indicator = {"50","156","408","180","231","356","398","404","360","508","104","566","586","608","643","710","764","804","860","704","20","31","112","417","598","604","498","706","762","716"};
     static String inputPath = "D:\\MyCode\\Code\\Others\\general-topics\\misc-concept\\string-manipulation\\src\\main\\java\\files\\input\\tb";
     static String outputPath = "D:\\MyCode\\Code\\Others\\general-topics\\misc-concept\\string-manipulation\\src\\main\\java\\files\\output\\tb";
 
@@ -16,9 +17,6 @@ class StringManipulatorInTB {
         StringBuffer sb = new StringBuffer();
         int x = 0;
         for (File file : fileCollection) {
-            if(x == 0 ){
-                x++;continue;
-            }
             if(file.getAbsolutePath().endsWith(".csv")) handleStringManipulationByCSV(file);
 //            if(file.getAbsolutePath().endsWith(".txt")) handleStringManipulationByTXT(file);
         }
@@ -51,19 +49,24 @@ class StringManipulatorInTB {
             }
 
         }
-        int count = 0;
         StringBuffer sb_tb_hbc_list = new StringBuffer();
         StringBuffer sb_tb_or_hbc_list = new StringBuffer();
         StringBuffer sb_mdt_tb_hbc_list = new StringBuffer();
+        sb_tb_hbc_list.append(line+"\n");
+        sb_tb_or_hbc_list.append(line+"\n");
+        sb_mdt_tb_hbc_list.append(line+"\n");
+
+        int count = 0;
+
         while ((line = reader.readLine()) != null) {
             String[] words = line.split(",");
-            if(Arrays.stream(tb_hbc_list).anyMatch(words[isoNumericIndex]::contains) && words[yearIndex].equals("2017")){
+            if(Arrays.stream(tb_hbc_list).anyMatch(words[isoNumericIndex]::contains) /*&& words[yearIndex].equals("2017")*/){
                 sb_tb_hbc_list.append(line+"\n");
             }
-            if(Arrays.stream(tb_or_hbc_list).anyMatch(words[isoNumericIndex]::contains) && words[yearIndex].equals("2017")){
+            if(Arrays.stream(tb_or_hbc_list).anyMatch(words[isoNumericIndex]::contains) /*&& words[yearIndex].equals("2017")*/){
                 sb_tb_or_hbc_list.append(line+"\n");
             }
-            if(Arrays.stream(mdt_tb_hbc_list).anyMatch(words[isoNumericIndex]::contains) && words[yearIndex].equals("2017")){
+            if(Arrays.stream(mdt_tb_hbc_list).anyMatch(words[isoNumericIndex]::contains) /*&& words[yearIndex].equals("2017")*/){
                 sb_mdt_tb_hbc_list.append(line+"\n");
             }
         }

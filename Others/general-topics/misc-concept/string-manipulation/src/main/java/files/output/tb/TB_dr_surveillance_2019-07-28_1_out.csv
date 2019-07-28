@@ -1,3 +1,4 @@
+"country","iso2","iso3","iso_numeric","g_whoregion","year","pulm_labconf_new","pulm_labconf_ret","pulm_labconf_unk","r_rlt_new","r_rlt_ret","rr_new","rr_ret","dst_rlt_new","dst_rlt_ret","dst_rlt_hr_new","dst_rlt_hr_ret","dst_rlt_rr_new","dst_rlt_rr_ret","mdr_new","mdr_ret","rr_dst_rlt","rr_ds_fq2li","rr_dr_fq","rr_dr_2li","rr_dr_fq_2li","mdr_dst_rlt","xdr"
 "Andorra","AD","AND","020","EUR",2017,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "Bangladesh","BD","BGD","050","SEA",2017,140752,5107,3,38977,5107,623,288,25,125,15,106,21,110,15,105,289,223,66,2,2,76,0
 "Benin","BJ","BEN","204","AFR",2017,2783,259,0,11,259,4,14,1,11,0,6,0,9,0,4,18,18,0,0,0,4,0

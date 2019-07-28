@@ -1,3 +1,4 @@
+"country","iso2","iso3","iso_numeric","year","source_rr_new","source_drs_coverage_new","source_drs_year_new","e_rr_pct_new","e_rr_pct_new_lo","e_rr_pct_new_hi","e_mdr_pct_rr_new","source_rr_ret","source_drs_coverage_ret","source_drs_year_ret","e_rr_pct_ret","e_rr_pct_ret_lo","e_rr_pct_ret_hi","e_mdr_pct_rr_ret","e_inc_rr_num","e_inc_rr_num_lo","e_inc_rr_num_hi","e_mdr_pct_rr","e_rr_in_notified_pulm","e_rr_in_notified_pulm_lo","e_rr_in_notified_pulm_hi"
 "Andorra","AD","AND","020",2017,"Surveillance","National","2017",0,0,98,100,"Surveillance","National","2017",12,7.9,17,94,0,0,0,94,0,0,1
 "Azerbaijan","AZ","AZE","031",2017,"Surveillance","National","2017",12,11,14,100,"Surveillance","National","2017",28,27,30,100,1500,1100,1900,100,1300,1200,1300
 "Bangladesh","BD","BGD","050",2017,"Survey","National","2011",1.6,0.74,2.8,88,"Survey","National","2011",29,24,35,99,8400,3800,15000,90,5800,3800,7800

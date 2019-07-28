@@ -1,3 +1,4 @@
+"country","iso2","iso3","iso_numeric","g_whoregion","year","wrd_initial_test","universal_dst","free_dx_followup","caseb_err_nat","digital_adherence_support","hcw_tb_infected","hcw_tot","mdrxdr_fail_morphine","pub_new_dx","priv_new_dx","prevtx_5plus_data_available","newinc_con5plus_prevtx","ptsurvey_newinc_5plus","ptsurvey_newinc_con5plus_prevtx"
 "Andorra","AD","AND","020","EUR",2017,,,,42,210,,,,,,,2,,
 "Benin","BJ","BEN","204","AFR",2017,0,0,0,0,210,,,,,,,,,
 "Botswana","BW","BWA","072","AFR",2017,1,1,1,42,210,16,22000,,,,,,,

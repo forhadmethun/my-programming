@@ -1,3 +1,4 @@
+"country","iso2","iso3","iso_numeric","year","source_hh","e_hh_size","prevtx_data_available","newinc_con04_prevtx","ptsurvey_newinc","ptsurvey_newinc_con04_prevtx","e_prevtx_eligible","e_prevtx_eligible_lo","e_prevtx_eligible_hi","e_prevtx_kids_pct","e_prevtx_kids_pct_lo","e_prevtx_kids_pct_hi"
 "Bangladesh","BD","BGD","050",2017,"DHS; 2014-08-22",4.469714,60,11394,,,52000,48000,57000,22,20,24
 "Benin","BJ","BEN","204",2017,"DHS; 2012-02-17",4.961135,60,1425,,,2100,1900,2300,68,62,75
 "Brazil","BR","BRA","076",2017,"IPUMS; 2010-07-01",3.31149,0,,,,2900,1900,3900,,,

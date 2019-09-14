@@ -269,7 +269,10 @@
 26. Alternating split of a given singly linked list
 27. Identical linked lists
 28. Delete nodes which have a greater value on right side 
-29. Add/Subtract/multiply two numbers represented by linked lists
+- [ ] 29. following operations of two numbers represented by linked lists
+- [x] i) Add
+- [ ] ii) Subtract
+- [ ] iii) Multiply
 30. Delete a given node in linked list under given constraints
 31. Find a triplet from three linked lists with sum equal to a given number
 32. Rotate a linked list

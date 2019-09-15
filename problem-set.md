@@ -229,12 +229,18 @@
 
 ##### Misc
 
+# String
+---
+- [x] 1. Longest Common Prefix ( ref: \Code\interview-prep\src\topic-wise\two-pointers\LongestCommonPrefix.java)
+- [x] 2. Longest Substring Without Repeating Character ( ref: \Code\interview-prep\src\topic-wise\string\LongestSubstringWithoutRepeatingCharacters.java)
+- [ ] 3. 
 # Linked List
 ---- 
 ### Singly Linked List
 
 1. Linked List insertion
-   - end 
+    - [x]  front (\Data-Structure\linked_list\link_list.cpp)
+    - end 
    - middle of linked list
    - after n node from the end
 2. Linked List Deletion(key given)
@@ -245,9 +251,9 @@
 6. Search an element in Linked List
 7. Get n'th node in Linked List
 8. Get n'th node from the end in Linked List
-9. Print middle of Linked List
+- [x] 9. Print middle of Linked List (\Data-Structure\linked_list\FindMiddleOfLinkedList.java)
 10. Count number of times an integer occurs in Linked List 
-11. Detect loop in linked list
+- [x] 11. Detect loop in linked list
 12. Find length of loop in linked list
 13. Check if linked list is palindrome
 14. Remove duplicates from a sorted linked list
@@ -270,14 +276,14 @@
 27. Identical linked lists
 28. Delete nodes which have a greater value on right side 
 - [ ] 29. following operations of two numbers represented by linked lists
-- [x] i) Add
+- [x] i) Add(ref: \Code\interview-prep\src\topic-wise\linked-list\AddTwoNumbers.java(iterative), \Data-Structure\linked_list\add-two-numbers-represented-as-reversed-linked-list.py(recursive),\Data-Structure\linked_list\AddTwoSinglyLinkedLists.java (less generic) )
 - [ ] ii) Subtract
 - [ ] iii) Multiply
 30. Delete a given node in linked list under given constraints
 31. Find a triplet from three linked lists with sum equal to a given number
 32. Rotate a linked list
     - block wise
-33. Flattening a linked list
+- [x] 33. Flattening a linked list(\Data-Structure\linked_list\FlattenLinkedList.java)
 34. Sort a linked list of 0s, 1s & 2s
 35. Flatten a multilevel linked list
 36. Delete n nodes after m nodes of a linked list
@@ -319,12 +325,14 @@
 ### Doubly Linked List
 
 1. Doubly Linked List Insertion
-   - general insertion
+   - [x] general insertion
+        - [x] insert at head
+        - [x] insert at tail
    - sorted way in sorted doubly linked list
    - sorted insert with head and tail pointers
 2. Delete node in a doubly linked list
    - with given value
-   - with given position
+   - [x] with given position (\Data-Structure\linked_list\DoublyLinkList.cpp)
    - all occurrences with given key 
 3. Reverse a doubly linked list
 4. Tree list recursion problem *
@@ -355,12 +363,11 @@
 21. XOR linked list
     - insert a new node at the beginning
     - traverse the list in forward direction
-
-
+-[x] 22. Reverse Print a linked list (\Data-Structure\linked_list\DoublyLinkList.cpp)
 
 ### Circular Linked List
 1. Circular linked list implementation & traversal
-    - insertion
+    - [x] insertion (ref: \Data-Structure\linked_list\src\CircularLinkList.java, \Data-Structure\linked_list\CircularLinkList.cpp, \Data-Structure\linked_list\CircularLinkList.py)
     - deletion
 2. Split a circular linked list into two halves
 3. Sorted insert in circular linked list
@@ -1293,3 +1300,8 @@ Finding minimum vertex cover size of a graph using binary search
 Stable Marriage Problem  
 Sum of dependencies in a graph  
     
+
+
+# Misc
+--- 
+### A

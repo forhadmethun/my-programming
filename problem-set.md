@@ -810,7 +810,7 @@ Output :  2
  16. Evaluation of expression tree
 
 ### Traversals
-1. ~~Tree traversals(in, pre, post)(ref: Data Structure/tree/src/TreeTraversal.java)~~
+- [x] 1. ~~Tree traversals(in, pre, post)(ref: Data Structure/tree/src/TreeTraversal.java)~~
 2. Inorder traversal without recursion
 3. inorder traversal without recursion & without stack
 4. print postorder traversal from given inorder and preorder traversals
@@ -837,7 +837,7 @@ Output :  2
     - right way diagonal
 25. Iterative diagonal traversal of a binary tree
 26. Boundary traversal of binary tree
-27. ~~find density = size/ height of a tree(ref: Data Structure/tree/src/IsTreeHeightBalanced.java)~~ 
+- [x] 27. ~~find density = size/ height of a tree(ref: Data Structure/tree/src/IsTreeHeightBalanced.java)~~ 
 28. calculate depth of a fully tree from preorder
 29. number of binary tree from preorder sequence length
 30. modify a binary tree to get preorder traversal using right pointer only 
@@ -1001,6 +1001,8 @@ Output :  2
 11. Second largest element in BST  
 12. K’th smallest element in BST using O(1) Extra Space  
 13. Check if given sorted sub-sequence exists in binary search tree  
+- [x] Check if two trees are identical or not 
+- [x] Delete a tree 
 Simple Recursive solution to check whether BST contains dead end  
 Check if an array represents Inorder of Binary Search tree or not  
 Check if two BSTs contain same set of elements  
@@ -1059,6 +1061,10 @@ Minimum Possible value of |ai + aj – k| for given array and k.
 Rank of an element in a stream  
 Special two digit numbers in a Binary Search Tree  
 
+### Trie
+-[x] insertion 
+-[x] search 
+-[x] delete key from trie
 
 # Graph Problem Set 
 

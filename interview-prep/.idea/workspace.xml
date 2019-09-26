@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d28dedb7-adb1-468b-82a5-083adfeb4e4b" name="Default Changelist" comment="">
+    <list default="true" id="d28dedb7-adb1-468b-82a5-083adfeb4e4b" name="Default Changelist" comment="- linked list add two numbers&#10;- longest substring without repeating characters&#10;- longest common prefix of string array&#10;- practice - linked list">
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/Excepts Dedoose for Kate May19.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/Excepts_Dedoose_Edited.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/Final Codes for Kate May19.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/GrimmsAll4labsagree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/Potter167All4labsagree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/hcand460All4labsagree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/test-combined-0.0.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/test-combined-0.33.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/test-combined-0.5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/test-combined-0.66.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/test-combined-0.99.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/train-combined-0.0.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/train-combined-0.33.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/train-combined-0.5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/train-combined-0.66.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/input/train-combined-0.99.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/Excepts_Dedoose_Edited-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/GrimmsAll4labsagree-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/Potter167All4labsagree-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/combined-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/hcand460All4labsagree-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/test-combined-0.0-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/test-combined-0.33-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/test-combined-0.5-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/test-combined-0.66-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/test-combined-0.99-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/train-combined-0.0-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/train-combined-0.33-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/train-combined-0.5-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/train-combined-0.66-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Others/general-topics/misc-concept/string-manipulation/target/classes/files/output/train-combined-0.99-out.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +62,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551389773223" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projects" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -234,7 +271,8 @@
       <workItem from="1550973313705" duration="1536000" />
       <workItem from="1551341189746" duration="1492000" />
       <workItem from="1551342726952" duration="1322000" />
-      <workItem from="1568405623823" duration="3043000" />
+      <workItem from="1568405623823" duration="9717000" />
+      <workItem from="1568723589183" duration="2017000" />
     </task>
     <task id="LOCAL-00001" summary="amazon: find vertical sum of binary tree. (idea: use horizontal distance and map )">
       <created>1547814149033</created>
@@ -306,7 +344,21 @@
       <option name="project" value="LOCAL" />
       <updated>1551378729977</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- linked list add two numbers&#10;- longest substring without repeating characters&#10;- longest common prefix of string array&#10;- practice - linked list">
+      <created>1568500621121</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568500621121</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- problem set updated">
+      <created>1568560578975</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1568560578975</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +369,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -334,7 +388,9 @@
     <MESSAGE value="amazon: count pairs sum in sorted, count # with first &amp; last same&#10;gfg: aders in array, reverse array, rotate array, split string cpp" />
     <MESSAGE value="amazon: add 2 singly linked list, check if tree are mirror, k sum path in binary tree, bags with chocolate how many can be eaten by maximum, reverse string by words, top view of binary tree" />
     <MESSAGE value="amazon: restructure package" />
-    <option name="LAST_COMMIT_MESSAGE" value="amazon: restructure package" />
+    <MESSAGE value="- linked list add two numbers&#10;- longest substring without repeating characters&#10;- longest common prefix of string array&#10;- practice - linked list" />
+    <MESSAGE value="- problem set updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="- problem set updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

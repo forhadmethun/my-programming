@@ -6,8 +6,8 @@
   b. left rotate
   
 2. cyclically rotate an array by one
-3. search an element in a sorted and rotated array in `O(logn)`
-4. in a sorted and rotated array find if there is a pair with a given sum
+- [x] 3. search an element in a sorted and rotated array in `O(logn)` (\Data-Structure\array\SearchInSortedAndRotatedArray.java)
+4. in a sorted and rotated array find if there is a pair with a given sum 
 5. find maximum value of sum (i*arr[i]) with only rotation on given array allowed
 6. find the rotation count in rotated sorted array
 7. find the minimum element in a sorted and rotated array
@@ -48,7 +48,7 @@
 34. k-th smallest absolute difference of two elements in an array 
 35. second (k)smallest/largest element of an array 
 36. find k numbers with most occurrences in the given array 
-37. find the smallest missing number from 0 to m-1 and m>n
+- [x] 37. find the smallest missing number from 0 to m-1 and m>n (\Data-Structure\array\find_missing_number.cpp)
 38. maximum sum such that no two elements are adjacent
 39. maximum and minimum of an array using minimum number of comparison
 ##### Range 
@@ -226,14 +226,20 @@
 30. Count 1's in a sorted binary array. 
 
 ##### Matrix
-
+ - [x] Two dimensional array representation in cpp (\Data-Structure\array\two_dimensional.cpp)
+ - [x] Print Unique row in matrix(\Data-Structure\array\PrintUniqueRowInBooleanMatrix.java)
 ##### Misc
 
 # String
 ---
 - [x] 1. Longest Common Prefix ( ref: \Code\interview-prep\src\topic-wise\two-pointers\LongestCommonPrefix.java)
 - [x] 2. Longest Substring Without Repeating Character ( ref: \Code\interview-prep\src\topic-wise\string\LongestSubstringWithoutRepeatingCharacters.java)
-- [ ] 3. 
+- [x] 3. Check one string is permutation of another (\Data-Structure\string\*)
+- [x] Compress a string(\Data-Structure\string\*)
+- [x] Reverse String by words(\Data-Structure\string\*)
+- [x] Check if one string is rotation of another (\Data-Structure\string\is-rotation-string.py)
+- [x] In place string reverse (\Data-Structure\string\in-place-string-reverse.py)
+- [x] Check if all characters are unique or not (\Data-Structure\string\has-unique-character.py )
 # Linked List
 ---- 
 ### Singly Linked List
@@ -241,11 +247,12 @@
 1. Linked List insertion
     - [x]  front (\Data-Structure\linked_list\link_list.cpp)
     - end 
-   - middle of linked list
+   - middle of linked list (\Data-Structure\linked_list\SinglyLinkList.cpp)
    - after n node from the end
-2. Linked List Deletion(key given)
-3. Linked List Deletion(position given) 
-4. Delete Linked List
+- [x] 2. Linked List Deletion(key given)
+    - [x] after n'th  (\Data-Structure\linked_list\SinglyLinkList.cpp)
+- [x] 3. Linked List Deletion(position given)   (\Data-Structure\linked_list\SinglyLinkList.cpp)
+- [x] 4. Delete Linked List (\Data-Structure\linked_list\SinglyLinkList.cpp)
 5. Find Linked List Length
     - check if even or odd length
 6. Search an element in Linked List
@@ -253,7 +260,7 @@
 8. Get n'th node from the end in Linked List
 - [x] 9. Print middle of Linked List (\Data-Structure\linked_list\FindMiddleOfLinkedList.java)
 10. Count number of times an integer occurs in Linked List 
-- [x] 11. Detect loop in linked list
+- [x] 11. Detect loop in linked list (\Data-Structure\linked_list\LoopDetectInLinkedList.java)
 12. Find length of loop in linked list
 13. Check if linked list is palindrome
 14. Remove duplicates from a sorted linked list
@@ -265,7 +272,9 @@
 20. Intersection point of two linked list
 21. Quick sort on Singly Linked List
 22. Segregate even and odd elements in a linked list
-23. Reverse a linked list (iterative, iterative with two pointers, recursive, group of given size, alternate k nodes)
+23. Reverse a linked list 
+    - (iterative, iterative with two pointers, recursive, group of given size, alternate k nodes) 
+    - [x] basic reverse (\Data-Structure\linked_list\ReverseLinkListStack.cpp)
 24. Merge two sorted linked lists such that merged list is in reverse orderm
     - merge two sorted linked lists
     - merge two sorted linked list(in-place)
@@ -309,7 +318,7 @@
 56. Clone linked list with next and random pointer in O(1) space (*)
 57. Add two polynomials using linked list
 58. Move all occurrences of an element to end in a linked list
-59. Remove all occurrences of duplicates from a sorted linked list
+- [x] 59. Remove all occurrences of duplicates from a sorted linked list (\Data-Structure\linked_list\remove-duplicate-from-linked-list.py)
 60. Remove every k node of linked list
 61. Find sum of last n nodes of the given linked list
 62. Merge sort for linked lists
@@ -321,7 +330,7 @@
 66. Recursive selection sort for singly linked list | swapping node links
 67. Linked list of n nodes which is first sorted, then rorated by k elements, find the value of k
 68. Make middle node head in a linked list
-
+- [x] Rearrange odd even (\Data-Structure\linked_list\RearrangeLinkedListByOddEven.java)
 ### Doubly Linked List
 
 1. Doubly Linked List Insertion
@@ -379,7 +388,7 @@
 9. Convert singly linked list into circular linked list
 10. Dequeue implementation with circular linked list
 11. Exchange first and last node in Circular linked list
-
+- [x] Sorted Insert in circular linked list(\Data-Structure\linked_list\SortedInsertInCircularLinkedList.cpp)
 
 ### Misc
 - later
@@ -388,10 +397,10 @@
 ---
 ##### Implementation 
 
-1. Implement queue using stack
+- [x] 1. Implement queue using stack (\Data-Structure\queue\queue-using-two-stacks.py)
 2. LRU Cache Implementation 
 3. Implement stack using queue
-4. Implement queue using linked list
+- [x] 4. Implement queue using linked list (\Data-Structure\queue\queue-using-linked-list.py)
 5. Implement k queues in a single array
 6. Implement stack using single queue
 7. Implement deque using circular array
@@ -400,6 +409,7 @@
 10. Implement priority queue using linked list
 10. Implement priority queue using doubly linked list
 11. Implement deque using doubly link list
+- [x] Implement Min heap
 
 ####Implementation
 1. queue
@@ -434,7 +444,7 @@
     Now, pop element 5 in the stack and push it to the second Queue.
 ``` 
 2. BFS for a graph
-3. Level Order tree traversal
+- [x] 3. Level Order tree traversal (\Data-Structure\tree\src\TreeTraversal.java)
 4. Reverse path in BST*
 5. Construct Complete BST with Linked List Representation
 6. Page replacement algorithm*
@@ -512,17 +522,18 @@ Output :  2
 16. Check mirror in n-ary tree
 
 # Stack Problem Set
-#####Design and Implementation
-1. Implement Queue using Stack 
+##### Design and Implementation
+- [x] 1. Implement Queue using Stack  (\Data-Structure\queue\queue-using-two-stacks.py)
 2. Implement stack which has getMin(), findMiddle(), deleteMiddle(),merge(Stack s1,Stack s2) method in O(1)
 3. Implement two stacks in an array
 4. Implement stack using queue
-5. Implement k stacks in an array  
+- [x] 5. Implement k stacks in an array (\Data-Structure\stack\implement-n-stack-by-single-array.py) (\Data-Structure\stack\set-of-stack.py)
 6. Implement stack using priority queue or heap
 7. Implement stack and queue using deque
+- [x] Implement stack using linked list(\Data-Structure\stack\sort-stack-using-another-stack.java)
 
 
-#####Standard Problems
+##### Standard Problems
 8. Infix to postfix
 9. Prefix to Infix
 10. Prefix to Postfix
@@ -545,10 +556,12 @@ Output :  2
     For the 2nd query index is 6, element is 10 and  there is no element greater then 10 at right,so print -1.
     For the 3rd query index is 1, element is 4 and the next greater element at its right is 7.
     ```
-#####Operations on Stack
+- [x] Reverse a string using stack
+
+##### Operations on Stack
 21. reverse stack using recursion
 22. sort a stack using recursion
-23. sort stack using temporary stack
+- [x] 23. sort stack using temporary stack (\Data-Structure\stack\sort-stack-using-another-stack.java)
 24. reverse a stack without using extra space in O(n)
 25. sorting array using stack
 26. delete array elements which are smaller than next or become smaller
@@ -564,7 +577,7 @@ Output :  2
     ```
 29. Check if an array is stack sortable. 
 
-#####Misc
+##### Misc
 30. Merge overlapping interval
     ```
     {{1,3}, {2,4}, {5,7}, {6,8} }. The intervals {1,3} and {2,4} overlap with each other, so they should be merged and become {1, 4}. Similarly {5, 7} and {6, 8} should be merged and become {5, 8}
@@ -609,7 +622,7 @@ Output :  2
     Input:  [ABC[23]][89]
     Output: 8
     ```
-42. Check for balance parentheses in an expression
+- [x] 42. Check for balance parentheses in an expression (\Data-Structure\stack\CheckForBalanceParenthesis.java)
     ```
     Input:  “[()]{}{[()()]()}” 
     Output: true
@@ -836,7 +849,7 @@ Output :  2
 24. Diagonal traversal of a binary tree
     - right way diagonal
 25. Iterative diagonal traversal of a binary tree
-26. Boundary traversal of binary tree
+- [x] 26. Boundary traversal of binary tree (\Data-Structure\tree\src\BoundaryTraversalOfBinaryTree.java)
 - [x] 27. ~~find density = size/ height of a tree(ref: Data Structure/tree/src/IsTreeHeightBalanced.java)~~ 
 28. calculate depth of a fully tree from preorder
 29. number of binary tree from preorder sequence length
@@ -983,6 +996,7 @@ Output :  2
 17. Merge Two Balanced Binary Search Trees
 18. Merge two BSTs with limited extra space
 19. ~~ Create a binary search tree with minimal height from a sorted array.~~
+- [x] Convert Binary Tree to DLL(\Data-Structure\tree\src\ConvertBinaryTreeToDLL.java)
 
 
 
@@ -1002,7 +1016,14 @@ Output :  2
 12. K’th smallest element in BST using O(1) Extra Space  
 13. Check if given sorted sub-sequence exists in binary search tree  
 - [x] Check if two trees are identical or not 
-- [x] Delete a tree 
+- [x] Delete a node from tree (\Data-Structure\tree\src\BST.java)
+- [x] Find k sum path (\Data-Structure\tree\src\FindKSumPathInBinaryTree.cpp)
+- [x] Find Vertical Sum of Binary Tree ( \Data-Structure\tree\src\FindVerticalSumOfBinaryTree.java)
+- [x] Check if root to leaf sum to given number exists (\Data-Structure\tree\src\IfRootToLeafPathSumToGivenNumberExists.java)
+- [x] Check if tree is height balanced or not (\Data-Structure\tree\src\IsTreeHeightBalanced.java)
+- [x] Maximum width of binary tree (\Data-Structure\tree\src\MaximumWidthOfBinaryTree.java)
+- [x] Print left view of binary tree (\Data-Structure\tree\src\PrintLeftViewOfBinaryTree.java)
+- [x] Print top view of binary tree (\Data-Structure\tree\src\TopViewOfBinaryTree.cpp)
 Simple Recursive solution to check whether BST contains dead end  
 Check if an array represents Inorder of Binary Search tree or not  
 Check if two BSTs contain same set of elements  
@@ -1031,7 +1052,10 @@ Find pairs with given sum such that pair elements lie in different BSTs
 Find the closest element in Binary Search Tree  
 Find the largest BST subtree in a given Binary Tree  
 Replace every element with the least greater element on its right  
-Add all greater values to every node in a given BST  
+Add all greater values to every node in a given BST 
+- [x] Check if given tree is BST or not (\Data-Structure\tree\src\BST.java) 
+- [x] Find minimum value of a BST (\Data-Structure\tree\src\BST.java) (efficient: \Data-Structure\tree\src\CheckIfBinarySearchTree.java)
+- [x] Check If two trees are mirror(\Data-Structure\tree\src\CheckIfTwoTreesAreMirror.cpp)
 #### Red Black Tree and Threaded Binary Tree : 
 
 C Program for Red Black Tree Insertion  
@@ -1069,7 +1093,7 @@ Special two digit numbers in a Binary Search Tree
 # Graph Problem Set 
 
 ### Introduction, DFS and BFS :
-1. ~~Graph and its representations~~
+- [x] 1. ~~Graph and its representations~~(\Data-Structure\graph\graph-representation.cpp)
 2. ~~Breadth First Traversal for a Graph(ref: Code/interviews/src/anki-coding/graph/breadth-first-search.cpp)~~
 3. ~~Depth First Traversal for a Graph~~
 4. Applications of Depth First Search

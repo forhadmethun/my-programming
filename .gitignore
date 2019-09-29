@@ -4,6 +4,13 @@ cmake-build-debug/*
 CMakeLists.txt
 
 
+*.exe 
+*.iml
+*.class 
+
+out/
+.idea/*
+
 Others/python/sorting/\.idea/
 
 Others/python/sorting/venv/bin/

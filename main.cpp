@@ -1,4 +1,6 @@
-#include "/media/forhad/Development/MyCodes/Code/Practice/algorithm/dp/fibonacci_tabulation.cpp"
+#include "/root/Documents/Code/OJ/kattis/hello.cpp"
+//#include "/root/Documents/Code/Practice/algorithm/number-theory/primes.cpp"
+//#include "/media/forhad/Development/MyCodes/Code/Practice/algorithm/dp/fibonacci_tabulation.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/Practice/algorithm/dp/fibonacci_memoization.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/interviews/src/anki-coding/tree/invert-binary-tree.cpp"
 //#include "/media/forhad/Development/MyCodes/Code/interviews/src/anki-coding/graph/shortest-path-dijkstra.cpp"

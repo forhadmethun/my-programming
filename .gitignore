@@ -23,6 +23,7 @@ Others/programming-languages/java/*.idea
 Others/programming-languages/Java/*.idea
 Others/programming-languages/Java/*.iml
 Others/programming-languages/java/out
+Others/general-topics/misc-concept/string-manipulation
 
 *.swp
 .history/*

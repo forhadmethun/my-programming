@@ -69,3 +69,7 @@ Others/general-topics/misc-concept/string-manipulation/target/classes/StringMani
 
 
 interview-prep/out/*
+
+/OJ/kattis/.idea/
+/OJ/kattis/*.iml
+

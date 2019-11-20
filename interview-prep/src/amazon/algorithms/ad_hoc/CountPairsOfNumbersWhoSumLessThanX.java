@@ -1,5 +1,7 @@
 package amazon.algorithms.ad_hoc;
-
+/*
+https://www.geeksforgeeks.org/count-pairs-array-whose-sum-less-x/
+*/
 public class CountPairsOfNumbersWhoSumLessThanX {
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 5, 7, 10, 12};

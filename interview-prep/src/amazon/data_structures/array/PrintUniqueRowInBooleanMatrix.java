@@ -11,7 +11,7 @@ public class PrintUniqueRowInBooleanMatrix {
     }
 
     private static void printUniqueRow(int[][] arr) {
-        HashSet<String> set = new HashSet();
+        Set<String> set = new HashSet();
         for(int i=0;i<arr.length;i++){
             String str = "";
             for(int j=0;j<arr[i].length;j++){

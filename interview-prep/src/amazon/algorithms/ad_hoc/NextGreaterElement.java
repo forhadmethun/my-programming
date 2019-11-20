@@ -1,5 +1,8 @@
 package amazon.algorithms.ad_hoc;
 import java.util.*;
+/*
+https://www.geeksforgeeks.org/next-greater-element/
+ */
 public class NextGreaterElement {
     static void nextGreaterElement(int arr[]){
         if(arr.length==0) return;

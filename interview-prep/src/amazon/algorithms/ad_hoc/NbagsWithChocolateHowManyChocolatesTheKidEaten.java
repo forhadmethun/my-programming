@@ -12,7 +12,7 @@ public class NbagsWithChocolateHowManyChocolatesTheKidEaten {
         int n = 5;
         int b[] = {10, 24, 6, 8, 20};
         int t = 3;
-
+        // practicePriorityQueue();
         System.out.println(howManyChocloateEaten(b,n,t));
     }
 
@@ -33,7 +33,7 @@ public class NbagsWithChocolateHowManyChocolatesTheKidEaten {
     }
 
     static void practicePriorityQueue(){
-        PriorityQueue<Integer> pq = new PriorityQueue<>((x,y) -> y-x);
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         pq.add(10);
         pq.add(15);
         pq.add(25);

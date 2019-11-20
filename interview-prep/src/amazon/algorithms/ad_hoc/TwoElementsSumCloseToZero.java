@@ -1,7 +1,12 @@
 package amazon.algorithms.ad_hoc;
 
 import java.util.Arrays;
-
+/*
+https://www.geeksforgeeks.org/two-elements-whose-sum-is-closest-to-zero/
+ */
+/*
+the following soln should be errornous
+ */
 public class TwoElementsSumCloseToZero {
 
 

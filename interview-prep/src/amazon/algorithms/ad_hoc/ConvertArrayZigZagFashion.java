@@ -1,7 +1,15 @@
 package amazon.algorithms.ad_hoc;
 
 import java.util.Arrays;
+/*
 
+Given an array of DISTINCT elements, 
+rearrange the elements of array in zig-zag fashion in O(n) time. 
+The converted array should be in form a < b > c < d > e < f.
+
+https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/
+
+*/
 public class ConvertArrayZigZagFashion {
 
     public static void main(String[] args){

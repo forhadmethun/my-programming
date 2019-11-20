@@ -1,0 +1,6 @@
+[submodule "Algorithm"]
+	path = Algorithm
+	url = https://github.com/forhadmethun/Algorithm.git
+[submodule "Data-Structure"]
+	path = Data-Structure
+	url = https://github.com/forhadmethun/Data-Structure.git

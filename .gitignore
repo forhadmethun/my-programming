@@ -74,4 +74,4 @@ interview-prep/out/*
 /OJ/kattis/*.iml
 
 /interview-prep/.idea/
-/practice/algorithm/recursion/.idea/
+Practice/algorithm/recursion/.idea/*

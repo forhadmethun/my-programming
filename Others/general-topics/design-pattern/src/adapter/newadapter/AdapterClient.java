@@ -1,12 +1,12 @@
-package adapter.old;
+package adapter.newadapter;
 
 public class AdapterClient {
     public static void main(String[] args) {
-        OldOMS oldOMS = new OldOMS();
-        oldOMS.addItem(new Item("Beer", 6.0));
-        oldOMS.addItem(new Item("wine", 2));
+        NewOMS newOMS = new NewOMS();
+        newOMS.addItem(new Item("Beer", 6.0));
+        newOMS.addItem(new Item("wine", 2));
         
-        oldOMS.makePayment(new Payment("CARD", 7.0));
-        oldOMS.makePayment(new Payment("CREDIT", 1.0));
+        newOMS.makePayment(new Payment("CARD", 7.0));
+        newOMS.makePayment(new Payment("CREDIT", 1.0));
     }
 }

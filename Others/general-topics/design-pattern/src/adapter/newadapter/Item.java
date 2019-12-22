@@ -1,4 +1,4 @@
-package adapter.old;
+package adapter.newadapter;
 
 public class Item {
     private String description;

@@ -1,4 +1,5 @@
 package decorator;
 
-public class Item {
+public interface Item {
+    void prepare();
 }

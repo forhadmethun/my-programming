@@ -73,5 +73,6 @@ interview-prep/out/*
 /OJ/kattis/.idea/*
 /OJ/kattis/*.iml
 
-/interview-prep/.idea/
+/interview-prep/.idea/*
 Practice/algorithm/recursion/.idea/*
+Others/general-topics/design-pattern/.idea/*

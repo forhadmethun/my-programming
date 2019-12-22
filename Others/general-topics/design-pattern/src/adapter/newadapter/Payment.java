@@ -1,4 +1,4 @@
-package adapter.old;
+package adapter.newadapter;
 
 public class Payment {
     private String type;

@@ -1,3 +1,7 @@
+package leetcode.array;
+
+import java.util.Arrays;
+
 class ArraysPartition {
     public int arrayPairSum(int[] nums) {
         Arrays.sort(nums);

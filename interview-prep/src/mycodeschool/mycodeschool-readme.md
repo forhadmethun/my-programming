@@ -1,0 +1,114 @@
+### Data Structure
+- [x] Video 1
+  - ADT - define data and operation but no implementation
+  - need to know
+    - logical view
+    - operations
+    - cost
+    - implementation
+- [x] Video 2
+  - list data type
+- [x] Video 3
+  - linked list
+- [x] Video 4
+    - array vs linked list
+      - search
+      - memory
+      - access
+      - easiness
+- [x] Video 5
+  - implementation 
+  - create linked list, new node, traverse, insert end
+- [x] Video 6
+  - linked list insert at beginning, print
+- [x] Video 7
+  - linked list insert at n'th position
+- [x] Video 8
+  - linked list delete n'th 
+- [x] Video 9
+  - reverse linked list iterative 
+- [x] Video 10
+  - print in forward and backward
+- [x] Video 11
+  - reverse linked list recursive
+- [x] Video 12 (SinglyLinkedList.java)
+  - doubly linked list intro
+- [x] Video 13 (DoublyLinkedList.java)
+  - doubly linked list implementation
+- [x] Video 14
+  - Stack ADT
+    - insertion and deletion performed only from one end called top
+  - LIFO
+  - Operations
+    - push
+    - pop
+    - top
+    - isEmpty
+  - Applications
+    - Function calls / Recursion
+    - undo operation in editor
+    - balenced parenthesis
+- [x] Video 15(Stack.java)
+  - Stack Implementation with array
+- [x] Video 16 (Stack.java)
+  - Stack implementation with linked list
+- [x] Video 17 (ReverseStringByStack.java, ReverseLinkedListByStack.java)
+  - reverse stack or linked list with 
+- [x] Video 18 (BalancedParenthesisCheck.java)
+  - Balanced Parenthesis check
+- [x] Video 19
+  - Infix   <Operand><Operator><Operand>
+  - Postfix <Operand><Operand><Operator>
+  - Prefix  <Operator><Operand><Operand>
+- [x] Video 20
+  - evaluation of postfix and prefix evaluation
+    - postfix evaluate
+      - create stack
+      - go through all the character of the operation
+        - if operand then push on the stack
+        - if operator then
+          - pop twice
+          - perform the operator with the popped value
+          - push the answer to the stack again 
+      - return stack top
+- [x] Video 21
+  - infix to postfix using stack
+    - res = ""
+    - stack s
+    - for c : characters 
+      - if c is operand then append to res
+      - if c is operator
+        - while(!s.isEmpty() && hasHighPrecendence(s.top(), c) && !isOpenParentheses(s.top()))
+          - append c to res
+          - pop from stack
+        - push c to stack
+      - if c is openning parentheses
+        - push it to the stack
+      - if c is closing parentheses
+        - while(!s.isEmpty() && !isOpenParentheses(s.top()))
+          - append c to res
+          - pop from stack
+        - pop from the stack /* the openning parentheses*/         
+      - while(!s.isEmpty())
+        - append s.top() to res
+        - s.pop()
+    - return res  
+- [] Video 22
+- [] Video 23
+- [] Video 24
+- [] Video 25
+- [] Video 26
+- [] Video 27
+- [] Video 28
+- [] Video 29
+- [] Video 30
+- [] Video 31
+- [] Video 32
+- [] Video 33
+- [] Video 34
+- [] Video 35
+- [] Video 36
+- [] Video 37
+- [] Video 38
+- [] Video 39
+- [] Video 40

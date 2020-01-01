@@ -1,6 +1,11 @@
+package leetcode.array;
+
+import java.util.ArrayList;
+import java.util.List;
+
 class FindDisappearedNumberInArray {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        List<Integer> outputList = new ArrayList<>(); 
+        List<Integer> outputList = new ArrayList<>();
         for(int i = 0; i < nums.length; i++){
             if(nums[i] == 0)continue;
             int temp = nums[i] - 1; 

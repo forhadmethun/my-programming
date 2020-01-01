@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class Solution1 {
     public static int solution(int[] A) {
         // write your code in Java SE 8
         Map<Integer, Boolean> map = new HashMap<>();

@@ -1,4 +1,4 @@
-class Solution {
+class Solution5 {
     public static  int solution(String S) {
         if(S.contains("aaa")) return -1;
         int sum = 2;

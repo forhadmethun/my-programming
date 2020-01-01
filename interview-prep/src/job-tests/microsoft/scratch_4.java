@@ -4,7 +4,7 @@
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-class Solution {
+class Solution4 {
     public static int solution(int N) {
         // write your code in Java SE 8
         boolean isNegative = false;

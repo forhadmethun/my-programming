@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class Solution2 {
     public static String solution(String S, int K) {
         // write your code in Java SE 8
         Map<String, Integer> map = new HashMap<>();

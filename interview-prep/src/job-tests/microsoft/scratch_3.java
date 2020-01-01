@@ -1,4 +1,4 @@
-class Solution {
+class Solutio3n {
     public static  int solution(String S) {
         String modifiedS = "";
         int current = 0;

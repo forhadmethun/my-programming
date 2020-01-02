@@ -1,3 +1,6 @@
+package leetcode.number;
+import java.util.*;
+
 class SelfDividingNumber {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> selfDividingNumberList = new ArrayList<>();

@@ -1,3 +1,6 @@
+package leetcode.number;
+
+import java.util.*;
 class CountPrimes {
     public int countPrimes(int n) {
         long m = (long) n ;

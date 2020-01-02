@@ -1,3 +1,6 @@
+package leetcode.number;
+import java.util.*;
+
 class SumOfSquareNumbers {
     public boolean judgeSquareSum(int c) {
         /*

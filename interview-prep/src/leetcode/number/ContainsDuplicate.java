@@ -1,3 +1,7 @@
+package leetcode.number;
+
+import java.util.*;
+
 class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>(); 

@@ -1,3 +1,6 @@
+package leetcode.number;
+import java.util.*;
+
 class ExcelSheetColumnTitleToColNum {
     public int titleToNumber(String s) {
         HashMap<Character,Integer> characterIntegerMap= new HashMap();

@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.*;
+
 class MaximumProductOfThreeNumbers {
     public int maximumProduct(int[] nums) {
         Arrays.sort(nums);

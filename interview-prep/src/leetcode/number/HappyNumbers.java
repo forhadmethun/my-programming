@@ -1,3 +1,6 @@
+package leetcode.number;
+import java.util.*;
+
 class HappyNumbers {
     public boolean isHappy(int n) {
         Set<Integer> alreadyComputedNumbers = new HashSet(); 

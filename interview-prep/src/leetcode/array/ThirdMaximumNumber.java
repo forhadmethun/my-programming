@@ -1,3 +1,7 @@
+package leetcode.array;
+
+import java.util.*;
+
 class ThirdMaximumNumber {
     public int thirdMax(int[] nums) {
         int len = nums.length;

@@ -1,3 +1,6 @@
+package leetcode.array;
+import java.util.*;
+
 class KDiffPairsInArray {
     public int findPairs(int[] nums, int k) {
         /*

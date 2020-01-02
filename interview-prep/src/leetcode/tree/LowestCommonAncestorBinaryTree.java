@@ -1,4 +1,4 @@
-// LowestCommonAncestorBinaryTree.java
+package leetcode.tree;// LowestCommonAncestorBinaryTree.java
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

@@ -1,3 +1,7 @@
+package leetcode.array;
+
+import java.util.*;
+
 class PascalsTriangle {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> pascalTriangle  = new ArrayList<>();

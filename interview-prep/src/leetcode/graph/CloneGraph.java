@@ -1,4 +1,7 @@
-/*
+package leetcode.graph;
+
+import java.util.*;
+
 // Definition for a Node.
 class Node {
     public int val;
@@ -11,7 +14,6 @@ class Node {
         neighbors = _neighbors;
     }
 };
-*/
 class CloneGraph {
     public Node cloneGraph(Node node) {
         if(node == null) return null; 

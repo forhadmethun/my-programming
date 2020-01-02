@@ -1,3 +1,6 @@
+package leetcode.number;
+import java.util.*;
+
 class SetMismatch {
     public int[] findErrorNums(int[] nums) {
         Arrays.sort(nums); 

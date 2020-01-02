@@ -1,3 +1,6 @@
+package leetcode.number;
+import java.util.*;
+
 class PerfectNumber {
     public boolean checkPerfectNumber(int num) {
         if(num<=0)return false;

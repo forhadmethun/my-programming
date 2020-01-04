@@ -3,16 +3,16 @@ Coderust Lessons - Free Alternatives
 
 A compilation of free links that correspond to the CodeRust lessons. Some may be equivalent, some may not. May or may not have your languages of choice. I'm open to pull requests if you'd like to help add better resources.
 
-See CodeRust Rubric here: [Educative](https://www.educative.io/collection/5642554087309312/5679846214598656)
+See CodeRust Rubric here: [Educative](https://www.educative.io/c    ollection/5642554087309312/5679846214598656)
 
 ---
 
 ### Arrays
 
-* Binary Search								-	[GeeksForGeeks](https://www.geeksforgeeks.org/binary-search/), [CodeRust Preview](https://www.educative.io/collection/page/5642554087309312/5679846214598656/240002)
-* Find Maximum Sliding Window					-	[GeeksForGeeks](https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/)
-* Search rotated array						-	[GeeksForGeeks](https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)
-* Find smallest common number					-	[GeeksForGeeks](https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/)
+- [x] Binary Search								-	[GeeksForGeeks](https://www.geeksforgeeks.org/binary-search/), [CodeRust Preview](https://www.educative.io/collection/page/5642554087309312/5679846214598656/240002)
+- [x] Find Maximum Sliding Window					-	[GeeksForGeeks](https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/)
+- [x] Search rotated array						-	[GeeksForGeeks](https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)
+- [] Find smallest common number					-	[GeeksForGeeks](https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/)
 * Rotate Array								-	[GeeksForGeeks](https://www.geeksforgeeks.org/array-rotation/)
 * Find low/high index							-	[GeeksForGeeks](https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/)
 * Move zeroes to left							-	[GeeksForGeeks](https://www.geeksforgeeks.org/move-zeroes-end-array/)

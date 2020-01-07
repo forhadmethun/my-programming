@@ -1,4 +1,4 @@
-package topic_wise.dp;
+package topic_wise.algorithm.dp;
 /*
     find minimum number of edit required to change 's1' to 's2'
 

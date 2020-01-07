@@ -1,4 +1,4 @@
-package topic_wise.dp;
+package topic_wise.algorithm.dp;
 
 public class LIS {
     public static void main(String[] args) {

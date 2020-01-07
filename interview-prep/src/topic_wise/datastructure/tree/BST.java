@@ -1,6 +1,4 @@
-package topic_wise.tree;
-
-import java.util.*;
+package topic_wise.datastructure.tree;
 
 class BST {
     static class Node {

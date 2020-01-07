@@ -22,7 +22,7 @@ public class MaxHeap {
         System.out.println(heap2.getMax());
 
     }
-    
+
     List<Integer> heapList = new ArrayList<>();
     int[] heapArray = null;
     int heapArraySize = 0;

@@ -1,6 +1,4 @@
-package mycodeschool;
-
-import java.util.*;
+package mycodeschool.list;
 
 class LinkedListNode{
     int data; 
@@ -12,6 +10,7 @@ class LinkedListNode{
 }
 class SinglyLinkedList{
     LinkedListNode head;
+    int size = 0;
     SinglyLinkedList(){
         this.head = null;
     }
@@ -23,7 +22,22 @@ class SinglyLinkedList{
         }
         System.out.println();
     }
+    int size(){
+        return size;
+    }
+    boolean isEmpty(){
+        return head == null;
+    }
+    int valueAt(int index){
+        LinkedListNode tempNode = head;
+        for(int i = 0; i < index;i++){
+            tempNode = tempNode.next;
+        }
+        if(tempNode == null) return -1;
+        return tempNode.data;
+    }
     void addToTail(int data){
+        size++;
         if(head == null){
             head = new LinkedListNode(data); 
             return;
@@ -37,13 +51,17 @@ class SinglyLinkedList{
 
     }
     void addToHead(int data){
-        LinkedListNode newNode = new LinkedListNode(data); 
-        newNode.next = head; 
+        size++;
+        LinkedListNode newNode = new LinkedListNode(data);
+        newNode.next = head;
         head = newNode;
     }
     void addToNth(int n, int data){
+        size++;
         if(n == 1){
-            addToHead(data);
+            LinkedListNode newNode = new LinkedListNode(data);
+            newNode.next = head;
+            head = newNode;
             return;
         }
         LinkedListNode tempNode = head; 
@@ -54,7 +72,9 @@ class SinglyLinkedList{
         newNode.next = tempNode.next; 
         tempNode.next = newNode;
     }
-    void deleteAtNth(int n){
+    void deleteAtNth(int n){ //need to check more validation
+        if(head == null || n > size())return;
+        size--;
         if(n == 1){
             head = head.next;
             return;
@@ -101,6 +121,47 @@ class SinglyLinkedList{
         System.out.printf("%d ",node.data); 
     }
 
+    void deleteFront(){
+        if(head!=null){
+            size--;
+            head = head.next;
+        }
+    }
+    void deleteBack(){
+        deleteAtNth(size);
+    }
+    void deleteNthFromLast(int position){
+        deleteAtNth(size - position );
+    }
+    int front(){
+        if(head!=null) return head.data;
+        return -1;
+    }
+    int back(){
+        LinkedListNode tempNode = head;
+        while(tempNode.next!=null)tempNode = tempNode.next;
+        if(tempNode!=null)return tempNode.data;
+        return -1;
+    }
+    void removeValue(int value){
+        LinkedListNode prev = null, cur = head;
+        while(cur != null){
+            if(cur.data == value)break;
+            prev = cur;
+            cur = cur.next;
+        }
+        size--;
+        prev.next = prev.next.next;
+    }
+    int getNthValueFromEnd(int position){
+        LinkedListNode tempNode = head;
+        for(int i = 0 ; i < size - position; i++){
+            tempNode = tempNode.next;
+        }
+        if(tempNode!= null) return tempNode.data;
+        return - 1;
+    }
+
     public static void main(String[] args){    
         SinglyLinkedList l1 = new SinglyLinkedList(); 
         l1.addToTail(1);
@@ -120,7 +181,17 @@ class SinglyLinkedList{
         l1.print();
         l1.reverseLinkedListIter(); 
         l1.print();
-        l1.printReverse();  
+        l1.printReverse();
+        l1.print();
+        System.out.println(l1.front());
+        System.out.println(l1.back());
+        l1.removeValue(0);
+        l1.print();
+        l1.deleteNthFromLast(2);
+        l1.print();
+        System.out.println(l1.size());
+        System.out.println(l1.getNthValueFromEnd(1));
+        System.out.println(l1.getNthValueFromEnd(3));
     }
 
 }

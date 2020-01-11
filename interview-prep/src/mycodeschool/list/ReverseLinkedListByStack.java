@@ -1,4 +1,4 @@
-package mycodeschool; 
+package mycodeschool.list;
 class ReverseLinkedListByStack{
     public static void main(String[] args){
         SinglyLinkedList ll = new SinglyLinkedList(); 

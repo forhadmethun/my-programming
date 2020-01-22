@@ -1,12 +1,13 @@
 package structural.bridge;
 
-public class About extends WebPage {
-    public About(Theme theme) {
-        super(theme);
+public class Careers extends WebPage {
+    Theme theme;
+    public Careers(Theme theme) {
+        super(theme);this.theme = theme;
     }
 
     @Override
     void getContent() {
-        System.out.println("About Page");
+        System.out.println("Career Page + " + theme.getColor());
     }
 }

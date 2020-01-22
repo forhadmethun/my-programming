@@ -1,4 +1,15 @@
 ### 0 - 1 Knapsack
+    - wt : weight array
+    - v  : value array
+    - W  : Knapsack weight limit
+    - n  : # of elements in array
+
+                          { 0,  
+    zokps(wt, v, w, n) =  { zokps(wt, v, w, n - 1)
+                          { max(                              
+                          {       v[n-1] + zokps(wt, v, w - wt[n-1], n)
+                          {                zokps(wt, v, w, n - 1      )
+                          {     )
 
 ### Longest Common Subsequence
 

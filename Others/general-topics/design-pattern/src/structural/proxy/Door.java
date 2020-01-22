@@ -1,4 +1,6 @@
 package structural.proxy;
 
-public class Door {
+public interface Door {
+    void open();
+    void close();
 }

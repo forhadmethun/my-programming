@@ -1,9 +1,9 @@
 package creational.abstract_factory;
 
-public class Welder implements DoorFittingExpert {
+public class Carpenter implements DoorFittingExpert {
 
     @Override
     public void getDescription() {
-        System.out.println("me Welder");
+        System.out.println("me Carpenter");
     }
 }

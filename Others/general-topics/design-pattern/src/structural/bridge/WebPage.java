@@ -1,4 +1,9 @@
 package structural.bridge;
 
-public interface WebPage {
+public abstract class WebPage {
+    protected Theme theme;
+    abstract void getContent();
+    public WebPage(Theme theme){
+        this.theme = theme;
+    }
 }

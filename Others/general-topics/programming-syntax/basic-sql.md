@@ -196,12 +196,41 @@ or
 ```
 
 ### SQL GROUP BY - 
+```sql
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name(s)
+    ORDER BY column_name(s);
 
+    SELECT Shippers.ShipperName,COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders
+    LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
+    GROUP BY ShipperName;
+
+```
 ### SQL HAVING - 
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+```sql
+    SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders
+    FROM (Orders
+    INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)
+    WHERE LastName = 'Davolio' OR LastName = 'Fuller'
+    GROUP BY LastName
+    HAVING COUNT(Orders.OrderID) > 10;
+```
 
 ### SQL EXISTS  - 
-
+```sql
+    SELECT SupplierName
+    FROM Suppliers
+    WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);
+```
 ### SQL ANY / ALL - 
+```sql
+    SELECT ProductName
+    FROM Products
+    WHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
+```
 
 ### SQL SELECT INTO - 
 

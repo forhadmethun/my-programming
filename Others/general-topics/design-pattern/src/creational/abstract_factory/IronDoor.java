@@ -1,8 +1,8 @@
 package creational.abstract_factory;
 
-public class WoodenDoor implements Door {
+public class IronDoor implements Door {
     @Override
     public void getDescription() {
-
+        System.out.println("iron door");
     }
 }

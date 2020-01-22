@@ -1,4 +1,7 @@
 package creational.abstract_factory;
 
-public class AbstractDoorFactory {
+public interface AbstractDoorFactory {
+    Door makeDoor();
+    DoorFittingExpert makeFittingExpert();
+
 }

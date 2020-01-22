@@ -1,4 +1,9 @@
 package structural.bridge;
 
-public class DarkTheme {
+public class DarkTheme implements Theme {
+    @Override
+    public String getColor() {
+//        System.out.println("Dark");
+        return "Dark";
+    }
 }

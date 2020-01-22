@@ -1,8 +1,5 @@
 package structural.adapter.newadapter;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.*;
 public class NewOMS {
     private List cart = new ArrayList();
     private List payments = new ArrayList();

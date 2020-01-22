@@ -1,13 +1,13 @@
 package creational.abstract_factory;
 
-public class WoodenDoorFactory implements AbstractDoorFactory {
+public class IronDoorFactory implements AbstractDoorFactory {
     @Override
     public Door makeDoor() {
-        return new WoodenDoor();
+        return new IronDoor();
     }
 
     @Override
     public DoorFittingExpert makeFittingExpert() {
-        return new Carpenter();
+        return new Welder();
     }
 }

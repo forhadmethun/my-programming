@@ -9,7 +9,7 @@ Some Linux Commands
         sudo mount -t ntfs-3g -o remove_hiberfile /dev/sda3 /mnt/spider
 
 
-- command to install tar.gz..
+- command to unzip tar.gz..
 
         tar -zxvf file.tar.gz
 

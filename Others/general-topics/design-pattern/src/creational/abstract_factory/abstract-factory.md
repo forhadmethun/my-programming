@@ -1,4 +1,4 @@
 - like factory but everything is encapsulated
-- final object contains objects that use the singletone pattern 
+- final object contains objects that use the singleton pattern 
 - allows creating families of related objects without specifying concrete class
 - when objects can be added, changed, dynamically during runtime

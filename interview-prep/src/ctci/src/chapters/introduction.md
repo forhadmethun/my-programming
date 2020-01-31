@@ -1,5 +1,6 @@
 - result isn't everything
 - just studying CLRS won't help
+    - interviewer may not remember red-black tree     
 - ctci focus on algo, coding, design
 
 ### I. The Interview Process

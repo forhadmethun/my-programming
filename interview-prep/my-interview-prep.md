@@ -11,11 +11,14 @@ How Computer works? Is it a magic? - Not really. Go through the playlist you'll 
   [Learn how Operating System works.](https://www.youtube.com/playlist?list=PL--jIyXjDXf6Q4XA6q8RYnyChYzJ0K0F2 ) \
   Learn:  processes, threads, synchronization, file system, network, cloud, distributed system etc.
 ### Computer Networking
-  [Learn Basic Networking Concepts] 
+  - [Learn Basic Networking Concepts] 
     - [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
     - learn about OSI, TCP/ UDP, Subnetting
 ### Database
   - [my practice resource](https://github.com/forhadmethun/Code/blob/master/Others/general-topics/programming-syntax/basic-sql.md)
+  - know difference about SQl & NoSQL
+  - Join Operations
+  - Solve few common problems related to SQL
 
 ## Programming Language
 In my undergraduate there was courses of python, C/C++, Java and even I practiced different problem solving problems(from OJs) in C/C++ but after graduation I worked mostly with Java and it's OOP (though C++ also OOP :P) so I choose Java for solving problems and practice. Language is nothing. Basic concepts(variable, loop, condition, array, string, etc.) are the main point to learn. If you know the basic concepts then learning a programming language is child's play. Just learn a language and start solving problems. I think the more problem you solve(from OJ, leetcode, interviebit, etc.) the more chances you have to get hired. 
@@ -78,5 +81,35 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
 - [design-pattern-for-humans](https://github.com/transparent2/design-patterns-for-humans)
 - [my resource](https://github.com/forhadmethun/Code/tree/master/Others/general-topics/design-pattern/src)
 ## More
+### Technology Specific
+#### MySQL
+ - difference between innoDB & MySIAM?
+ - NoSQL vs MySQL?
+
+#### GIT
+ - 
+
+### Java Technology
+ - Spring
+   - What is IoC, DI?
+   - what are the features of Spring framework?
+ - Hibernate/ JPA
+   - what ..?
+### Javascript
+  - What is closure?
+  - What is hoisting?
+  - 
+
 ### Practice
 ### Behavioral Prep.
+ - Tell me about yourself?
+ - Tell me about your projects?
+ - What are your weakness?
+ - Do you have any question to me?
+ - Tell me your involvement to persuade a group of people to make a big change?
+ - Tell me about your hobbies?
+ - Why do you want to work at MS?
+ - What do you know about our product?
+ - Which feature of the product X you like most?
+ - What feature we can improve/ update of our product X?
+ 

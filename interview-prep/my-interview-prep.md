@@ -105,6 +105,8 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
  - Tell me about yourself?
  - Tell me about your projects?
  - What are your weakness?
+   - memorization power
+   - introvert
  - Do you have any question to me?
  - Tell me your involvement to persuade a group of people to make a big change?
  - Tell me about your hobbies?
@@ -112,4 +114,11 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
  - What do you know about our product?
  - Which feature of the product X you like most?
  - What feature we can improve/ update of our product X?
+ - tell me about something what's not in the cv?
+   - hard working & hardship
+   - convince ability
+   - reliablity
+ - future plan?
+   - do something for country
+   - 
  

@@ -1,6 +1,14 @@
 ### Arrays and Strings
 
 --- 
+ - hashtable
+   - can be impleneted by a hash funciton and a list(array, linked list, tree)
+ - arraylist & resizable array
+   - if array of size n then need to copy : n/2 + n /4 + n/8 + .... = usually less than n,  O(n) items
+     - on avg, O(1)
+ - StringBuilder
+   - String class take, x + 2x + 3x + ... nx = O(n^2) time to add strings from a list
+   - StringBuilder use dynamic array
 
 Questions
 --- 

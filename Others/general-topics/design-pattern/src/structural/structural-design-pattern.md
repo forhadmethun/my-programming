@@ -2,7 +2,7 @@
  - about organizing different classes and objects to form larger structures and provide new functionality
  - ease the design by identifying a simple way to realize relationships among entities.
 ### Adapter
- - memory card is adapter while sending file memory to pc
+ - memory card reader is adapter while sending file memory to pc
  - power adapter where 3 legged plug connected to 2 leg
  - language interpreter person work as adapter
 ``` 

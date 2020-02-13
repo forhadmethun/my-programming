@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class Q1_4 {
     public static void main(String[] args) throws Exception{
-        Scanner sc = new Scanner(new FileReader( Paths.get("").toAbsolutePath()+"/src/codes/ch1/Q1_4.txt"));
+        Scanner sc = new Scanner(System.in);//new FileReader( Paths.get("").toAbsolutePath()+"/src/codes/ch1/Q1_4.txt"));
         while(sc.hasNext()){
             String inputString = sc.nextLine();
 //            System.out.println(inputString);

@@ -108,6 +108,8 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
    - memorization power
    - introvert
  - Do you have any question to me?
+   - is there anything you'd suggest I work on for next time?
+   - 
  - Tell me your involvement to persuade a group of people to make a big change?
  - Tell me about your hobbies?
  - Why do you want to work at MS?

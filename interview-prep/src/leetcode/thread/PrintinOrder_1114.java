@@ -5,9 +5,8 @@ import java.util.concurrent.Semaphore;
 public class PrintinOrder_1114 {}
 
 class Foo{
-    Semaphore f,s,t;
-    public Foo() {
-        f = new Semaphore(0);
+    Semaphore s,t;
+    public Foo() {       
         s = new Semaphore(0);
         t = new Semaphore(0);
     }

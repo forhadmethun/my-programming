@@ -1,130 +1,64 @@
 #!/usr/bin/env python3
 import os, sys       # do not use any other imports/libraries
 # took x.y hours (please specify here how much time your solution required)
+"""
+### Time Taken
+
+To solve the problem it took around - 4.5 hours for me. I didn't code in python language for a long time and more specifically I didn't know much about how to read, write byte to file and encode, decode them. Thanks for the slide from where I got almost all the knowledge. 
+
+### Suggestions
+ - It would be great if you can form a group in any media like - slack/ skype group/ mail thread/ telegram messenger group, fb messenger group, or anything else,  with all the students who took the cryptography course and including you, as many of us probably facing simple issue/ questions, so we can communicate through the group. Probably our another course - System Administration will create a slack group for our questions. 
+ - In this assignment we are given a template file. It's really nice to have a template like that. But I have a request, can you please give the method any good name ? It's really tough to understand the function that, what are - bn(b) or nb(i, length), methods purpose. Then it would look great. I know that it's not industry level code but it's good to have nice method name in the code. Thanks. 
+
+"""
 
 def bn(b):
     # b - bytes to encode as integer
     # your implementation here
-    i = 0
-    print("---- start: bn(n) meth0d -----", )
-    for c in b:
-        i = (i << 8) | c
-        print(i)
-    print("---- end: bn(n) meth0d -----")
-
-    return i
+    byte_encoded_as_integer = 0
+    for each_byte in b:
+        byte_encoded_as_integer = (byte_encoded_as_integer << 8) | each_byte
+    return byte_encoded_as_integer
 
 def nb(i, length):
     # i - integer to encode as bytes
     # length - specifies in how many bytes the number should be encoded
     # your implementation here
     b = b''
-    list = []
-    print("---- !!!! start: nb(n) meth0d!!! -----", )
+    integer_to_encode_as_byte_list = []
     while length != 0:
-        list.insert(0, i & 255)
+        integer_to_encode_as_byte_list.insert(0, i & 255)
         i = i >> 8
         length = length - 1
-        print(i)
-    print("---- !!!! end: nb(n) meth0d!!! -----", )
-    print(": list : ", list)
-    b = bytes(list)
-    # b = b.decode("utf-8")
-    # print('decoded')
-    # print(b.decode("utf-8"))
-    # print(len(b))
-
-    # print(b[0])
-    # print(b[1])
-
+    b = bytes(integer_to_encode_as_byte_list)
     return b
 
 def encrypt(pfile, kfile, cfile):
     # your implementation here
-    b =  open(pfile, 'rb').read()
-    print('datafile content')
-    print(b)
-    b_text = b.decode()
-    print('decoded data file')
-    print(b_text)
-    print("lenth of the byte from the file ", len(b))
-    print("-------- start byte from the file ----------------")
-    print(list(b))
-    # for bb in b:
-    #     print(bb)
-    print("-------- end ----------------")
-
-    print('data file to integer')
-    print(bn(b))
-    text_byte_to_int = bn(b)
-    rand = os.urandom(len(b_text))
-    print('start: random key with same lenght of data file')
-    print(list(rand))
-    print('end: random kety: ')
-    # # print(rand.decode())
-    # print(rand[0])
-    # print(rand[1])
-    # print('rand length')
-    # print(len(rand))
-    random_byte_to_int = bn(rand)
-    # print('text byte to int')
-    # print(text_byte_to_int)
-    # print('random byte to int')
-    # print(random_byte_to_int)
-    xor = text_byte_to_int ^ random_byte_to_int
-    print('cipher text', xor)
-    # print(xor)
-
+    encoded_plain_text =  open(pfile, 'rb').read()
+    decoded_plain_text = encoded_plain_text.decode()
+    palin_text_byte_encoded_as_integer = bn(encoded_plain_text)
+    encoded_key = os.urandom(len(decoded_plain_text))
+    key_byte_encoded_as_integer = bn(encoded_key)
+    cipher_text_as_integer = palin_text_byte_encoded_as_integer ^ key_byte_encoded_as_integer
     key_file = open(kfile, 'wb')
     ciphertext_file = open(cfile, 'wb')
-    key_file.write(rand)
-    print("length random: ", len(rand))
-    print("length plaintext: ", len(b_text))
-    NB = nb(xor, len(b_text))
-    # print('cipher in byte')
-    print("cipher byte list: " , list(NB))
-    ciphertext_file.write(NB)
+    key_file.write(encoded_key)
+    cipher_text_integer_to_encode_as_byte = nb(cipher_text_as_integer, len(decoded_plain_text))
+    ciphertext_file.write(cipher_text_integer_to_encode_as_byte)
 
-
-
-    # rand = os.urandom(len(str(bn)))
-
-
-
-    #pass
 
 def decrypt(cfile, kfile, pfile):
     # your implementation here
     cipher_in_byte = open(cfile, 'rb').read()
-    # print('datafile content')
-    # print(cipher_in_byte[0])
-    # print(cipher_in_byte[1])
-
     key_in_byte = open(kfile, 'rb').read()
-    # print('datafile content')
-    # print(key_in_byte[0])
-    # print(key_in_byte[1])
-
     cipher_in_number  = bn(cipher_in_byte)
     key_in_number = bn(key_in_byte)
-
     original_text_in_number = cipher_in_number ^ key_in_number
-
     original_text_in_byte = nb(original_text_in_number,len(cipher_in_byte))
-    # print('original')
-    # print(type(original_text_in_byte))
-    # print(original_text_in_byte[0])
-    # print(original_text_in_byte[1])
-    # print(original_text_in_byte.decode())
     original_text = original_text_in_byte.decode()
     orignal_text_file = open(pfile, 'w+')
     orignal_text_file.write(original_text)
-
-
-    # b_text = b.decode()
-    # print('decoded data file')
-    # print(b_text)
-    # pass
 
 def usage():
     print("Usage:")

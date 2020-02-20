@@ -46,8 +46,9 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
  - Go through mycodeschool videos & solve problem from leetcode
  - [my practice 1](https://github.com/forhadmethun/Code/blob/master/interview-prep/src/mycodeschool/queue) [my practice 2](https://github.com/forhadmethun/Code/tree/master/interview-prep/src/amazon/data_structures/queue) [my practice 3](https://github.com/forhadmethun/Data-Structure/tree/master/queue)
 ### Hash Table
+ - [my practice](https://github.com/forhadmethun/Code/blob/master/interview-prep/src/leetcode/hashmap)
 ### Tree
-
+ - [my practice 1](https://github.com/forhadmethun/Code/blob/master/interview-prep/src/mycodeschool/tree) [my practice 2](https://github.com/forhadmethun/Code/tree/master/interview-prep/src/amazon/data_structures/tree) [my practice 3(leetcode)](https://github.com/forhadmethun/Code/tree/master/interview-prep/src/leetcode/tree)
 <details>
 <summary>Trees</summary>
 
@@ -68,6 +69,7 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
  - heap sort
  - bubble sort
  - insertion sort
+ - [my practice](https://github.com/forhadmethun/Code/blob/master/interview-prep/src/topic_wise/algorithm/sorting)
 ### Searching
  - [binary-search]()
 
@@ -90,11 +92,13 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
  - 
 
 ### Java Technology
+ - Basic Java
  - Spring
    - What is IoC, DI?
    - what are the features of Spring framework?
  - Hibernate/ JPA
    - what ..?
+ - What is AOP? 
 ### Javascript
   - What is closure?
   - What is hoisting?
@@ -103,13 +107,17 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
 ### Practice
 ### Behavioral Prep.
  - Tell me about yourself?
+  - [my answer]()
  - Tell me about your projects?
+  - [my answer]()
  - What are your weakness?
    - memorization power
    - introvert
  - Do you have any question to me?
    - is there anything you'd suggest I work on for next time?
-   - 
+   - what are the technology stack's are you using?
+   - how many developers/employees are working in this office. 
+
  - Tell me your involvement to persuade a group of people to make a big change?
  - Tell me about your hobbies?
  - Why do you want to work at MS?
@@ -119,7 +127,8 @@ In my undergraduate there was courses of python, C/C++, Java and even I practice
  - tell me about something what's not in the cv?
    - hard working & hardship
    - convince ability
-   - reliablity
+   - 
+   
  - future plan?
    - do something for country
    - 

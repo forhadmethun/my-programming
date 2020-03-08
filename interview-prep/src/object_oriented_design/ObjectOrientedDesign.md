@@ -31,15 +31,15 @@
    - faceValue
  - class CardDeck
    - init()
-     - for(i = 0; i <= 13; i++){ for(Suit suit: Suit.values()){cardDeck.add(new Card(suit, i))}}
+     - for(i = 1; i <= 13; i++){ for(Suit suit: Suit.values()){cardDeck.add(new Card(suit, i))}}
 
  - [ref](https://www.youtube.com/watch?v=lDa8I7iA5FA)
 
 
 ### Design Parking Lot
  - ParkingLot
- - Levels
- - ParkingSpot
+    - Levels
+        - ParkingSpot
  - Vehicle
  - MotorCycle
  - Bus

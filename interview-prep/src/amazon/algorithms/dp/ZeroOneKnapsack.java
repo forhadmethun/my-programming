@@ -1,5 +1,8 @@
 package amazon.algorithms.dp;
 
+/**
+ * See code of the path: /interview-prep/src/topic_wise/algorithm/dp/ZeroOneKnapsack.java
+ */
 public class ZeroOneKnapsack {
     static int knapsack(int w, int n, int val[], int wt[]){
         int mat[][] = new int[n+1][w+1];

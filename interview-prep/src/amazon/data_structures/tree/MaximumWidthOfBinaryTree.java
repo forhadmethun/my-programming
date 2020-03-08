@@ -47,8 +47,8 @@ public class MaximumWidthOfBinaryTree {
         root.left.right = new Node(5);
 
         root.right = new Node(3);
-        root.right.right = new Node(6);
-        root.right.left = new Node(7);
+      //  root.right.right = new Node(6);
+        //root.right.left = new Node(7);
 
         // the following maxWidth method is just modified version of level order traversal of tree
         int width = maxWidth(root);

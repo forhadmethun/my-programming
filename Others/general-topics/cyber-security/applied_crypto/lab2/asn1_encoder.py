@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys   # do not use any other imports/libraries
 
-# took x.y hours (please specify here how much time your solution required)
+# took 4.5 hours (please specify here how much time your solution required)
 
 _type_class_universal = 0
 _type_class_application = 1 << 6
@@ -56,12 +56,14 @@ def asn1_integer(i):
     return bytes([0x02]) + asn1_len(integer_to_encode_as_byte) + integer_to_encode_as_byte
 
 def bin_string_to_int(str):
-    val = 0
-    power_of_two = 1
-    for i in range(len(str) - 1, -1, -1):
-        val = val + (ord(str[i]) - 48) * power_of_two
-        power_of_two = power_of_two * 2
-    return val
+    i = 0
+    for bit in str:
+        i <<= 1
+        if bit =='1':
+            i |= 1
+    return i
+
+
 def asn1_bitstring(bitstr):
     # bitstr - string containing bitstring (e.g., "10101")
     # returns DER encoding of BITSTRING
@@ -104,30 +106,21 @@ def int_to_bin_string(int):
 def asn1_objectidentifier(oid):
     # oid - list of integers representing OID (e.g., [1,2,840,123123])
     # returns DER encoding of OBJECTIDENTIFIER
-    int_list = []
-    for i in range(2, len(oid)):
-        bitstr = int_to_bin_string(oid[i])
-
-        count = 0
-        string_length = len(bitstr)
-        byte_len = 0
-        while count < string_length:
-            count += 7
-            byte_len += 1
-        pad_length = count - string_length
-        for i in range(0, pad_length):
-            bitstr = '0' + bitstr
-
-        str_list = [bitstr[i: i + 7] for i in range(0, len(bitstr), 7)]
-        for j in range(0, len(str_list)):
-            if(j == len(str_list) -1 ):
-                str_list[j] = '0' + str_list[j]
+    integer_to_encode_as_byte = b''
+    for i in range(len(oid) - 1, 1, -1):
+        int_list = []
+        x = oid[i]
+        last = True
+        while x != 0:
+            if last is False:
+                mask = x & 127
+                mask = mask | (1 << 7)
             else:
-                str_list[j] = '1' + str_list[j]
-
-        for s in str_list:
-            int_list.append(bin_string_to_int(s))
-    integer_to_encode_as_byte = bytes(int_list)
+                mask = x & 127
+                last = False
+            int_list.insert(0, mask)
+            x >>= 7
+        integer_to_encode_as_byte = bytes(int_list) + integer_to_encode_as_byte
     integer_to_encode_as_byte = bytes([oid[0] * 40 + oid[1]]) + integer_to_encode_as_byte
 
     return bytes([0x6]) + asn1_len((integer_to_encode_as_byte)) + integer_to_encode_as_byte

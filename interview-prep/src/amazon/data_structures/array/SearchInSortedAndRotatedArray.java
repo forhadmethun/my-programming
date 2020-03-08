@@ -1,5 +1,7 @@
 package amazon.data_structures.array;
-
+/*
+https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+*/
 public class SearchInSortedAndRotatedArray {
 
     static boolean search(int arr[], int low, int high, int element){

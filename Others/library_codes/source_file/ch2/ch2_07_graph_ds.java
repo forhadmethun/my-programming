@@ -50,7 +50,7 @@ class ch2_07_graph_ds {
     4 6 5
     */
 
-    File f = new File("in_07.txt");
+    File f = new File("/home/f/Code/Others/library_codes/source_file/ch2/in_07.txt");
     Scanner sc = new Scanner(f);
     V = sc.nextInt(); // we must know this size first!
                       // remember that if V is > 100, try NOT to use AdjMat!

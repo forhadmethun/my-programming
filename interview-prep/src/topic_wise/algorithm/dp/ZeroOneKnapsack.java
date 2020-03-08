@@ -1,6 +1,7 @@
 package topic_wise.algorithm.dp;
 
-public class ZeroOneKnapsack {
+public class
+ ZeroOneKnapsack {
 
     public static void main(String[] args) {
         int wt[] = {1, 3, 4, 5};

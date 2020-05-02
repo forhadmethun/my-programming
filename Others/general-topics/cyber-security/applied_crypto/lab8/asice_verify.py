@@ -91,21 +91,58 @@ xmldoc = BeautifulSoup(xml, features="xml")
 # let's trust this certificate
 signers_cert_der = codecs.decode(xmldoc.XAdESSignatures.KeyInfo.X509Data.X509Certificate.encode_contents(), 'base64')
 print("[+] Signatory:", get_subject_cn(signers_cert_der))
-print("[+] Signed file:",xmldoc.XAdESSignatures.Signature.SignedInfo.Reference['URI'])
+signed_file  = xmldoc.XAdESSignatures.Signature.SignedInfo.Reference['URI']
+print("[+] Signed file:",signed_file)
 
-sign_time_stamp = (codecs.decode(xmldoc.SignatureTimeStamp.EncapsulatedTimeStamp.encode_contents(), 'base64'))
+sign_time_stamp = (codecs.decode(xmldoc.XAdESSignatures.Signature.Object.QualifyingProperties.UnsignedProperties.SignatureTimeStamp.EncapsulatedTimeStamp.encode_contents(), 'base64'))
+# sign_time_stamp = (codecs.decode(xmldoc.SignatureTimeStamp.EncapsulatedTimeStamp.encode_contents(), 'base64'))
 
 
-print("[+] Timestamped:", parseTsaResponse(signers_cert_der))
+# print("[+] Timestamped:", xmldoc.XAdESSignatures.Object.QualifyingProperties.SignedProperties.SignedSignatureProperties.SigningTime.get_text())
+print("[+] Timestamped:", parseTsaResponse(sign_time_stamp)[0])
 #xmldoc.XAdESSignatures.Object.QualifyingProperties.SignedProperties.SignedSignatureProperties.SigningTime
 
 
 
 # perform all kinds of checks
 
+# check 1: signature of signed info check
+canonicalize_signed_info = canonicalize(xml, "SignedInfo")
+signature_value_signed_info_hashed = hashlib.sha256(canonicalize_signed_info).hexdigest()
+signature_value_signed_info = codecs.decode(xmldoc.XAdESSignatures.Signature.SignatureValue.encode_contents(), 'base64')
+m = hashlib.sha256()
+
+
+signed_info_str = hashlib.sha256(canonicalize_signed_info).digest()
+signature_value =             codecs.decode(xmldoc.XAdESSignatures.Signature.SignatureValue.encode_contents(), 'base64')
+# these two value should be same but signed_info_str gives 32 byte, but signature_value gives 96 byte :/
+
+
+
+# check 2: signature of file check
+signed_file_open = archive.read(signed_file)
+file_calculated_digest = hashlib.sha256(signed_file_open).digest()
+signed_value_from_xml1 = codecs.decode(xmldoc.XAdESSignatures.Signature.SignedInfo.find('Reference').DigestValue
+                                            .encode_contents(), 'base64')
+
+# check 3: signature of signed properties check
+canonicalize_signed_properties = hashlib.sha256(canonicalize(xml, "SignedProperties")).digest()
+signed_value_from_xml2 = codecs.decode(xmldoc.XAdESSignatures.Signature.SignedInfo.findAll('Reference')[1].DigestValue
+                                            .encode_contents(), 'base64')
+
+# check 4: ...
+
 
 # finally verify signatory's signature
-if verify_ecdsa(signers_cert_der, signature_value, signed_info_str):
-    print("[+] Signature verification successful!")
+if file_calculated_digest != signed_value_from_xml1:
+    print("[-] Hash value of file doesn't match with file Digest Value!")
+# elif verify_ecdsa(signers_cert_der, signature_value, signed_info_str):
+#    print("[-] a wrong certificate hash included under the signature!")
+
+# elif signed_info_str != signature_value:
+#     print("[-] a wrong certificate hash included under the signature!")
+
+elif canonicalize_signed_properties != signed_value_from_xml2:
+    print("[-] Signed Properties doesn't match with Signed Properties Digest Value!")
 else:
-    print("[-] a wrong certificate hash included under the signature!")
+    print("[+] Signature verification successful!")

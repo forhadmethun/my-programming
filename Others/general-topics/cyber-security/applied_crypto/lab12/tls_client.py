@@ -16,12 +16,48 @@ args = parser.parse_args()
 
 def get_pubkey_certificate(cert):
     # reads the certificate and returns (n, e)
+    pubkey = [0, 0]
+    # keyfile = open(filename, 'rb')
+    # decode the DER to get public key DER structure, which is encoded as BITSTRING
+    # der = pem_to_der(keyfile.read())
+    der = cert
+    bitstring = str(decoder.decode(der)[0][1])
+    # convert BITSTRING to bytestring
+    bytestring = bytes(int(bitstring[i: i + 8], 2) for i in range(0, len(bitstring), 8))
+    pubkey[0] = decoder.decode(bytestring)[0][0]
+    pubkey[1] = decoder.decode(bytestring)[0][1]
+    return int(pubkey[0]), int(pubkey[1])
 
 def pkcsv15pad_encrypt(plaintext, n):
     # pad plaintext for encryption according to PKCS#1 v1.5
 
+    # calculate byte size of modulus n
+    k = (n.bit_length()+7)//8
+
+    # plaintext must be at least 11 bytes smaller than modulus
+    if len(plaintext) > (k - 11):
+        print("[-] Plaintext larger than modulus - 11 bytes")
+        sys.exit(1)
+
+    # generate padding bytes
+    padding_len = k - len(plaintext) - 3
+    padding = b""
+    for i in range(padding_len):
+        padbyte = os.urandom(1)
+        while padbyte==b"\x00":
+            padbyte = os.urandom(1)
+        padding += padbyte
+
+    return b"\x00\x02" + padding + b"\x00" + plaintext
+
 def rsa_encrypt(cert, m):
     # encrypts message m using public key from certificate cert
+    n, e = get_pubkey_certificate(cert)
+    m = pkcsv15pad_encrypt(m, n)
+    m = bn(m)
+    c = pow(m, e, n)
+    c = nb(c, (n.bit_length()+7)//8)
+    return c
 
 def nb(i, length=False):
     # converts integer to bytes
@@ -41,12 +77,37 @@ def bn(b):
         i |= char
     return i
 
+SSL_VERSION = b"\x03\x01"
+HANDSHAKE = b"\x16"
 # returns TLS record that contains ClientHello handshake message
 def client_hello():
     global client_random, handshake_messages
 
     print("--> ClientHello()")
+    # list of cipher suites the client supports
+    csuite = b"\x00\x05"  # TLS_RSA_WITH_RC4_128_SHA
+    # csuite += b"\x00\x2f"  # TLS_RSA_WITH_AES_128_CBC_SHA
+    # csuite += b"\x00\x35"  # TLS_RSA_WITH_AES_256_CBC_SHA
 
+    # add Handshake message header
+    client_random = b"\xAB" * 32
+    # print("Client random: %s" % client_random.encode("hex"))
+    CLIENT_HELLO = b"\x01"
+    client_version = SSL_VERSION
+    unix_time = nb(int(time.time()))
+    random_bytes = os.urandom(28)  # client_random[4:]
+    session_id_len = b"\x00"
+    session_id = b""
+    cipher_suites_len = nb(2, 2)  # only TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+    compression_method_len = b"\x01"
+    compression_method = b"\x00"  # no compression
+    # add record layer header
+    client_hello_data = (b'\x03\x03' + unix_time + random_bytes +
+                         session_id_len + session_id + cipher_suites_len +
+                         csuite +
+                         compression_method_len + compression_method)
+    client_hello_tlv = CLIENT_HELLO + nb(len(client_hello_data), 3) + client_hello_data
+    record = HANDSHAKE + SSL_VERSION + nb(len(client_hello_tlv), 2) + client_hello_tlv
     return record
 
 # returns TLS record that contains ClientKeyExchange message containing encrypted pre-master secret

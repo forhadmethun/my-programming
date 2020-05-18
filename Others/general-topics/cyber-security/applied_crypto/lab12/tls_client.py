@@ -16,6 +16,9 @@ args = parser.parse_args()
 
 def get_pubkey_certificate(cert):
     # reads the certificate and returns (n, e)
+    # f = open('key.out','wb')
+    # f.write(cert)
+    # f.close()
     pubkey = [0, 0]
     # keyfile = open(filename, 'rb')
     # decode the DER to get public key DER structure, which is encoded as BITSTRING
@@ -23,10 +26,20 @@ def get_pubkey_certificate(cert):
     der = cert
     bitstring = str(decoder.decode(der)[0][1])
     # convert BITSTRING to bytestring
-    bytestring = bytes(int(bitstring[i: i + 8], 2) for i in range(0, len(bitstring), 8))
-    pubkey[0] = decoder.decode(bytestring)[0][0]
-    pubkey[1] = decoder.decode(bytestring)[0][1]
-    return int(pubkey[0]), int(pubkey[1])
+    privkey = decoder.decode(der)
+
+
+    kfc = str(privkey[0][0][6][1])
+    return int(kfc,2)
+   # kbc = bytes(int(kfc[i: i + 8], 2) for i in range(0, len(bitstring), 8))
+
+    #return int(privkey[0][1]), int(privkey[0][3])
+
+    #
+    # bytestring = bytes(int(bitstring[i: i + 8], 2) for i in range(0, len(bitstring), 8))
+    # pubkey[0] = decoder.decode(bytestring)[0][0]
+    # pubkey[1] = decoder.decode(bytestring)[0][1]
+    # return int(pubkey[0]), int(pubkey[1])
 
 def pkcsv15pad_encrypt(plaintext, n):
     # pad plaintext for encryption according to PKCS#1 v1.5
@@ -114,6 +127,11 @@ def client_hello():
 def client_key_exchange():
     global server_cert, premaster, handshake_messages
 
+    premaster = os.urandom(48)
+    n, e = get_pubkey_certificate(server_cert)
+
+    client_key_exchange_tlv = b'\x10'
+    record = HANDSHAKE + SSL_VERSION + nb(len(client_key_exchange_tlv), 2) + client_key_exchange_tlv
     print("--> ClientKeyExchange()")
 
     return record
@@ -157,10 +175,13 @@ def parsehandshake(r):
 
     if htype == b"\x02":
         print("	<--- ServerHello()")
+        printServerHelloData(r)
     elif htype == b"\x0b":
         print("	<--- Certificate()")
+        printServerCertificateData(r)
     elif htype == b"\x0e":
         print("	<--- ServerHelloDone()")
+        server_hello_done_received = True
     elif htype == b"\x14":
         print("	<--- Finished()")
         # hashmac of all Handshake messages except the current Finished message (obviously)
@@ -210,6 +231,76 @@ def parserecord(r):
         print("[-] Unknown TLS Record type:", ctype.hex())
         sys.exit(1)
 
+def printServerHelloData(r):
+    header = {
+    }
+    body =  (r[4:])  # recv_num_bytes(s, length)
+    version = body[:2]
+    server_randomness = body[2: 2 + 32]
+    timestamp = server_randomness[:4]
+    session_id_len_b = body[34:35]
+    session_id_len = bn(session_id_len_b)
+    session_id = body[35: 35 + session_id_len]
+    cipher_suit = body[35 + session_id_len: 35 + session_id_len + 2]
+    compression_method = body[35 + session_id_len + 2: 35 + session_id_len + 2 + 1]
+    extensions = body[35 + session_id_len + 2 + 1:]
+    header['server_random'] = server_randomness
+    header['gmt'] = datetime.datetime.fromtimestamp(bn(timestamp)).strftime('%Y-%m-%d %H:%M:%S')
+    header['sessid'] = session_id
+    header['cipher'] = cipher_suit
+    header['compression'] = bn(compression_method)
+    server_random = header['server_random']
+    gmt = header['gmt']
+    sessid = header['sessid']
+    cipher = header['cipher']
+    compression = header['compression']
+
+    print("	[+] server randomness:", server_random.hex().upper())
+    print("	[+] server timestamp:", gmt)
+    print("	[+] TLS session ID:", sessid.hex().upper())
+
+    cipher = cipher_suit
+    if cipher == b"\x00\x2f":
+        print("	[+] Cipher suite: TLS_RSA_WITH_AES_128_CBC_SHA")
+    elif cipher == b"\x00\x35":
+        print("	[+] Cipher suite: TLS_RSA_WITH_AES_256_CBC_SHA")
+    elif cipher == b"\x00\x05":
+        print("	[+] Cipher suite: TLS_RSA_WITH_RC4_128_SHA")
+    else:
+        print("[-] Unsupported cipher suite selected:", cipher.hex())
+
+def printServerCertificateData(r):
+    global server_cert
+    header = {
+    }
+    certificate_field_len = bn(r[1:4])
+    certificates_len =  bn(r[4:7])
+    certificates = []
+    cert_string_left = r[7:certificates_len+7]
+    while cert_string_left:
+        cert_len = bn(cert_string_left[:3])
+        certificates.append(cert_string_left[3: 3 + cert_len])
+        cert_string_left = cert_string_left[3 + cert_len:]
+    header['certlen'] = len(certificates[0])
+    server_cert = certificates[0]
+    print("[+] Server certificate length: ", len(certificates[0]))
+    """"
+    # if (certificates_len + 4 + 3 != len(r)):
+    #     combined = True
+    #     header['combined'] = r[certificates_len + 4 + 3:]
+    # if args.certificate:
+   
+    f = open("key.pem", 'wb')
+    cert = certificates[0]
+    encoded_hext = codecs.encode(cert, 'hex')
+    p = b'-----BEGIN CERTIFICATE-----\n'
+    p += codecs.encode(cert, 'base64');
+    # p += b'\n'
+    p += b'-----END CERTIFICATE-----\n';
+    pem = p
+    f.write(pem)
+    f.close()
+    """
 # PRF defined in TLS v1.2
 def PRF(secret, seed, l):
 
@@ -329,7 +420,7 @@ server_finished_received = False
 
 while not server_hello_done_received:
     parserecord(readrecord())
-
+    
 s.send(client_key_exchange())
 s.send(change_cipher_spec())
 derive_master_secret()

@@ -166,7 +166,7 @@ def get_pubkey(filename):
     return int(pubkey[0]), int(pubkey[1])
 
 
-# get_pubkey('/home/f/Code/Others/general-topics/cyber-security/applied_crypto/lab5/pub.der')
+get_pubkey('/home/f/Code/Others/general-topics/cyber-security/applied_crypto/lab5/pub.der')
 
 # todo: done
 def get_privkey(filename):

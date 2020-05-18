@@ -35,7 +35,7 @@
       - we can return ip address of load balancer from the dns when client request for data.
       - How load balacer handle wich server to send the request?
         - load balancer find least busy server and send the request via tcp then the server handle the request and handle back to the load balancer and it server to the client.
-        - all the server may contain the same data, or different server may be used to serve different data. images.something.com, videos.something.com etc.
+          -                                                                             all the server may contain the same data, or different server may be used to serve different data. images.something.com, videos.something.com etc.
       - how load balancer decide which server is less busy?
         - DNS server may be configured to choose which server to choose.
           - this is not good idea. load balancer may handle those requests.

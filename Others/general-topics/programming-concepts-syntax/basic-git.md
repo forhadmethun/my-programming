@@ -99,3 +99,10 @@ git remote add origin 'git_repo_url'
 git push origin master
 
 ```
+
+
+# Git Caching username and password
+```
+git config --global credential.helper store
+
+```

@@ -3,8 +3,13 @@
 import argparse, hashlib, sys, datetime # do not use any other imports/libraries
 
 # took 3.0 hours (please specify here how much time your solution required)
+"""
+[+] Input: 466f726861642055540000000004a4d29c
+[+] Solved in 510.673517 sec (0.15256456700103366 Mhash/sec)
+[+] Solution: 000000305efcfc391a1207580e9982ba38d3ac2e7e50c2ed981a24db730abebd
+[+] Nonce: 77910684
+"""
 
-# solution time: 182.3411526 sec
 
 # parse arguments
 parser = argparse.ArgumentParser(description='Proof-of-work solver')
@@ -36,8 +41,8 @@ nonce = 62613423
 def hashFunction(x):
     return hashlib.sha256(hashlib.sha256(x).digest()).hexdigest()
 nonce = 0
-input = b'Aivar UT' + nb(nonce,8)
-print("[+] Input:", input)
+input = b'Forhad UT' + nb(nonce,8)
+
 # s = now()
 computed_hash = hashFunction(input)
 # hashCalculateTime =  (timediff(s))
@@ -49,11 +54,11 @@ while not bin(int(computed_hash, 16))[2:].zfill(len(computed_hash)*4).startswith
 # while not computed_hash.startswith('0' * 6):
     nonce += 1
     # computed_hash = hashFunction(computed_hash)
-    input = b'Aivar UT' + nb(nonce,8)
+    input = b'Forhad UT' + nb(nonce,8)
     computed_hash = hashFunction(input)
 solveTime = (timediff(s))
 mhashps = (nonce/ solveTime)/1000000
-
+print("[+] Input:", input.hex())
 print("[+] Solved in %s sec (%s Mhash/sec)" % (solveTime, mhashps))
 print("[+] Solution:", computed_hash)
 print("[+] Nonce:", nonce)

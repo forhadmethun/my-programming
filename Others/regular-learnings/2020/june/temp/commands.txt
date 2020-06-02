@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo openvpn --config client.ovpn 
+ssh -i id_rsa centos@172.17.64.208

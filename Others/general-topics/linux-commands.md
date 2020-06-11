@@ -470,3 +470,19 @@ network:
 sudo netplan apply – apply network changes
 
 ```
+## DNS
+- 4 types
+ - DNS Resolver
+   - local ISP
+ - Root Name Server
+     - operated by 12 org, holds ip where .com reside
+ - Top Level Domain(TLD)
+   - knows ip for all domain shared common extension like .com
+ - Authoritative Name Server 
+   - knows the actual ip of requested website   
+```
+nslookup
+set query=ns
+facebook.com
+
+```

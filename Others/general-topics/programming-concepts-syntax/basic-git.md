@@ -72,6 +72,7 @@ git --version
 ```
  git config --global user.name "Forhad Hossain"
  git config --global user.email "forhadmethun@gmail.com"
+ git config --list
 ```
 ### Git Life Cycle
 General work-flow - 
@@ -106,3 +107,29 @@ git push origin master
 git config --global credential.helper store
 
 ```
+# Git Basics
+```
+# https://github.com/forhadmethun/coursera-fewd-with-react
+git config --global user.name <username>
+git config --global user.mail
+
+git log --oneline
+
+git status
+
+git commit -m 'message'
+git checkout <commit-identifier> <file> #the file will be automatically staged, so to unstage need to execute following command
+git reset HEAD <file>
+git checkout -- <file> #to take to the previous commit
+git reset <file>
+
+git remote add origin <repo-url>
+git push -u origin master
+
+
+git clone <repo-url>
+
+#.gitignore 
+
+```
+

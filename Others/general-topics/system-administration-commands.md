@@ -41,8 +41,8 @@ chown username filename
 ```
 
 # create an user
-```
-useradd username
+``
+eradd username
 ```
 
 

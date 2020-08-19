@@ -1,4 +1,4 @@
-
+package dcp;
 public class DCP63{
 	public static void main(String[]  args) {
 		char[][] matrix = {{'F', 'A', 'C', 'I'} ,

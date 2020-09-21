@@ -133,3 +133,29 @@ git clone <repo-url>
 
 ```
 
+# Git Merge vs Git Rebase
+## Result of `git merge master`
+```
+*   63c6403  (master) Merge "second_branch" in "master"
+|\
+| |
+* | 33facc8 Commit 3
+| |
+| * 3b36f32  (second_branch) Detached commit
+| |
+|/
+* 29af11f  Commit 2
+|
+* 1439f8e  Commit 1
+```
+
+## Result of `git rebase master`
+```
+* a018520  (HEAD -> second_branch) Detached commit
+|
+* 33facc8  (master) Commit 3
+|
+* 29af11f  Commit 2
+|
+* 1439f8e  Commit 1
+```

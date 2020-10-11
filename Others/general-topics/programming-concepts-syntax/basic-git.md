@@ -159,3 +159,9 @@ git clone <repo-url>
 |
 * 1439f8e  Commit 1
 ```
+
+## Replace existing remote origin
+```
+git remote set-url origin https://github.com/forhadmethun/watchflix.git
+
+```

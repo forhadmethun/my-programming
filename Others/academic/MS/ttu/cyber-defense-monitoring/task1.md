@@ -74,6 +74,9 @@ coreutils-8.22,pcre-8.32+%
 egrep "^[[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?(,([[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?))*$"
 
 ```
+^[[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?(,([[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?))*$
+egrep "^[[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?(,([[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?))*$"
+egrep "^[[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?(,([[:alpha:]][[:alnum:]]*(-(([0-9]+)[[:alpha:]]?(\.[0-9]+[[:alpha:]]?)*))?))*$"
 
 iwl2030,a12bcd3456ef78gh,mydatabase-13i.222.5b,e2fsprogs,PyYAML
 

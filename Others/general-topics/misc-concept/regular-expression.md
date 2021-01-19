@@ -35,19 +35,25 @@
 ## inside [] special characters(? or .) treated as regular character
 ```
   [:C:] maybe used inside []
-  [[:alpha]01] -> matches a letter (both lower and upper case), or digit 0 or 1
-  [[:alnum]_,@]
-  [ABC[:punc:]]
+  [:alpha:]
+  [:digit:]
+  [:alnum:]
+  [:punc:]
+  [:space:]
+
+  [[:alpha:]01] -> matches a letter (both lower and upper case), or digit 0 or 1
+  [[:alnum:]_,@]
+  [ABC[:punc:]] # matches a letter A, B or C, or any punctuation character like ! @ # ( ] | _ etc.
   [^[:print:]] # prints anything that's not printable character
   [[:cntrl:][:blank:]]
   [^[:space:]]
   [ABC[:punct:]]
-  \w  -> [[:alnum:]_]
+  \w  -> [[:alnum:]_] -> [0-9A-Za-z_]
   \W  -> [^[:alnum:]_]
   $   -> end of a string
   \b  -> word boundary(empty string at the begging or end of word)
   \B  -> empty string that's not start or end of a word
-  ^   -> beginning of a string
+  ^   -> beginning of a string  
   $   -> end of a string
 ```
 

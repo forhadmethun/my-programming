@@ -13,3 +13,6 @@
 [submodule "my-online-judge-practice"]
 	path = my-online-judge-practice
 	url = https://github.com/forhadmethun/my-online-judge-practice.git
+[submodule "my-misc-topics"]
+	path = my-misc-topics
+	url = https://github.com/forhadmethun/my-misc-topics.git

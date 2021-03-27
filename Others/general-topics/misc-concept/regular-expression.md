@@ -6,6 +6,7 @@
       - add some features and changes to BRE and supported bu `egrep`
     - Perl regular Expression
       - add lot of features to ERE and supported by Perl
+      - `pcregrep` tool to check  
 ## Outline
   - atoms
   - repetition operators

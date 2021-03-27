@@ -83,3 +83,10 @@ iwl2030,a12bcd3456ef78gh,mydatabase-13i.222.5b,e2fsprogs,PyYAML
 
 
 
+
+# Practice from test
+``` 
+
+egrep "^firewall\[[0-9]+\]: (([[:alnum:]]*[[:alpha:]]+)|([[:alpha:]]+[[:alnum:]]*))=[[:alnum:]]+(,(([[:alnum:]]*[[:alpha:]]+)|([[:alpha:]]+[[:alnum:]]*))=[[:alnum:]]+)*$"
+
+```

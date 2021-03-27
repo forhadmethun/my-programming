@@ -4,9 +4,9 @@
 [submodule "Data-Structure"]
 	path = Data-Structure
 	url = https://github.com/forhadmethun/Data-Structure.git
-[submodule "my-inerview-preparation"]
-	path = my-inerview-preparation
-	url = https://github.com/forhadmethun/my-inerview-preparation.git
+[submodule "my-interview-preparation"]
+	path = my-interview-preparation
+	url = https://github.com/forhadmethun/my-interview-preparation.git
 [submodule "my-regular-learnings"]
 	path = my-regular-learnings
 	url = https://github.com/forhadmethun/my-regular-learnings.git
